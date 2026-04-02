@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion, useInView, AnimatePresence, type Variants } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -192,11 +192,11 @@ export default function AboutPage() {
   const statsInView = useInView(statsRef, { once: true, margin: "-80px" });
   const testimonialsInView = useInView(testimonialsRef, { once: true, margin: "-80px" });
 
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] } },
   };
-  const stagger = {
+  const stagger: Variants = {
     hidden: {},
     visible: { transition: { staggerChildren: 0.15 } },
   };
