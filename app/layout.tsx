@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import NoScrollOnNav from "@/components/NoScrollOnNav";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -32,8 +33,10 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${fraunces.variable} ${dmSans.variable} font-dm h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col text-brand-ink bg-brand-surface selection:bg-brand-gold selection:text-brand-ink overflow-x-hidden" suppressHydrationWarning>
+        <NoScrollOnNav />
         <Navbar />
         <main className="flex-grow pt-20">
           {children}

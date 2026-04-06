@@ -11,14 +11,17 @@ const navLinks = [
   { name: "About", href: "/about" },
   {
     name: "Services",
-    href: "#",
+    href: "/services",
     dropdown: [
-      { name: "AI SEO", href: "/services/ai-seo" },
       { name: "Content Marketing", href: "/services/content-marketing" },
-      { name: "Social Media", href: "/services/social-media" },
-      { name: "Google Ads", href: "/services/google-ads" },
-      { name: "Website Design", href: "/services/website-design" },
-      { name: "CBD SEO", href: "/services/cbd-seo" },
+      { name: "Google & Facebook Ads", href: "/services/google-facebook-ads" },
+      { name: "Graphic / Website Design", href: "/services/graphic-website-design" },
+      { name: "SEO Services", href: "/services/seo-services" },
+      { name: "Google My Business", href: "/services/google-my-business" },
+      { name: "Social Media Management", href: "/services/social-media-management" },
+      { name: "Brand Presence & Consulting", href: "/services/brand-presence" },
+      { name: "Lead Generation", href: "/services/lead-generation" },
+      { name: "CBD SEO Strategies", href: "/services/cbd-seo" },
     ],
   },
   { name: "Case Studies", href: "/case-studies" },
@@ -98,12 +101,18 @@ export default function Navbar() {
             {navLinks.map((link) => (
               <motion.div key={link.name} variants={itemVariants} className="relative group">
                 {link.dropdown ? (
-                  <div className="flex items-center text-[15px] font-medium text-gray-600 hover:text-brand-blue-deep transition-colors cursor-pointer py-2">
-                    <span aria-label={`${link.name} dropdown`}>{link.name}</span>
-                    <FiChevronDown className="ml-1.5 h-4 w-4 group-hover:-rotate-180 transition-transform duration-200" />
-                    
+                  <div className="relative group flex items-center">
+                    <Link
+                      href={link.href}
+                      className="flex items-center text-[15px] font-medium text-gray-600 hover:text-brand-blue-deep transition-colors py-2"
+                      aria-label={link.name}
+                    >
+                      {link.name}
+                      <FiChevronDown className="ml-1.5 h-4 w-4 group-hover:-rotate-180 transition-transform duration-200" />
+                    </Link>
+
                     {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 w-56 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
+                    <div className="absolute top-full left-0 w-64 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left -translate-y-2 group-hover:translate-y-0">
                       <div className="bg-white border border-brand-border rounded-xl overflow-hidden py-3" style={{ boxShadow: '0 20px 60px rgba(0,0,0,0.08)' }}>
                         {link.dropdown.map((subItem) => (
                           <Link
