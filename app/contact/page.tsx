@@ -128,7 +128,7 @@ function TestimonialsCarousel() {
                       <div
                         className="w-12 h-12 rounded-full flex items-center justify-center font-dm font-bold text-brand-ink text-sm flex-shrink-0"
                         style={{
-                          background: "linear-gradient(135deg, #e8a045 0%, #f5c878 100%)",
+                          background: "linear-gradient(135deg, #ffb605 0%, #ffc833 100%)",
                         }}
                       >
                         {t.initials}
@@ -293,7 +293,7 @@ export default function ContactPage() {
             <a
               href="tel:+919821774565"
               className="font-dm font-semibold px-8 py-3.5 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
-              style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.4)" }}
+              style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
             >
               <FiPhone /> Call Us Now
             </a>
@@ -554,7 +554,7 @@ export default function ContactPage() {
                       type="submit"
                       disabled={submitting}
                       className="w-full py-4 bg-brand-gold text-brand-ink font-dm font-bold text-base rounded-xl hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                      style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.35)" }}
+                      style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.35)" }}
                     >
                       {submitting ? (
                         <>
@@ -683,7 +683,7 @@ export default function ContactPage() {
               <a
                 href="tel:+919821774565"
                 className="font-dm font-semibold px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
-                style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.4)" }}
+                style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
               >
                 <FiPhone /> +91 98217 74565
               </a>

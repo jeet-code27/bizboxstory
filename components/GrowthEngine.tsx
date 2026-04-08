@@ -76,7 +76,7 @@ export default function GrowthEngine() {
   return (
     <section className="bg-brand-blue-deep py-24 object-contain overflow-hidden relative" ref={ref}>
       {/* Background glowing effects — matches Hero */}
-      <div className="absolute top-0 left-0 w-full h-[600px] bg-[radial-gradient(circle_at_0%_0%,rgba(245,166,35,0.05)_0%,transparent_50%)] pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-[600px] bg-[radial-gradient(circle_at_0%_0%,rgba(255,182,5,0.05)_0%,transparent_50%)] pointer-events-none" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-brand-blue-mid/30 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

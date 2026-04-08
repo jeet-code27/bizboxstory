@@ -150,7 +150,7 @@ export default function Navbar() {
             <Link
               href="/free-strategy-call"
               className="font-dm text-[14.5px] font-semibold tracking-wide px-7 py-3 bg-brand-gold text-brand-ink rounded-full border-none cursor-pointer transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-0.5 flex items-center gap-2"
-              style={{ boxShadow: '0 12px 40px rgba(232,160,69,0.35)' }}
+              style={{ boxShadow: '0 12px 40px rgba(255,182,5,0.35)' }}
             >
               Book a Call &rarr;
             </Link>
@@ -218,7 +218,7 @@ export default function Navbar() {
                   href="/free-strategy-call"
                   onClick={() => setIsOpen(false)}
                   className="font-dm font-bold flex w-full items-center justify-center px-6 py-4.5 bg-brand-gold text-brand-ink rounded-full transition-all duration-300 hover:bg-brand-gold-light text-[16px]"
-                  style={{ boxShadow: '0 8px 30px rgba(232,160,69,0.3)' }}
+                  style={{ boxShadow: '0 8px 30px rgba(255,182,5,0.3)' }}
                 >
                   Book Free Call
                 </Link>

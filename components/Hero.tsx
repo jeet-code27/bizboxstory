@@ -38,13 +38,13 @@ export default function Hero() {
     <section className="relative flex items-center overflow-hidden bg-brand-blue-deep pt-32 pb-16 lg:pt-36 lg:pb-20">
       {/* Background Elements */}
       {/* 1. Radial gradient top-left */}
-      <div className="absolute top-0 left-0 w-full h-[800px] bg-[radial-gradient(circle_at_0%_0%,rgba(245,166,35,0.05)_0%,transparent_50%)] pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-[800px] bg-[radial-gradient(circle_at_0%_0%,rgba(255,182,5,0.05)_0%,transparent_50%)] pointer-events-none" />
 
       {/* 2. Grid pattern overlay */}
       <div 
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
-          backgroundImage: `linear-gradient(rgba(245, 166, 35, 1) 1px, transparent 1px), linear-gradient(90deg, rgba(245, 166, 35, 1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(255, 182, 5, 1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 182, 5, 1) 1px, transparent 1px)`,
           backgroundSize: '40px 40px'
         }}
       />
@@ -90,7 +90,7 @@ export default function Hero() {
               <motion.span variants={textItemVariants} className="block text-white pb-1">
                 Revenue-Driven
               </motion.span>
-              <motion.span variants={textItemVariants} className="block text-brand-gold pb-1">
+              <motion.span variants={textItemVariants} className="block text-[#ffb605] pb-1">
                 Digital Marketing
               </motion.span>
               <motion.span variants={textItemVariants} className="block text-white">
@@ -113,7 +113,7 @@ export default function Hero() {
             >
               <Link 
                 href="/free-strategy-call"
-                className="inline-flex justify-center items-center bg-brand-gold text-brand-ink font-dm font-semibold px-6 py-3.5 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:shadow-[0_0_20px_rgba(245,166,35,0.4)] text-base"
+                className="inline-flex justify-center items-center bg-brand-gold text-brand-ink font-dm font-semibold px-6 py-3.5 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:shadow-[0_0_20px_rgba(255,182,5,0.4)] text-base"
               >
                 Book Free Strategy Call &rarr;
               </Link>
@@ -153,7 +153,7 @@ export default function Hero() {
             animate="show"
           >
             <div 
-              className="bg-white/5 border border-brand-gold/20 rounded-2xl p-6 shadow-[0_20px_50px_rgba(245,166,35,0.1)] backdrop-blur-sm relative"
+              className="bg-white/5 border border-brand-gold/20 rounded-2xl p-6 shadow-[0_20px_50px_rgba(255,182,5,0.1)] backdrop-blur-sm relative"
               style={{ animation: 'float 4s ease-in-out infinite' }}
             >
               {/* Card Header Badge */}
@@ -198,7 +198,7 @@ export default function Hero() {
                     strokeWidth="3" 
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    style={{ filter: "drop-shadow(0px 4px 6px rgba(245, 166, 35, 0.4))" }}
+                    style={{ filter: "drop-shadow(0px 4px 6px rgba(255, 182, 5, 0.4))" }}
                   />
                   
                   {/* Data Points */}

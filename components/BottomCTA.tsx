@@ -27,7 +27,7 @@ export default function BottomCTA() {
           initial={{ opacity: 0, y: 50, scale: 0.95 }}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 50, scale: 0.95 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative w-full max-w-4xl bg-brand-blue-mid border border-brand-gold/10 rounded-[2rem] sm:rounded-[3rem] py-16 sm:py-20 px-6 sm:px-10 text-center shadow-[0_0_50px_rgba(232,160,69,0.03)] z-10"
+          className="relative w-full max-w-4xl bg-brand-blue-mid border border-brand-gold/10 rounded-[2rem] sm:rounded-[3rem] py-16 sm:py-20 px-6 sm:px-10 text-center shadow-[0_0_50px_rgba(255,182,5,0.03)] z-10"
         >
           {/* Eyebrow */}
           <span className="font-dm text-brand-gold text-xs sm:text-sm uppercase tracking-widest font-bold">
@@ -49,7 +49,7 @@ export default function BottomCTA() {
           <div className="mt-8 sm:mt-10">
             <Link
               href="/free-strategy-call"
-              className="inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-full hover:bg-brand-gold-light hover:scale-105 hover:shadow-[0_0_30px_rgba(232,160,69,0.3)] transition-all duration-300 group w-full sm:w-auto"
+              className="inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-5 rounded-full hover:bg-brand-gold-light hover:scale-105 hover:shadow-[0_0_30px_rgba(255,182,5,0.3)] transition-all duration-300 group w-full sm:w-auto"
             >
               Book Your Free Strategy Call
               <span className="ml-3 sm:ml-4 text-xl leading-none group-hover:translate-x-1 transition-transform duration-300">

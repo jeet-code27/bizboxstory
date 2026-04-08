@@ -346,7 +346,7 @@ export default function CbdSeoPage() {
             <Link
               href="/contact"
               className="font-dm font-semibold px-9 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 text-base"
-              style={{ boxShadow: "0 14px 40px rgba(232,160,69,0.4)" }}
+              style={{ boxShadow: "0 14px 40px rgba(255,182,5,0.4)" }}
             >
               Get Your Free CBD SEO Audit <FiArrowRight />
             </Link>
@@ -462,7 +462,7 @@ export default function CbdSeoPage() {
                 {/* Floating badge */}
                 <div
                   className="absolute bottom-6 left-6 bg-brand-gold px-5 py-3 rounded-2xl flex items-center gap-3"
-                  style={{ boxShadow: "0 8px 32px rgba(232,160,69,0.5)" }}
+                  style={{ boxShadow: "0 8px 32px rgba(255,182,5,0.5)" }}
                 >
                   <div className="w-2 h-2 rounded-full bg-brand-ink animate-pulse" />
                   <span className="font-dm font-bold text-brand-ink text-sm">
@@ -1010,7 +1010,7 @@ export default function CbdSeoPage() {
               <Link
                 href="/contact"
                 className="mt-8 inline-flex items-center gap-2 font-dm font-semibold px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5"
-                style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.35)" }}
+                style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.35)" }}
               >
                 Partner with BizBox Story <FiArrowRight />
               </Link>
@@ -1122,7 +1122,7 @@ export default function CbdSeoPage() {
               <Link
                 href="/contact"
                 className="font-dm font-semibold px-10 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 text-base"
-                style={{ boxShadow: "0 14px 50px rgba(232,160,69,0.45)" }}
+                style={{ boxShadow: "0 14px 50px rgba(255,182,5,0.45)" }}
               >
                 Get Your Free CBD SEO Audit <FiArrowRight />
               </Link>

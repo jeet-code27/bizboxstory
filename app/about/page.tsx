@@ -282,7 +282,7 @@ export default function AboutPage() {
             <Link
               href="/contact"
               className="font-dm font-semibold px-8 py-3.5 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
-              style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.4)" }}
+              style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
             >
               Get a Free Strategy Call <FiArrowRight />
             </Link>
@@ -409,7 +409,7 @@ export default function AboutPage() {
                 }`}
                 style={
                   activeTab === tab.id
-                    ? { boxShadow: "0 8px 30px rgba(232,160,69,0.35)" }
+                    ? { boxShadow: "0 8px 30px rgba(255,182,5,0.35)" }
                     : {}
                 }
               >
@@ -566,7 +566,7 @@ export default function AboutPage() {
               <div className="absolute bottom-8 left-8 right-8">
                 <div
                   className="inline-flex items-center gap-3 bg-brand-gold px-5 py-3 rounded-2xl"
-                  style={{ boxShadow: "0 8px 32px rgba(232,160,69,0.5)" }}
+                  style={{ boxShadow: "0 8px 32px rgba(255,182,5,0.5)" }}
                 >
                   <div className="w-2 h-2 rounded-full bg-brand-ink animate-pulse" />
                   <span className="font-dm font-bold text-brand-ink text-sm tracking-wide">
@@ -740,7 +740,7 @@ export default function AboutPage() {
                     <FiStar
                       key={s}
                       className="text-brand-gold fill-current"
-                      style={{ fill: "#e8a045" }}
+                      style={{ fill: "#ffb605" }}
                     />
                   ))}
                 </div>
@@ -760,7 +760,7 @@ export default function AboutPage() {
                     className="w-12 h-12 rounded-full flex items-center justify-center font-dm font-bold text-brand-ink text-sm flex-shrink-0"
                     style={{
                       background:
-                        "linear-gradient(135deg, #e8a045 0%, #f5c878 100%)",
+                        "linear-gradient(135deg, #ffb605 0%, #ffc833 100%)",
                     }}
                   >
                     {t.initials}
@@ -809,7 +809,7 @@ export default function AboutPage() {
               <Link
                 href="/contact"
                 className="font-dm font-semibold px-9 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 text-base"
-                style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.4)" }}
+                style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
               >
                 Book a Free Strategy Call <FiArrowRight />
               </Link>

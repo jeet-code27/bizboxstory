@@ -47,7 +47,7 @@ const services = [
       "Content personalization and strategy",
     ],
     image: "/images/services/content-marketing.webp",
-    accent: "#e8a045",
+    accent: "#ffb605",
     badge: "Most Popular",
   },
   {
@@ -131,7 +131,7 @@ const services = [
       "Brand identity creation",
     ],
     image: "/images/services/brand.webp",
-    accent: "#f59e0b",
+    accent: "#ffb605",
     badge: null,
   },
   {
@@ -443,7 +443,7 @@ export default function ServicesPage() {
             <Link
               href="/contact"
               className="font-dm font-semibold px-8 py-3.5 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
-              style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.4)" }}
+              style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
             >
               Free Consultation <FiArrowRight />
             </Link>
@@ -571,7 +571,7 @@ export default function ServicesPage() {
               <Link
                 href="/contact"
                 className="font-dm font-semibold px-8 py-3.5 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
-                style={{ boxShadow: "0 12px 40px rgba(232,160,69,0.4)" }}
+                style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
               >
                 Start Your Journey <FiArrowRight />
               </Link>

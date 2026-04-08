@@ -60,7 +60,7 @@ export default function VideoSection() {
                   />
                   {/* Custom Play Button Overlay */}
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/20 transition-all duration-300">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand-gold rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(232,160,69,0.4)] group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 bg-brand-gold rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(255,182,5,0.4)] group-hover:scale-110 transition-transform duration-300">
                       <FiPlay className="text-white text-2xl sm:text-3xl ml-1.5 sm:ml-2" />
                     </div>
                   </div>
@@ -144,7 +144,7 @@ export default function VideoSection() {
             {/* CTA Button */}
             <Link
               href="/free-strategy-call"
-              className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(232,160,69,0.3)] w-fit"
+              className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-fit"
             >
               Book Your Free Strategy Call &rarr;
             </Link>

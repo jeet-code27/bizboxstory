@@ -12,6 +12,11 @@ const clients = [
   { name: "Nirvana DC", logo: "/images/clients/nirvanadc-logo.webp" },
   { name: "HCL Foundation", logo: "/images/clients/hcl-foundation.webp" },
   { name: "Saankanvali", logo: "/images/clients/saankanvali.webp" },
+  { name: "Pest Control Boston", logo: "/images/clients/pest-control-boston.png" },
+  { name: "Bed Bug Boston", logo: "/images/clients/bed-bug-boston-logo.jpg" },
+  { name: "Plugd", logo: "/images/clients/plugd-logo.png" },
+  { name: "District Cure", logo: "/images/clients/district-cure.png" },
+  { name: "Torch", logo: "/images/clients/torch.svg" },
 ];
 
 export default function ClientLogos() {
