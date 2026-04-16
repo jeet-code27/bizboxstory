@@ -19,7 +19,7 @@ const navLinks = [
       { name: "SEO Services", href: "/services/seo-services" },
       { name: "Google My Business", href: "/services/google-my-business" },
       { name: "Social Media Management", href: "/services/social-media-management" },
-      { name: "Brand Presence & Consulting", href: "/services/brand-presence" },
+      { name: "Brand Presence & Consulting", href: "/services/brand-presence-consulting" },
       { name: "Lead Generation", href: "/services/lead-generation" },
       { name: "CBD SEO Strategies", href: "/services/cbd-seo" },
     ],

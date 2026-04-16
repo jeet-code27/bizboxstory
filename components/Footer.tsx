@@ -7,11 +7,11 @@ import { FiMail, FiPhone } from "react-icons/fi";
 const servicesLinks = [
   { name: "AI SEO Services", href: "/services/ai-seo" },
   { name: "Content Marketing", href: "/services/content-marketing" },
-  { name: "Social Media Management", href: "/services/social-media" },
-  { name: "Google & Facebook Ads", href: "/services/paid-ads" },
-  { name: "Website Design", href: "/services/web-design" },
+  { name: "Social Media Management", href: "/services/social-media-management" },
+  { name: "Google & Facebook Ads", href: "/services/google-facebook-ads" },
+  { name: "Graphic / Website Design", href: "/services/graphic-website-design" },
   { name: "Lead Generation", href: "/services/lead-generation" },
-  { name: "Brand Strategy", href: "/services/brand-strategy" },
+  { name: "Brand Presence & Consulting", href: "/services/brand-presence-consulting" },
   { name: "CBD SEO Strategies", href: "/services/cbd-seo" },
 ];
 
