@@ -11,7 +11,7 @@ const blogPosts = [
     excerpt: "Digital marketing is no longer just about ranking on Google. Discover the new landscape of search optimization.",
     date: "March 24, 2026",
     image: "/images/blog/ai-seo.webp",
-    href: "/blog/aiseo-aso-geo-differences"
+    href: "/aiseo-aso-geo-differences"
   },
   {
     category: "Strategy",
@@ -19,7 +19,7 @@ const blogPosts = [
     excerpt: "Classic businesses are discovering how AI-powered marketing can help them stay relevant and grow faster.",
     date: "February 28, 2026",
     image: "/images/blog/ai-marketing.jpg",
-    href: "/blog/ai-marketing-traditional-businesses"
+    href: "/ai-marketing-traditional-businesses"
   },
   {
     category: "SEO",
@@ -27,7 +27,7 @@ const blogPosts = [
     excerpt: "Watched YouTube tutorials. Tweaked meta tags. Wrote blogs. Six months later — zero growth. Here's what to do next.",
     date: "January 5, 2026",
     image: "/images/blog/seo-agency.webp",
-    href: "/blog/hire-right-seo-agency"
+    href: "/hire-right-seo-agency"
   }
 ];
 
@@ -70,7 +70,7 @@ export default function BlogPreview() {
           </div>
           
           <Link
-            href="/blog"
+            href="/blogs"
             className="font-dm text-brand-gold hover:text-brand-gold-light transition-colors font-semibold flex items-center gap-2 group w-fit pb-1 border-b border-transparent hover:border-brand-gold/50"
           >
             View All Articles 

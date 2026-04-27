@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
+import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -25,7 +27,7 @@ const navLinks = [
     ],
   },
   { name: "Case Studies", href: "/case-studies" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "/blogs" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -70,11 +72,47 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? "bg-white/95 backdrop-blur-[16px] shadow-[0_1px_0_rgba(13,13,13,0.08)] py-3" 
-          : "bg-white py-5 shadow-[0_1px_0_rgba(13,13,13,0.04)]"
+          ? "bg-white/95 backdrop-blur-[16px] shadow-[0_1px_0_rgba(13,13,13,0.08)]" 
+          : "bg-white shadow-[0_1px_0_rgba(13,13,13,0.04)]"
       }`}
     >
-      <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Top Bar - hides on scroll and mobile */}
+      <div className={`w-full bg-brand-gold transition-all duration-300 overflow-hidden hidden lg:block ${scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100'}`}>
+        <div className="w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-between font-dm text-[13px] text-brand-ink font-bold tracking-wide">
+          
+          {/* Left: Contact Info */}
+          <div className="flex items-center space-x-6">
+            <a href="mailto:info@bizboxstory.com" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <FaEnvelope className="w-3.5 h-3.5" /> <span>info@bizboxstory.com</span>
+            </a>
+            <a href="tel:+17749912610" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <FaPhone className="w-3 h-3 scale-x-[-1]" /> <span>+1-7749912610</span>
+            </a>
+            <a href="tel:+919821774565" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <FaPhone className="w-3 h-3 scale-x-[-1]" /> <span>+919821774565</span>
+            </a>
+          </div>
+
+          {/* Right: Socials */}
+          <div className="flex items-center space-x-1.5">
+            <a href="https://www.facebook.com/bizboxstory" target="_blank" rel="noopener noreferrer" className="bg-white w-[26px] h-[26px] rounded-[2px] flex items-center justify-center hover:bg-brand-ink hover:text-white transition-all text-brand-ink">
+              <FaFacebookF className="w-3.5 h-3.5" />
+            </a>
+            <a href="https://www.instagram.com/bizbox_story/" target="_blank" rel="noopener noreferrer" className="bg-white w-[26px] h-[26px] rounded-[2px] flex items-center justify-center hover:bg-brand-ink hover:text-white transition-all text-brand-ink">
+              <FaInstagram className="w-[15px] h-[15px]" />
+            </a>
+            <a href="https://x.com/BizBox_Story" target="_blank" rel="noopener noreferrer" className="bg-white w-[26px] h-[26px] rounded-[2px] flex items-center justify-center hover:bg-brand-ink hover:text-white transition-all text-brand-ink">
+              <FaXTwitter className="w-3.5 h-3.5" />
+            </a>
+            <a href="https://in.linkedin.com/company/bizboxstory" target="_blank" rel="noopener noreferrer" className="bg-white w-[26px] h-[26px] rounded-[2px] flex items-center justify-center hover:bg-brand-ink hover:text-white transition-all text-brand-ink">
+              <FaLinkedinIn className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div className={`w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 ${scrolled ? "py-3" : "py-5"}`}>
         <div className="flex justify-between items-center h-14">
           
           {/* Restored Native Image Logo component */}
