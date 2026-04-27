@@ -19,7 +19,7 @@ const services = [
     icon: FiSearch,
     title: "AI SEO Services",
     desc: "Rank higher with AI-assisted keyword strategy and on-page optimization built for sustainable organic growth.",
-    href: "/services/ai-seo-services"
+    href: "/services/seo-services"
   },
   {
     icon: FiEdit3,
@@ -43,7 +43,7 @@ const services = [
     icon: FiMonitor,
     title: "Website Design",
     desc: "Fast, user-first websites built for conversions — not just aesthetics. SEO-baked from day one.",
-    href: "/services/website-design-development"
+    href: "/services/graphic-website-design"
   },
   {
     icon: FiUsers,
@@ -55,13 +55,13 @@ const services = [
     icon: FiAward,
     title: "Brand Strategy",
     desc: "Positioning, identity, and reputation management for brands ready to lead their category.",
-    href: "/services/brand-strategy-consulting"
+    href: "/services/brand-presence-consulting"
   },
   {
     icon: FiMapPin,
     title: "Google Business Profile",
     desc: "Full GBP setup, verification & local SEO optimization — get found by local customers 3x faster.",
-    href: "/services/google-business-profile-optimization"
+    href: "/services/google-my-business"
   }
 ];
 
