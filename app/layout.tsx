@@ -22,9 +22,18 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "BizBox Story | AI-Powered Digital Marketing Agency",
   description: "Revenue-driven digital marketing agency helping SMEs scale with AI SEO, Content Marketing, Google Ads & Social Media. Serving US, UK, Australia & India.",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
-    icon: "/images/logo.png",
-    apple: "/images/logo.png",
+    icon: "/favicon.ico",
   },
 };
 

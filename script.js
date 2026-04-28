@@ -1,0 +1,1 @@
+fetch('https://cms.bizboxstory.com/zero-click-search-in-2026-how-to-win-visibility-without-getting-clicks/').then(r=>r.text()).then(t => { const metas = t.match(/<meta[^>]+>/gi); console.log(metas ? metas.join('\n') : 'No metas'); })

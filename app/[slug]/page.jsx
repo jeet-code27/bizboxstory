@@ -16,6 +16,25 @@ export async function generateStaticParams() {
   }
 }
 
+function decodeHtmlEntities(text) {
+  if (!text) return '';
+  const entities = {
+    '&amp;': '&',
+    '&lt;': '<',
+    '&gt;': '>',
+    '&quot;': '"',
+    '&#39;': "'",
+    '&#8217;': "'",
+    '&#8216;': "'",
+    '&#8220;': '"',
+    '&#8221;': '"',
+    '&hellip;': '...',
+    '&#8230;': '...',
+    '&nbsp;': ' '
+  };
+  return text.replace(/&[#\w]+;/g, match => entities[match] || match);
+}
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
@@ -27,12 +46,38 @@ export async function generateMetadata({ params }) {
   }
 
   const featuredImage = getFeaturedImageUrl(post);
+  
+  // Clean up HTML tags and decode entities
+  let cleanTitle = post.title.rendered.replace(/<[^>]+>/g, '').trim();
+  cleanTitle = decodeHtmlEntities(cleanTitle);
+  
+  let cleanDescription = post.excerpt.rendered.replace(/<[^>]+>/g, '').trim();
+  cleanDescription = decodeHtmlEntities(cleanDescription).substring(0, 160);
+  
+  const canonicalUrl = `https://bizboxstory.com/${slug}`;
 
   return {
-    title: `${post.title.rendered.replace(/<[^>]+>/g, '')} | BizBox Story`,
-    description: post.excerpt.rendered.replace(/<[^>]+>/g, '').substring(0, 160),
+    title: `${cleanTitle} | BizBox Story`,
+    description: cleanDescription,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
-      images: featuredImage ? [featuredImage] : [],
+      title: cleanTitle,
+      description: cleanDescription,
+      url: canonicalUrl,
+      images: featuredImage ? [{ url: featuredImage }] : [],
+      type: 'article',
     },
   };
 }
