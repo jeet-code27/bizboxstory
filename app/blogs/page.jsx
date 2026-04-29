@@ -4,8 +4,14 @@ import { getPostsPaginated, getFeaturedImageUrl } from '@/lib/wordpress';
 import { FiArrowRight, FiCalendar, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 export const metadata = {
-  title: 'Blog | BizBox Story',
-  description: 'Read the latest digital marketing insights, tips, and strategies from BizBox Story.',
+  title: "Digital Marketing Blog | SEO Tips, Ads & Growth Insights",
+  description: "Discover practical tips on SEO, content marketing, paid ads, and online growth to help your business attract more traffic and customers.",
+  keywords: ["digital marketing blog", "SEO tips", "content marketing insights", "paid ads", "online growth"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/blogs",
+  },
 };
 
 export default async function BlogListingPage({ searchParams }) {

@@ -5,8 +5,14 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency Australia | BizBox Story",
-  description: "Looking for a top digital marketing agency in Australia? BizBox Story drives revenue with SEO, Ads & Content. Get a free strategy call today!",
+  title: "Digital Marketing Agency in Australia | BizBox Story",
+  description: "Top digital marketing agency in Australia. BizBox Story drives growth with AI SEO, Google Ads, content marketing & lead generation for Australian businesses.",
+  keywords: ["digital marketing agency Australia", "SEO Australia", "Google Ads Australia", "content marketing Australia", "lead generation Australia"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/digital-marketing-agency-australia",
+  },
 };
 
 export default function AustraliaPage() {

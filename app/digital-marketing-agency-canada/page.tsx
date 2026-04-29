@@ -5,8 +5,14 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency Canada | BizBox Story",
-  description: "Looking for a top digital marketing agency in Canada? BizBox Story drives revenue with SEO, Ads & Content. Get a free strategy call today!",
+  title: "Digital Marketing Agency in Canada | BizBox Story",
+  description: "Top digital marketing agency in Canada. BizBox Story helps Canadian businesses grow with AI SEO, Google Ads, content marketing & lead generation services.",
+  keywords: ["digital marketing agency Canada", "SEO Canada", "Google Ads Canada", "content marketing Canada", "lead generation Canada"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/digital-marketing-agency-canada",
+  },
 };
 
 export default function CanadaPage() {

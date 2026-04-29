@@ -5,8 +5,14 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency United Kingdom | BizBox Story",
-  description: "Looking for a top digital marketing agency in the United Kingdom? BizBox Story drives revenue with SEO, Ads & Content. Get a free strategy call today!",
+  title: "Digital Marketing Agency in the UK | BizBox Story",
+  description: "Leading digital marketing agency in the United Kingdom. BizBox Story helps UK businesses grow with AI SEO, Google Ads, content marketing & lead generation.",
+  keywords: ["digital marketing agency UK", "SEO United Kingdom", "Google Ads UK", "content marketing UK", "lead generation UK"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/digital-marketing-agency-united-kingdom",
+  },
 };
 
 export default function UnitedKingdomPage() {

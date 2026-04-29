@@ -2,15 +2,8 @@
 
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   // Framer Motion Variants
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -32,8 +25,6 @@ export default function Hero() {
     show: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.4, ease: "easeOut" } },
   };
 
-  if (!mounted) return null;
-
   return (
     <section className="relative flex items-center overflow-hidden bg-brand-blue-deep pt-32 pb-16 lg:pt-36 lg:pb-20">
       {/* Background Elements */}
@@ -49,18 +40,39 @@ export default function Hero() {
         }}
       />
 
-      {/* 3. Pure CSS Particle Dots */}
+      {/* 3. Pure CSS Particle Dots - fixed values to avoid hydration mismatch */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {[...Array(20)].map((_, i) => (
+        {[
+          { w: 3.2, h: 2.1, top: 12.4, left: 24.6, dur: 14.2 },
+          { w: 2.1, h: 3.5, top: 34.8, left: 67.3, dur: 11.8 },
+          { w: 4.1, h: 1.8, top: 56.2, left: 89.1, dur: 16.5 },
+          { w: 1.9, h: 2.7, top: 78.5, left: 45.2, dur: 13.1 },
+          { w: 3.5, h: 3.1, top: 91.3, left: 12.8, dur: 18.4 },
+          { w: 2.8, h: 1.5, top: 23.7, left: 78.4, dur: 12.6 },
+          { w: 1.5, h: 4.0, top: 45.1, left: 33.9, dur: 15.9 },
+          { w: 3.9, h: 2.3, top: 67.8, left: 56.1, dur: 10.3 },
+          { w: 2.4, h: 3.8, top: 88.2, left: 91.7, dur: 17.7 },
+          { w: 4.3, h: 1.2, top: 8.6, left: 48.3, dur: 14.8 },
+          { w: 1.8, h: 2.9, top: 31.4, left: 6.2, dur: 11.2 },
+          { w: 3.1, h: 3.6, top: 52.9, left: 72.5, dur: 19.1 },
+          { w: 2.6, h: 1.9, top: 74.3, left: 29.8, dur: 13.7 },
+          { w: 4.0, h: 2.5, top: 95.1, left: 60.4, dur: 16.3 },
+          { w: 1.7, h: 3.2, top: 18.7, left: 84.6, dur: 12.0 },
+          { w: 3.4, h: 4.2, top: 40.5, left: 15.3, dur: 15.4 },
+          { w: 2.2, h: 1.6, top: 62.8, left: 38.7, dur: 10.8 },
+          { w: 4.4, h: 2.8, top: 83.6, left: 52.1, dur: 18.2 },
+          { w: 1.3, h: 3.4, top: 5.2, left: 76.9, dur: 14.6 },
+          { w: 3.7, h: 1.1, top: 26.9, left: 97.4, dur: 11.5 },
+        ].map((p, i) => (
           <div
             key={i}
             className="absolute rounded-full bg-brand-gold opacity-[0.15]"
             style={{
-              width: Math.random() * 4 + 1 + 'px',
-              height: Math.random() * 4 + 1 + 'px',
-              top: Math.random() * 100 + '%',
-              left: Math.random() * 100 + '%',
-              animation: `float-particle ${Math.random() * 10 + 10}s linear infinite`,
+              width: `${p.w}px`,
+              height: `${p.h}px`,
+              top: `${p.top}%`,
+              left: `${p.left}%`,
+              animation: `float-particle ${p.dur}s linear infinite`,
             }}
           />
         ))}

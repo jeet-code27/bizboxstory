@@ -5,8 +5,14 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency Dubai | BizBox Story",
-  description: "Looking for a top digital marketing agency in Dubai? BizBox Story drives revenue with SEO, Ads & Content. Get a free strategy call today!",
+  title: "Digital Marketing Agency in Dubai | BizBox Story",
+  description: "Leading digital marketing agency in Dubai & UAE. BizBox Story drives business growth with AI SEO, Google Ads, content marketing & lead generation for UAE brands.",
+  keywords: ["digital marketing agency Dubai", "SEO Dubai", "Google Ads UAE", "content marketing Dubai", "lead generation Dubai", "digital marketing UAE"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/digital-marketing-agency-dubai",
+  },
 };
 
 export default function DubaiPage() {

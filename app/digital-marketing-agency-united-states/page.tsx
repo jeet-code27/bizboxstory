@@ -5,8 +5,14 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency United States | BizBox Story",
-  description: "Looking for a top digital marketing agency in the United States? BizBox Story drives revenue with SEO, Ads & Content. Get a free strategy call today!",
+  title: "Digital Marketing Agency in the USA | BizBox Story",
+  description: "Top digital marketing agency in the United States. BizBox Story helps US businesses grow with AI SEO, Google Ads, content marketing & lead generation services.",
+  keywords: ["digital marketing agency USA", "SEO United States", "Google Ads USA", "content marketing USA", "lead generation US", "digital marketing agency America"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/digital-marketing-agency-united-states",
+  },
 };
 
 export default function UnitedStatesPage() {

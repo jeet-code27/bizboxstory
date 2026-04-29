@@ -12,8 +12,14 @@ import BlogPreview from "@/components/BlogPreview";
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "BizBox Story | AI-Powered Digital Marketing Agency — US, UK & India",
-  description: "Revenue-driven digital marketing agency helping SMEs scale with AI SEO, Content Marketing, Google Ads & Social Media. Serving US, UK, Australia & India.",
+  title: "BizBox Story | Digital Marketing Agency for Business Growth",
+  description: "BizBox Story is a digital marketing agency offering SEO, Google Ads, content marketing, and lead generation services to grow brands globally.",
+  keywords: ["digital marketing agency", "SEO", "Google Ads", "content marketing", "lead generation", "business growth"],
+  authors: [{ name: "shay mehta" }],
+  publisher: "shay mehta",
+  alternates: {
+    canonical: "https://bizboxstory.com/",
+  },
 };
 
 export default function Home() {
