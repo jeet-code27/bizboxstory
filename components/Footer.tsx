@@ -84,8 +84,8 @@ export default function Footer() {
               <a href="mailto:info@bizboxstory.com" className="hover:text-brand-gold transition-colors flex items-center gap-3">
                 <FiMail className="text-brand-gold text-base" /> info@bizboxstory.com
               </a>
-              <a href="tel:+919821774565" className="hover:text-brand-gold transition-colors flex items-center gap-3">
-                <FiPhone className="text-brand-gold text-base" /> +91-9821774565 (India)
+              <a href="tel:+919217730039" className="hover:text-brand-gold transition-colors flex items-center gap-3">
+                <FiPhone className="text-brand-gold text-base" /> +91-9217730039 (India)
               </a>
               <a href="tel:+17749912610" className="hover:text-brand-gold transition-colors flex items-center gap-3">
                 <FiPhone className="text-brand-gold text-base" /> +1-774-991-2610 (USA)

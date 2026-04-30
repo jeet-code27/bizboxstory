@@ -24,7 +24,7 @@ export default function FloatingWhatsApp() {
         
         {/* Core Clickable Asset */}
         <Link
-          href="https://wa.me/919821774565?text=Hi%20BizBox%20Story%2C%20I%27d%20like%20to%20discuss%20my%20digital%20marketing%20needs"
+          href="https://wa.me/919217730039?text=Hi%20BizBox%20Story%2C%20I%27d%20like%20to%20discuss%20my%20digital%20marketing%20needs"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"

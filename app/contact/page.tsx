@@ -291,7 +291,7 @@ export default function ContactPage() {
             className="mt-10 flex flex-wrap justify-center gap-6"
           >
             <a
-              href="tel:+919821774565"
+              href="tel:+919217730039"
               className="font-dm font-semibold px-8 py-3.5 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
               style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
             >
@@ -357,8 +357,8 @@ export default function ContactPage() {
                     <div className="font-dm font-bold text-brand-ink text-sm uppercase tracking-wider mb-1">
                       Call Us On
                     </div>
-                    <a href="tel:+919821774565" className="font-dm text-gray-600 text-sm hover:text-brand-gold transition-colors block">
-                      +91-9821774565 (India)
+                    <a href="tel:+919217730039" className="font-dm text-gray-600 text-sm hover:text-brand-gold transition-colors block">
+                      +91-9217730039 (India)
                     </a>
                     <a href="tel:+17749912610" className="font-dm text-gray-500 text-sm hover:text-brand-gold transition-colors block mt-0.5">
                       +1-774-991-2610 (USA)
@@ -387,7 +387,7 @@ export default function ContactPage() {
                 <p className="font-dm text-sm text-gray-500 uppercase tracking-widest font-semibold mb-4">Connect With Us</p>
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://wa.me/919821774565"
+                    href="https://wa.me/919217730039"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 font-dm text-sm font-semibold bg-[#25D366] text-white px-5 py-2.5 rounded-full hover:opacity-90 transition-all hover:-translate-y-0.5"
@@ -522,7 +522,7 @@ export default function ContactPage() {
                             required
                             value={formState.phone}
                             onChange={handleChange}
-                            placeholder="+91 98217 74565"
+                            placeholder="+91 92177 30039"
                             className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-brand-border bg-brand-muted font-dm text-sm text-brand-ink placeholder:text-gray-400 focus:outline-none focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 transition-all duration-200"
                           />
                         </div>
@@ -681,11 +681,11 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="tel:+919821774565"
+                href="tel:+919217730039"
                 className="font-dm font-semibold px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2"
                 style={{ boxShadow: "0 12px 40px rgba(255,182,5,0.4)" }}
               >
-                <FiPhone /> +91 98217 74565
+                <FiPhone /> +91 92177 30039
               </a>
               <a
                 href="mailto:info@bizboxstory.com"

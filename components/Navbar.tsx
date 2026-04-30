@@ -88,8 +88,8 @@ export default function Navbar() {
             <a href="tel:+17749912610" className="flex items-center gap-1.5 hover:text-white transition-colors">
               <FaPhone className="w-3 h-3 scale-x-[-1]" /> <span>+1-7749912610</span>
             </a>
-            <a href="tel:+919821774565" className="flex items-center gap-1.5 hover:text-white transition-colors">
-              <FaPhone className="w-3 h-3 scale-x-[-1]" /> <span>+919821774565</span>
+            <a href="tel:+919217730039" className="flex items-center gap-1.5 hover:text-white transition-colors">
+              <FaPhone className="w-3 h-3 scale-x-[-1]" /> <span>+919217730039</span>
             </a>
           </div>
 

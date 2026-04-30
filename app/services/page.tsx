@@ -576,7 +576,7 @@ export default function ServicesPage() {
                 Start Your Journey <FiArrowRight />
               </Link>
               <a
-                href="tel:+919821774565"
+                href="tel:+919217730039"
                 className="font-dm font-medium px-8 py-3.5 border border-white/20 text-white rounded-full hover:bg-white/10 transition-all duration-300 flex items-center gap-2"
               >
                 <FiPhone /> Call Now
@@ -593,11 +593,11 @@ export default function ServicesPage() {
                 info@bizboxstory.com
               </a>
               <a
-                href="tel:+919821774565"
+                href="tel:+919217730039"
                 className="flex items-center gap-2 hover:text-brand-gold transition-colors"
               >
                 <FiPhone className="text-brand-gold" />
-                +91-9821774565
+                +91-9217730039
               </a>
             </div>
           </motion.div>
