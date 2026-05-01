@@ -181,21 +181,21 @@ const caseStudies = [
   {
     client: "ZAZACITY",
     location: "Washington, DC",
-    image: "/images/cbd/zazacity-result-1.jpg",
+    image: "/images/cbd/zazacity-result-1.png",
     results: ["#1 on Leafly for DC dispensaries", "+340% organic traffic in 60 days", "3× increase in walk-in foot traffic"],
     tag: "Dispensary SEO",
   },
   {
     client: "DC Leafly",
     location: "Washington, DC",
-    image: "/images/cbd/dc-leafly-result.jpg",
+    image: "/images/cbd/dc-leafly-result.png",
     results: ["Top 3 for 18 high-intent keywords", "+280% Google Business clicks", "45-day ranking achievement"],
     tag: "Local SEO + GBP",
   },
   {
     client: "Canna Connect DC",
     location: "Washington, DC",
-    image: "/images/cbd/canna-connect-result.jpg",
+    image: "/images/cbd/canna-connect-result.png",
     results: ["Full page-1 domination for 'DC weed'", "+190% revenue from organic channel", "4.9★ GMB rating after review campaign"],
     tag: "Full SEO Strategy",
   },
@@ -453,10 +453,10 @@ export default function CbdSeoPage() {
             >
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] bg-brand-muted border border-brand-border">
                 <Image
-                  src="/images/cbd/cbd-seo-hero.jpg"
+                  src="/images/cbd/cbd-seo-hero.png"
                   alt="CBD SEO Strategy — BizBox Story"
                   fill
-                  className="object-cover"
+                  className="object-fit"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 {/* Floating badge */}
@@ -552,10 +552,10 @@ export default function CbdSeoPage() {
             >
               <div className="relative rounded-3xl overflow-hidden aspect-video bg-brand-muted border border-brand-border">
                 <Image
-                  src="/images/cbd/keyword-research-dashboard.jpg"
+                  src="/images/cbd/keyword-research-dashboard.png"
                   alt="CBD Keyword Research Dashboard"
                   fill
-                  className="object-cover"
+                  className="object-fit"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
@@ -671,10 +671,10 @@ export default function CbdSeoPage() {
 
               <div className="relative rounded-2xl overflow-hidden aspect-video bg-brand-muted border border-brand-border">
                 <Image
-                  src="/images/cbd/url-structure.jpg"
+                  src="/images/cbd/url-structure.png"
                   alt="SEO-friendly URL structure diagram"
                   fill
-                  className="object-cover"
+                  className="object-fit"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
@@ -815,7 +815,7 @@ export default function CbdSeoPage() {
               </ul>
               <div className="relative rounded-2xl overflow-hidden aspect-video bg-brand-muted border border-brand-border">
                 <Image
-                  src="/images/cbd/gmb-optimisation.jpg"
+                  src="/images/cbd/gmb-optimisation.png"
                   alt="Google My Business optimisation for CBD dispensary"
                   fill
                   className="object-cover"
@@ -963,7 +963,7 @@ export default function CbdSeoPage() {
             >
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] bg-brand-muted border border-brand-border">
                 <Image
-                  src="/images/cbd/seo-analytics.jpg"
+                  src="/images/cbd/seo-analytics.png"
                   alt="CBD SEO Analytics Results"
                   fill
                   className="object-cover"
