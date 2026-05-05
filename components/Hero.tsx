@@ -130,7 +130,7 @@ export default function Hero() {
                 Book Free Strategy Call &rarr;
               </Link>
               <Link 
-                href="/results"
+                href="/case-studies"
                 className="inline-flex justify-center items-center border border-brand-gold/40 text-brand-gold font-dm px-6 py-3.5 rounded-full transition-all duration-300 hover:bg-brand-gold/10 text-base"
               >
                 See Our Results

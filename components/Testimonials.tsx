@@ -14,7 +14,7 @@ const testimonials = [
     name: "Mike Harrison",
     role: "CEO, Nirvana DC Dispensary",
     country: "🇺🇸 Massachusetts, USA",
-    avatar: "/images/testimonials/mike.jpg",
+    avatar: "",
   },
   {
     quote:
@@ -22,7 +22,7 @@ const testimonials = [
     name: "Priya Sharma",
     role: "Founder, TechStart India",
     country: "🇮🇳 Bangalore, India",
-    avatar: "/images/testimonials/priya.jpg",
+    avatar: "",
   },
   {
     quote:
@@ -30,7 +30,7 @@ const testimonials = [
     name: "James O'Connor",
     role: "Owner, Zaza City",
     country: "🇺🇸 New York, USA",
-    avatar: "/images/testimonials/james.jpg",
+    avatar: "",
   },
 ];
 
