@@ -7,7 +7,7 @@ import { FiArrowRight, FiTrendingUp } from "react-icons/fi";
 export default function CaseStudiesPage() {
   return (
     <>
-      {/* ── HERO SECTION ──────────────────────────────────────────────────*/}
+      {/* â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/}
       <section 
         className="relative pt-32 pb-24 flex items-center justify-center overflow-hidden bg-brand-surface min-h-[60vh]"
       >
@@ -34,15 +34,255 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* ── CASE STUDIES LIST ───────────────────────────────────────────────────*/}
-      <section className="pb-32 bg-brand-surface relative z-10">
+      {/* â”€â”€ US CLIENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/}
+      <section className="pb-16 bg-brand-surface relative z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Section Label */}
+          <div className="flex items-center gap-6 mb-10">
+            <div className="flex-shrink-0">
+              <span className="inline-flex items-center gap-2 px-5 py-2 bg-brand-blue-deep text-white text-xs font-bold rounded-full uppercase tracking-widest font-dm">
+                US Clients
+              </span>
+            </div>
+            <div className="flex-grow h-px bg-brand-border" />
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Smarana Case Study */}
+
+            {/* Bed Bugs Boston */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/bed-bugs-boston-home.webp"
+                  alt="Bed Bugs Boston Case Study"
+                  className="w-full h-full object-fit transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Facebook Marketing
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Pest Control
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  Bed Bugs Boston
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped Bed Bugs Boston rank #1 on Google, achieve 98% SEO site health, reach 104K+ users, and drive 1,300+ website clicks through local Facebook campaigns.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">104K+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Users Reached</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">98%</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">SEO Health</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/bed-bugs-boston"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Torch Cannabis */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/torch-cannabis-home.svg"
+                  alt="Torch Cannabis Dispensary Case Study"
+                  className="w-full h-full object-cover p-4 transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Social Media
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Cannabis Retail
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  Torch Cannabis
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped a fast-growing dispensary build local brand awareness, hit 320K+ video views, and drive 193% engagement growth through authentic social content.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">320K+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Video Views</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">+193%</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Engagement</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/torch-cannabis"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Plugd */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/plugd-home.png"
+                  alt="Plugd Cannabis Case Study"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Social Media
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Cannabis Retail
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  Plugd
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped Plugd build a community-driven cannabis brand with 80K+ organic reach and 137% engagement growth through authentic, culture-first social content.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">80K+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Organic Reach</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">+137%</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Engagement</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/plugd"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Pikky */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/pikky-home.svg"
+                  alt="Pikky Case Study"
+                  className="w-full h-full object-fit p-4 transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Performance Marketing
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Food Tech
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  Pikky
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we drove highly efficient app installs for a food-tech startup across multiple cities with sharp hyper-local targeting.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">529K</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Accounts Reached</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">â‚¹3.93</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">CPA</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/pikky"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* â”€â”€ INDIAN CLIENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/}
+      <section className="pb-32 bg-brand-surface relative z-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Section Label */}
+          <div className="flex items-center gap-6 mb-10">
+            <div className="flex-shrink-0">
+              <span className="inline-flex items-center gap-2 px-5 py-2 bg-brand-gold text-brand-ink text-xs font-bold rounded-full uppercase tracking-widest font-dm">
+                Indian Clients
+              </span>
+            </div>
+            <div className="flex-grow h-px bg-brand-border" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            {/* Smarana App */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
               className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
               style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
             >
@@ -74,7 +314,7 @@ export default function CaseStudiesPage() {
                     <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Downloads</p>
                   </div>
                   <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
-                    <p className="font-dm text-brand-gold font-bold text-2xl">₹2.41</p>
+                    <p className="font-dm text-brand-gold font-bold text-2xl">â‚¹2.41</p>
                     <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">CPI</p>
                   </div>
                 </div>
@@ -83,18 +323,18 @@ export default function CaseStudiesPage() {
                     href="/case-studies/smarana"
                     className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
                   >
-                    Read Full Story 
+                    Read Full Story
                     <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
                   </Link>
                 </div>
               </div>
             </motion.div>
 
-            {/* Hashville Case Study */}
+            {/* Hashville Real Estate */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
               style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
             >
@@ -118,7 +358,7 @@ export default function CaseStudiesPage() {
                   Hashville Real Estate
                 </h2>
                 <p className="font-dm text-gray-500 mb-6 line-clamp-3">
-                  How we drove nearly 400K views and built organic brand authority in Gurgaon's crowded luxury real estate market.
+                  How we drove nearly 400K views and built organic brand authority in Gurgaon&apos;s crowded luxury real estate market.
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
@@ -135,18 +375,18 @@ export default function CaseStudiesPage() {
                     href="/case-studies/hashville"
                     className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
                   >
-                    Read Full Story 
+                    Read Full Story
                     <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
                   </Link>
                 </div>
               </div>
             </motion.div>
 
-            {/* Shop Shakun Case Study */}
+            {/* Shop Shakun */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
               style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
             >
@@ -187,64 +427,13 @@ export default function CaseStudiesPage() {
                     href="/case-studies/shopshakun"
                     className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
                   >
-                    Read Full Story 
+                    Read Full Story
                     <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
                   </Link>
                 </div>
               </div>
             </motion.div>
 
-            {/* Pikky Case Study */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
-              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
-            >
-              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
-                <img
-                  src="/images/case-studies/pikky-home.svg"
-                  alt="Pikky Case Study"
-                  className="w-full h-full object-fit p-4 transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
-                    Performance Marketing
-                  </span>
-                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
-                    Food Tech
-                  </span>
-                </div>
-              </div>
-              <div className="p-8 flex flex-col flex-grow">
-                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
-                  Pikky
-                </h2>
-                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
-                  How we drove highly efficient app installs for a food-tech startup across multiple cities with sharp hyper-local targeting.
-                </p>
-                <div className="grid grid-cols-2 gap-4 mb-8">
-                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
-                    <p className="font-dm text-brand-gold font-bold text-2xl">529K</p>
-                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Accounts Reached</p>
-                  </div>
-                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
-                    <p className="font-dm text-brand-gold font-bold text-2xl">₹3.93</p>
-                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">CPA</p>
-                  </div>
-                </div>
-                <div className="mt-auto">
-                  <Link
-                    href="/case-studies/pikky"
-                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
-                  >
-                    Read Full Story 
-                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
-                  </Link>
-                </div>
-              </div>
-            </motion.div>
           </div>
         </div>
       </section>
