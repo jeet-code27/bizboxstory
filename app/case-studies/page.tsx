@@ -50,7 +50,7 @@ export default function CaseStudiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            {/* Bed Bugs Boston */}
+            {/* Bed Bugs Boston - Temporarily Hidden
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -101,6 +101,7 @@ export default function CaseStudiesPage() {
                 </div>
               </div>
             </motion.div>
+            */}
 
             {/* Torch Cannabis */}
             <motion.div
@@ -257,6 +258,59 @@ export default function CaseStudiesPage() {
                 </div>
               </div>
             </motion.div>
+
+            {/* DC Leafly - Temporarily Hidden
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/dc-leafly-keywords.png"
+                  alt="DC Leafly SEO Case Study"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    SEO
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Cannabis Dispensary
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  DC Leafly
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped DC Leafly improve local search visibility, build authority through backlinks, and increase organic orders with targeted SEO strategies.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">+142%</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Organic Traffic</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">310+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Organic Orders</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/dc-leafly"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+            */}
 
           </div>
         </div>
