@@ -157,83 +157,29 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* RIGHT COLUMN */}
+          {/* RIGHT COLUMN - Video Player */}
           <motion.div 
-            className="hidden lg:block lg:col-span-5 relative"
+            className="flex mt-12 lg:mt-0 lg:col-span-5 relative justify-center items-center"
             variants={cardVariants}
             initial="hidden"
             animate="show"
           >
             <div 
-              className="bg-white/5 border border-brand-gold/20 rounded-2xl p-6 shadow-[0_20px_50px_rgba(255,182,5,0.1)] backdrop-blur-sm relative"
-              style={{ animation: 'float 4s ease-in-out infinite' }}
+              className="relative w-full max-w-[280px] aspect-[9/16] rounded-3xl border-4 border-white/10 shadow-[0_20px_50px_rgba(255,182,5,0.2)] overflow-hidden bg-brand-muted backdrop-blur-sm z-10"
+              style={{ animation: 'float 5s ease-in-out infinite' }}
             >
-              {/* Card Header Badge */}
-              <div className="flex justify-between items-center mb-6">
-                <div className="flex items-center space-x-2">
-                  <div className="text-xl">📈</div>
-                  <span className="font-dm font-medium text-white">Organic Traffic</span>
-                </div>
-                <div className="bg-green-500/10 text-green-400 text-sm font-bold px-3 py-1 rounded-full">
-                  +127%
-                </div>
-              </div>
-
-              {/* Chart Mockup */}
-              <div className="h-48 w-full border-b border-l border-gray-600 relative flex items-end">
-                {/* SVG Line Chart */}
-                <svg className="w-full h-full overflow-visible" viewBox="0 0 100 100" preserveAspectRatio="none">
-                  {/* Grid Lines */}
-                  <line x1="0" y1="25" x2="100" y2="25" stroke="rgba(255,255,255,0.1)" strokeDasharray="2,2" />
-                  <line x1="0" y1="50" x2="100" y2="50" stroke="rgba(255,255,255,0.1)" strokeDasharray="2,2" />
-                  <line x1="0" y1="75" x2="100" y2="75" stroke="rgba(255,255,255,0.1)" strokeDasharray="2,2" />
-                  
-                  {/* Area gradient */}
-                  <defs>
-                    <linearGradient id="chartGradient" x1="0" x2="0" y1="0" y2="1">
-                      <stop offset="0%" stopColor="var(--color-brand-gold)" stopOpacity="0.3" />
-                      <stop offset="100%" stopColor="var(--color-brand-gold)" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-
-                  {/* Chart Area */}
-                  <polygon 
-                    points="0,100 0,80 20,65 40,70 60,35 80,20 100,5 100,100" 
-                    fill="url(#chartGradient)" 
-                  />
-                  
-                  {/* Chart Line */}
-                  <polyline 
-                    points="0,80 20,65 40,70 60,35 80,20 100,5" 
-                    fill="none" 
-                    stroke="var(--color-brand-gold)" 
-                    strokeWidth="3" 
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    style={{ filter: "drop-shadow(0px 4px 6px rgba(255, 182, 5, 0.4))" }}
-                  />
-                  
-                  {/* Data Points */}
-                  <circle cx="20" cy="65" r="3" fill="var(--color-brand-ink)" stroke="var(--color-brand-gold)" strokeWidth="2" />
-                  <circle cx="40" cy="70" r="3" fill="var(--color-brand-ink)" stroke="var(--color-brand-gold)" strokeWidth="2" />
-                  <circle cx="60" cy="35" r="3" fill="var(--color-brand-ink)" stroke="var(--color-brand-gold)" strokeWidth="2" />
-                  <circle cx="80" cy="20" r="3" fill="var(--color-brand-ink)" stroke="var(--color-brand-gold)" strokeWidth="2" />
-                  <circle cx="100" cy="5" r="4" fill="var(--color-brand-gold)" />
-                </svg>
-
-                {/* X-axis labels mock */}
-                <div className="absolute -bottom-6 left-0 w-full flex justify-between px-2 text-xs text-gray-400 font-dm">
-                  <span>Jan</span>
-                  <span>Feb</span>
-                  <span>Mar</span>
-                  <span>Apr</span>
-                  <span>May</span>
-                </div>
-              </div>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/ksOiXHDHHpA?autoplay=1&mute=1&loop=1&playlist=ksOiXHDHHpA"
+                title="BizBox Story Promo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
             
-            {/* Background glowing orb behind the card */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-brand-gold/20 blur-[100px] rounded-full z-[-1] pointer-events-none" />
+            {/* Background glowing orb behind the video */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[350px] bg-brand-gold/20 blur-[100px] rounded-full z-[0] pointer-events-none" />
           </motion.div>
 
         </div>

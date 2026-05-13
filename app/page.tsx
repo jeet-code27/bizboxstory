@@ -10,7 +10,6 @@ import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
 import BlogPreview from "@/components/BlogPreview";
 import BottomCTA from "@/components/BottomCTA";
-import ShortPromo from "@/components/ShortPromo";
 
 export const metadata: Metadata = {
   title: "BizBox Story | Digital Marketing Agency for Business Growth",
@@ -34,7 +33,6 @@ export default function Home() {
       <GrowthEngine />
       <VideoSection />
       <WhyUs />
-      <ShortPromo />
       <Testimonials />
       <BlogPreview />
       <BottomCTA />
