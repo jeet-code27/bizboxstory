@@ -8,7 +8,7 @@ export default function CaseStudiesPage() {
   return (
     <>
       {/* â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/}
-      <section 
+      <section
         className="relative pt-32 pb-24 flex items-center justify-center overflow-hidden bg-brand-surface min-h-[60vh]"
       >
         {/* Abstract shapes */}
@@ -259,7 +259,7 @@ export default function CaseStudiesPage() {
               </div>
             </motion.div>
 
-            {/* DC Leafly - Temporarily Hidden
+            {/* DC Leafly */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -269,7 +269,7 @@ export default function CaseStudiesPage() {
             >
               <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
                 <img
-                  src="/images/case-studies/dc-leafly-keywords.png"
+                  src="/images/case-studies/dc-leafly-keywords.avif"
                   alt="DC Leafly SEO Case Study"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
@@ -310,7 +310,60 @@ export default function CaseStudiesPage() {
                 </div>
               </div>
             </motion.div>
-            */}
+
+            {/* HighThere */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/highthere-home.webp"
+                  alt="HighThere Case Study"
+                  className="w-full h-full object-fit p-4 transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    SEO
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Cannabis Market
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  HighThere
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped HighThere scale organic traffic, dominate competitive cannabis search terms, and generate over $45,000/month in revenue.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">320+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Keywords</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">$45K+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Revenue/mo</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/highthere"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+
 
           </div>
         </div>
@@ -332,11 +385,63 @@ export default function CaseStudiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            {/* Smarana App */}
+            {/* Royal Bikers */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5">
+                <img
+                  src="/images/case-studies/royal-bikers-logo.png"
+                  alt="Royal Bikers Case Study"
+                  className="w-full h-full object-fit transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Performance Marketing
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Tour Booking
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  Royal Bikers
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped Royal Bikers generate over £25,000 in tour bookings within 2 months through high-converting Meta ad campaigns.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">£25K+</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Revenue</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">2 Months</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Timeframe</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/royal-bikers"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Smarana App */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
               style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
             >
