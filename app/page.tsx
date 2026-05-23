@@ -5,6 +5,7 @@ import ClientLogos from "@/components/ClientLogos";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import GrowthEngine from "@/components/GrowthEngine";
+import HomeCaseStudies from "@/components/HomeCaseStudies";
 import VideoSection from "@/components/VideoSection";
 import WhyUs from "@/components/WhyUs";
 import Testimonials from "@/components/Testimonials";
@@ -31,6 +32,7 @@ export default function Home() {
       <About />
       <Services />
       <GrowthEngine />
+      <HomeCaseStudies />
       <VideoSection />
       <WhyUs />
       <Testimonials />

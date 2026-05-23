@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
   
   if (!post) {
     return {
-      title: 'Post Not Found | BizBox Story',
+      title: 'Post Not Found',
     };
   }
 
@@ -51,13 +51,28 @@ export async function generateMetadata({ params }) {
   let cleanTitle = post.title.rendered.replace(/<[^>]+>/g, '').trim();
   cleanTitle = decodeHtmlEntities(cleanTitle);
   
-  let cleanDescription = post.excerpt.rendered.replace(/<[^>]+>/g, '').trim();
-  cleanDescription = decodeHtmlEntities(cleanDescription).substring(0, 160);
+  // Generate a better description
+  let rawExcerpt = post.excerpt?.rendered || '';
+  let cleanDescription = rawExcerpt.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  cleanDescription = decodeHtmlEntities(cleanDescription);
+  // Remove WordPress's default [...] at the end
+  cleanDescription = cleanDescription.replace(/\[\s*\.\.\.\s*\]/g, '').replace(/\s*\.\.\.$/, '').trim();
+
+  // If excerpt is too short, try taking from content
+  if (cleanDescription.length < 120 && post.content?.rendered) {
+    let contentDesc = post.content.rendered.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    cleanDescription = decodeHtmlEntities(contentDesc);
+  }
+
+  // Truncate to recommended SEO length (around 160 chars)
+  if (cleanDescription.length > 160) {
+    cleanDescription = cleanDescription.substring(0, 157).trim() + '...';
+  }
   
   const canonicalUrl = `https://bizboxstory.com/${slug}`;
 
   return {
-    title: `${cleanTitle} | BizBox Story`,
+    title: cleanTitle,
     description: cleanDescription,
     alternates: {
       canonical: canonicalUrl,

@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   if (!category) return { title: 'Category Not Found' };
   
   return {
-    title: `${category.name} | BizBox Story`,
+    title: category.name,
     description: `Read the latest articles about ${category.name} from BizBox Story.`,
   };
 }
