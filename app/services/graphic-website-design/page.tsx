@@ -161,18 +161,31 @@ export default function GraphicWebsiteDesignPage() {
 
   return (
     <>
-      <script
+            <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Website Design Services",
+              "provider": {
+                "@type": "Organization",
+                "name": "BizBox Story",
+                "url": "https://bizboxstory.com"
+              },
+              "description": "Create a fast, SEO-friendly website designed to attract visitors, improve user experience, and turn traffic into real customers."
+            }
+          ]),
         }}
       />
 

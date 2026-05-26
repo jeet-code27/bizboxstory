@@ -161,18 +161,31 @@ export default function BrandPresenceConsultingPage() {
 
   return (
     <>
-      <script
+            <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Brand Strategy & Consulting",
+              "provider": {
+                "@type": "Organization",
+                "name": "BizBox Story",
+                "url": "https://bizboxstory.com"
+              },
+              "description": "Strengthen your business with brand strategy and consulting services that build trust, improve positioning, and support long-term growth."
+            }
+          ]),
         }}
       />
 

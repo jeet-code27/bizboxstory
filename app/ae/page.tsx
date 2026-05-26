@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   authors: [{ name: "shay mehta" }],
   publisher: "shay mehta",
   alternates: {
-    canonical: "https://bizboxstory.com/digital-marketing-agency-dubai",
+    canonical: "https://bizboxstory.com/ae",
   },
 };
 
@@ -44,15 +44,28 @@ export default function DubaiPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "BizBox Story - Dubai",
+              "url": "https://bizboxstory.com/ae",
+              "description": "Top digital marketing agency serving Dubai and the UAE.",
+              "areaServed": {
+                "@type": "Country",
+                "name": "United Arab Emirates"
+              }
+            }
+          ]),
         }}
       />
 

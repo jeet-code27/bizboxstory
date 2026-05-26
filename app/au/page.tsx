@@ -5,37 +5,37 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency in Canada | BizBox Story",
-  description: "Top digital marketing agency in Canada. BizBox Story helps Canadian businesses grow with AI SEO, Google Ads, content marketing & lead generation services.",
-  keywords: ["digital marketing agency Canada", "SEO Canada", "Google Ads Canada", "content marketing Canada", "lead generation Canada"],
+  title: "Digital Marketing Agency in Australia | BizBox Story",
+  description: "Top digital marketing agency in Australia. BizBox Story drives growth with AI SEO, Google Ads, content marketing & lead generation for Australian businesses.",
+  keywords: ["digital marketing agency Australia", "SEO Australia", "Google Ads Australia", "content marketing Australia", "lead generation Australia"],
   authors: [{ name: "shay mehta" }],
   publisher: "shay mehta",
   alternates: {
-    canonical: "https://bizboxstory.com/digital-marketing-agency-canada",
+    canonical: "https://bizboxstory.com/au",
   },
 };
 
-export default function CanadaPage() {
+export default function AustraliaPage() {
   const faqs = [
     {
-      q: "What makes your digital marketing agency different from others in Canada?",
-      a: "We focus exclusively on revenue-driven results. Unlike agencies that report on vanity metrics, we build comprehensive growth engines using AI SEO, engaging content, and optimized ads to ensure scalable business growth and a strong ROI for Canadian businesses."
+      q: "What makes your digital marketing agency different from others in Australia?",
+      a: "We focus exclusively on revenue-driven results. Unlike agencies that report on vanity metrics, we build comprehensive growth engines using AI SEO, engaging content, and optimized ads to ensure scalable business growth and a strong ROI for Australian businesses."
     },
     {
-      q: "Do you work with local businesses or nationwide enterprises in Canada?",
-      a: "We partner with both. Whether you need local Google My Business optimization to capture foot traffic in Toronto or Vancouver, or nationwide SEO to dominate broad search terms across Canada, our strategies are highly adaptable."
+      q: "Do you work with local businesses or nationwide enterprises in Australia?",
+      a: "We partner with both. Whether you need local Google My Business optimization to capture foot traffic in Sydney or Melbourne, or nationwide SEO to dominate broad search terms across Australia, our strategies are highly adaptable."
     },
     {
       q: "How long does it take to see results from AI SEO?",
-      a: "While paid ads can generate immediate leads, our AI-powered SEO strategies typically begin showing significant improvements in search rankings and organic traffic within 3 to 6 months for most competitive markets in Canada."
+      a: "While paid ads can generate immediate leads, our AI-powered SEO strategies typically begin showing significant improvements in search rankings and organic traffic within 3 to 6 months for most competitive markets in Australia."
     },
     {
       q: "Can you handle our social media and content marketing together?",
-      a: "Yes, we offer comprehensive services. We perfectly align your content marketing with your social media management to ensure your brand message is consistent, authoritative, and highly engaging across all platforms in Canada."
+      a: "Yes, we offer comprehensive services. We perfectly align your content marketing with your social media management to ensure your brand message is consistent, authoritative, and highly engaging across all platforms in Australia."
     },
     {
       q: "How do we get started with your services?",
-      a: "Getting started is simple. Book a free strategy call with our experts. We will thoroughly audit your current digital presence and propose a custom roadmap tailored to your specific business goals in the Canadian market."
+      a: "Getting started is simple. Book a free strategy call with our experts. We will thoroughly audit your current digital presence and propose a custom roadmap tailored to your specific business goals in the Australian market."
     }
   ];
 
@@ -44,15 +44,28 @@ export default function CanadaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "BizBox Story - Australia",
+              "url": "https://bizboxstory.com/au",
+              "description": "Top digital marketing agency serving Australia.",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Australia"
+              }
+            }
+          ]),
         }}
       />
 
@@ -63,13 +76,13 @@ export default function CanadaPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="inline-flex items-center gap-2 font-dm text-brand-gold text-sm uppercase tracking-widest font-semibold mb-6 px-4 py-2 border border-brand-gold/30 rounded-full bg-brand-gold/10">
-            🇨🇦 Serving Canada
+            🇦🇺 Serving Australia
           </span>
           <h1 className="font-fraunces text-5xl sm:text-6xl lg:text-[4.5rem] font-bold text-white leading-tight max-w-5xl mx-auto">
-            Leading Digital Marketing Agency in <span className="text-brand-gold italic">Canada</span>
+            Leading Digital Marketing Agency in <span className="text-brand-gold italic">Australia</span>
           </h1>
           <p className="mt-8 font-dm text-lg sm:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Helping Canadian businesses scale with AI-driven SEO, high-converting Google & Facebook Ads, and revenue-focused content marketing. We don't just run campaigns—we build powerful growth engines tailored specifically for the competitive North American market.
+            Helping Australian businesses scale with AI-driven SEO, high-converting Google & Facebook Ads, and revenue-focused content marketing. We don't just run campaigns—we build powerful growth engines tailored specifically for the competitive Aussie market.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link href="/free-strategy-call" className="font-dm font-bold text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.3)] hover:-translate-y-1">
@@ -85,23 +98,23 @@ export default function CanadaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="font-fraunces text-3xl md:text-4xl lg:text-5xl font-bold text-brand-ink mb-6 leading-tight">
-                Transforming How Canadian Businesses Grow Online
+                Transforming How Australian Businesses Grow Online
               </h2>
               <div className="w-16 h-1 bg-brand-gold mb-8 rounded-full" />
               <div className="space-y-6 font-dm text-gray-600 text-lg leading-relaxed">
                 <p>
-                  As a premier digital marketing agency in Canada, BizBox Story is committed to transforming how Canadian businesses grow online. Whether you are a local SME in Toronto or a nationwide enterprise, we offer comprehensive digital marketing services tailored to your specific market demands. From dominating search results with advanced AI SEO to generating high-quality leads through targeted ad campaigns, our ultimate goal is tangible business growth.
+                  As a premier digital marketing agency in Australia, BizBox Story is committed to transforming how Australian businesses grow online. Whether you are a local SME in Sydney or a nationwide enterprise across Australia, we offer comprehensive digital marketing services tailored to your specific market demands. From dominating search results with advanced AI SEO to generating high-quality leads through targeted ad campaigns, our ultimate goal is tangible business growth.
                 </p>
                 <p>
-                  We understand the fiercely competitive landscape of the Canadian market, bringing years of global experience, proven reliability, and unmatched quality to every project. We know you are tired of agencies that sell empty promises. That is why we partner with you to build a sustainable online presence that drives real revenue, not just vanity metrics. Let us engineer your growth.
+                  We understand the fiercely competitive landscape of the Australian market, bringing years of global experience, proven reliability, and unmatched quality to every project. We know you are tired of agencies that sell empty promises. That is why we partner with you to build a sustainable online presence that drives real revenue, not just vanity metrics. Let us engineer your growth.
                 </p>
               </div>
             </div>
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden aspect-square sm:aspect-[4/3] lg:aspect-square border border-brand-border shadow-lg group">
                 <Image
-                  src="/images/services/ads-management.webp"
-                  alt="BizBox Story team managing Google Ads and Facebook Ads for Canadian clients"
+                  src="/images/services/content-marketing.webp"
+                  alt="BizBox Story team planning content strategy for Australian clients"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -110,14 +123,14 @@ export default function CanadaPage() {
               </div>
               
               {/* Floating element */}
-              <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-brand-border hidden sm:block animate-bounce-slow" style={{ animationDelay: '0.5s' }}>
+              <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-brand-border hidden sm:block animate-bounce-slow">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center">
                     <FiTrendingUp className="text-2xl" />
                   </div>
                   <div>
-                    <div className="font-fraunces font-bold text-2xl text-brand-blue-deep">-45%</div>
-                    <div className="font-dm text-sm text-gray-500 uppercase tracking-widest font-semibold mt-1">Acquisition Cost</div>
+                    <div className="font-fraunces font-bold text-2xl text-brand-blue-deep">+310%</div>
+                    <div className="font-dm text-sm text-gray-500 uppercase tracking-widest font-semibold mt-1">Traffic Growth</div>
                   </div>
                 </div>
               </div>
@@ -126,7 +139,7 @@ export default function CanadaPage() {
         </div>
       </section>
 
-      {/* ── OUR SERVICES IN CANADA ──────────────────────────────────────── */}
+      {/* ── OUR SERVICES IN AUSTRALIA ───────────────────────────────────── */}
       <section className="py-24 bg-brand-muted border-y border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -134,7 +147,7 @@ export default function CanadaPage() {
               Tailored Solutions
             </span>
             <h2 className="font-fraunces text-4xl sm:text-5xl font-bold text-brand-blue-deep mt-3">
-              Our Services in <span className="text-brand-gold italic">Canada</span>
+              Our Services in <span className="text-brand-gold italic">Australia</span>
             </h2>
           </div>
 
@@ -145,7 +158,7 @@ export default function CanadaPage() {
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">AI-Powered SEO Services</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Dominate local and national search rankings across Canada. Our <Link href="/services/seo-services" className="text-brand-gold font-semibold hover:underline">AI-powered SEO strategies</Link> ensure your website appears right when potential customers are actively searching for your solutions. For Canadian businesses, this means higher organic traffic, stronger brand visibility, and a significant boost in qualified leads without relying entirely on paid advertising.
+                Dominate local and national search rankings across Australia. Our <Link href="/services/seo-services" className="text-brand-gold font-semibold hover:underline">AI-powered SEO strategies</Link> ensure your website appears right when potential customers are actively searching for your solutions. For Australian businesses, this means higher organic traffic, stronger brand visibility, and a significant boost in qualified leads without relying entirely on paid advertising.
               </p>
             </div>
 
@@ -155,7 +168,7 @@ export default function CanadaPage() {
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">Google & Facebook Ads</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Maximize your return on ad spend in the highly competitive Canadian market. We design, launch, and manage high-converting <Link href="/services/google-facebook-ads" className="text-brand-gold font-semibold hover:underline">Google and Facebook ad campaigns</Link> that target your ideal audience with precision. Experience a lower cost-per-acquisition and a steady stream of ready-to-buy customers tailored specifically for CA-based companies.
+                Maximize your return on ad spend in the highly competitive Australian market. We design, launch, and manage high-converting <Link href="/services/google-facebook-ads" className="text-brand-gold font-semibold hover:underline">Google and Facebook ad campaigns</Link> that target your ideal audience with precision. Experience a lower cost-per-acquisition and a steady stream of ready-to-buy customers tailored specifically for AU-based companies.
               </p>
             </div>
 
@@ -165,7 +178,7 @@ export default function CanadaPage() {
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">Content Marketing & Brand Presence</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Stand out in Canada with authoritative, revenue-focused content. Our <Link href="/services/brand-presence-consulting" className="text-brand-gold font-semibold hover:underline">content marketing and brand presence</Link> consulting build immediate trust and establish you as an industry leader. For businesses in Canada, we create compelling narratives that engage your audience and naturally guide them through your sales funnel.
+                Stand out in Australia with authoritative, revenue-focused content. Our <Link href="/services/brand-presence-consulting" className="text-brand-gold font-semibold hover:underline">content marketing and brand presence</Link> consulting build immediate trust and establish you as an industry leader. For businesses down under, we create compelling narratives that engage your audience and naturally guide them through your sales funnel.
               </p>
             </div>
 
@@ -175,7 +188,7 @@ export default function CanadaPage() {
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">Lead Generation & GMB Optimization</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Capture high-intent local leads with <Link href="/services/lead-generation" className="text-brand-gold font-semibold hover:underline">targeted lead generation</Link> and <Link href="/services/google-my-business" className="text-brand-gold font-semibold hover:underline">Google My Business (GMB) optimization</Link>. We ensure your business is easily discoverable on local Canadian maps and search results. The outcome is a consistent pipeline of local inquiries and increased foot traffic for your physical or service-area business in Canada.
+                Capture high-intent local leads with <Link href="/services/lead-generation" className="text-brand-gold font-semibold hover:underline">targeted lead generation</Link> and <Link href="/services/google-my-business" className="text-brand-gold font-semibold hover:underline">Google My Business (GMB) optimization</Link>. We ensure your business is easily discoverable on local Australian maps and search results. The outcome is a consistent pipeline of local inquiries and increased foot traffic for your physical or service-area business.
               </p>
             </div>
           </div>
@@ -201,7 +214,7 @@ export default function CanadaPage() {
                   </div>
                   <div>
                     <h4 className="font-fraunces font-bold text-xl text-brand-ink mb-2">Proven Years of Experience</h4>
-                    <p className="font-dm text-gray-600">We bring over 6 years of hands-on experience helping SMEs scale globally, with deep expertise navigating the specific demands of the Canadian market.</p>
+                    <p className="font-dm text-gray-600">We bring over 6 years of hands-on experience helping SMEs scale globally, with deep expertise navigating the specific demands of the Australian market.</p>
                   </div>
                 </div>
 
@@ -221,7 +234,7 @@ export default function CanadaPage() {
                   </div>
                   <div>
                     <h4 className="font-fraunces font-bold text-xl text-brand-ink mb-2">Global Expertise, Local Focus</h4>
-                    <p className="font-dm text-gray-600">Our global team understands international best practices while applying highly localized strategies specifically designed for clients across Canada.</p>
+                    <p className="font-dm text-gray-600">Our global team understands international best practices while applying highly localized strategies specifically designed for clients across Australia.</p>
                   </div>
                 </div>
 
@@ -240,8 +253,8 @@ export default function CanadaPage() {
             <div className="bg-[#080c18] rounded-3xl p-10 text-white relative overflow-hidden shadow-2xl group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/10 rounded-full blur-[80px]" />
               <Image 
-                src="/images/services/social-media.webp" 
-                alt="Social media management and engagement for Canadian brands"
+                src="/images/services/lead-gen.webp" 
+                alt="Lead generation optimization for Australian market"
                 fill
                 className="object-cover opacity-20 mix-blend-overlay group-hover:opacity-30 transition-opacity duration-500"
               />
@@ -251,7 +264,7 @@ export default function CanadaPage() {
                   <span className="w-8 h-8 rounded-full bg-brand-gold text-brand-ink flex items-center justify-center font-bold flex-shrink-0">1</span>
                   <div>
                     <strong className="block text-lg mb-1">Discovery & Audit:</strong>
-                    <span className="text-white/70">We analyze your current digital presence, target audience, and direct competitors within the Canadian market.</span>
+                    <span className="text-white/70">We analyze your current digital presence, target audience, and direct competitors within the Australian market.</span>
                   </div>
                 </li>
                 <li className="flex gap-4 items-start">
@@ -288,20 +301,20 @@ export default function CanadaPage() {
             Success Stories
           </span>
           <h2 className="font-fraunces text-4xl sm:text-5xl font-bold text-brand-blue-deep mt-3 mb-16">
-            What Our <span className="text-brand-gold italic">Canadian Clients</span> Say
+            What Our <span className="text-brand-gold italic">Aussie Clients</span> Say
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
             <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm group hover:border-brand-gold/40 transition-colors">
               <div className="text-brand-gold text-lg tracking-wider mb-4">★★★★★</div>
               <p className="font-dm text-gray-700 text-lg leading-relaxed italic mb-6">
-                "Partnering with BizBox Story completely transformed our online visibility. Their targeted approach to the Canadian market doubled our organic leads within just four months. They truly understand what drives real revenue."
+                "Partnering with BizBox Story completely transformed our online visibility. Their targeted approach to the Australian market doubled our organic leads within just four months. They truly understand what drives real revenue."
               </p>
               <div className="flex items-center gap-4 border-t border-brand-border pt-6">
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">E</div>
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">L</div>
                 <div>
-                  <div className="font-dm font-bold text-brand-blue-deep">Ethan T.</div>
-                  <div className="font-dm text-sm text-gray-500">Director, Toronto Logistics</div>
+                  <div className="font-dm font-bold text-brand-blue-deep">Liam M.</div>
+                  <div className="font-dm text-sm text-gray-500">Director, Sydney Property Group</div>
                 </div>
               </div>
             </div>
@@ -309,13 +322,13 @@ export default function CanadaPage() {
             <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm group hover:border-brand-gold/40 transition-colors">
               <div className="text-brand-gold text-lg tracking-wider mb-4">★★★★★</div>
               <p className="font-dm text-gray-700 text-lg leading-relaxed italic mb-6">
-                "We were tired of agencies delivering empty promises. BizBox Story stepped in, restructured our Google Ads, and optimized our local SEO. We are finally seeing a strong ROI across our service locations in Vancouver."
+                "We were tired of agencies delivering empty promises. BizBox Story stepped in, restructured our Google Ads, and optimized our local SEO. We are finally seeing a strong ROI across our service locations in Melbourne."
               </p>
               <div className="flex items-center gap-4 border-t border-brand-border pt-6">
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">O</div>
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">C</div>
                 <div>
-                  <div className="font-dm font-bold text-brand-blue-deep">Olivia B.</div>
-                  <div className="font-dm text-sm text-gray-500">Founder, Vancouver Retail Co.</div>
+                  <div className="font-dm font-bold text-brand-blue-deep">Chloe S.</div>
+                  <div className="font-dm text-sm text-gray-500">Founder, Melbourne Retail Network</div>
                 </div>
               </div>
             </div>
@@ -366,10 +379,10 @@ export default function CanadaPage() {
       <section className="py-20 bg-brand-surface">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-fraunces text-4xl font-bold text-brand-ink mb-6">
-            Ready to Scale Your Business in Canada?
+            Ready to Scale Your Business in Australia?
           </h2>
           <p className="font-dm text-lg text-gray-600 mb-10 leading-relaxed">
-            If you are looking for a digital marketing agency in Canada that prioritizes your bottom line, BizBox Story is your ideal partner. Stop wasting budget on generic campaigns that do not convert. Let us build a customized growth engine that drives sustainable revenue, high-quality leads, and long-term digital success.
+            If you are looking for a digital marketing agency in Australia that prioritizes your bottom line, BizBox Story is your ideal partner. Stop wasting budget on generic campaigns that do not convert. Let us build a customized growth engine that drives sustainable revenue, high-quality leads, and long-term digital success.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/free-strategy-call" className="font-dm font-bold text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-lg hover:-translate-y-1">

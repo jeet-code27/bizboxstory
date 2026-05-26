@@ -160,18 +160,31 @@ export default function SEOServicesPage() {
 
   return (
     <>
-      <script
+            <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "SEO Services",
+              "provider": {
+                "@type": "Organization",
+                "name": "BizBox Story",
+                "url": "https://bizboxstory.com"
+              },
+              "description": "Increase your online visibility with SEO services designed to improve Google rankings, drive organic traffic, and generate more leads."
+            }
+          ]),
         }}
       />
 

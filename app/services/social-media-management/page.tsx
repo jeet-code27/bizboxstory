@@ -161,18 +161,31 @@ export default function SocialMediaManagementPage() {
 
   return (
     <>
-      <script
+            <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Social Media Management",
+              "provider": {
+                "@type": "Organization",
+                "name": "BizBox Story",
+                "url": "https://bizboxstory.com"
+              },
+              "description": "Build a stronger online presence with social media management services focused on engagement, content strategy, and business growth."
+            }
+          ]),
         }}
       />
 

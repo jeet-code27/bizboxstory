@@ -159,18 +159,31 @@ export default function ContentMarketingPage() {
 
   return (
     <>
-      <script
+            <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Content Marketing Services",
+              "provider": {
+                "@type": "Organization",
+                "name": "BizBox Story",
+                "url": "https://bizboxstory.com"
+              },
+              "description": "Grow your brand with content marketing services that improve SEO, engage your audience, and turn traffic into real business leads."
+            }
+          ]),
         }}
       />
 

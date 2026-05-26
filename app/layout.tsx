@@ -20,8 +20,20 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bizboxstory.com"),
   title: "BizBox Story | AI-Powered Digital Marketing Agency",
   description: "Revenue-driven digital marketing agency helping SMEs scale with AI SEO, Content Marketing, Google Ads & Social Media. Serving US, UK, Australia & India.",
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/us',
+      'en-GB': '/uk',
+      'en-AU': '/au',
+      'en-CA': '/ca',
+      'en-AE': '/ae',
+      'x-default': '/',
+    },
+  },
   robots: {
     index: true,
     follow: true,
@@ -37,6 +49,21 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BizBox Story",
+  "url": "https://bizboxstory.com",
+  "logo": "https://bizboxstory.com/images/logo.png",
+  "description": "Revenue-driven digital marketing agency helping SMEs scale with AI SEO, Content Marketing, Google Ads & Social Media.",
+  "sameAs": [
+    "https://www.facebook.com/bizboxstory",
+    "https://twitter.com/bizboxstory",
+    "https://www.instagram.com/bizboxstory/",
+    "https://www.linkedin.com/company/bizboxstory"
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +76,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col text-brand-ink bg-brand-surface selection:bg-brand-gold selection:text-brand-ink overflow-x-hidden" suppressHydrationWarning>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <NoScrollOnNav />
         <Navbar />
         <main className="flex-grow pt-20">

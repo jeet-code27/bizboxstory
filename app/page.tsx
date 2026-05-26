@@ -26,6 +26,32 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "BizBox Story",
+              "url": "https://bizboxstory.com/",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://bizboxstory.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "BizBox Story",
+              "url": "https://bizboxstory.com",
+              "description": "Digital marketing agency offering SEO, Google Ads, content marketing, and lead generation.",
+              "image": "https://bizboxstory.com/images/logo.png"
+            }
+          ]),
+        }}
+      />
       <Hero />
       <TrustBar />
       <ClientLogos />

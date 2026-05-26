@@ -5,37 +5,37 @@ import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, 
 import BottomCTA from "@/components/BottomCTA";
 
 export const metadata: Metadata = {
-  title: "Digital Marketing Agency in the USA | BizBox Story",
-  description: "Top digital marketing agency in the United States. BizBox Story helps US businesses grow with AI SEO, Google Ads, content marketing & lead generation services.",
-  keywords: ["digital marketing agency USA", "SEO United States", "Google Ads USA", "content marketing USA", "lead generation US", "digital marketing agency America"],
+  title: "Digital Marketing Agency in the UK | BizBox Story",
+  description: "Leading digital marketing agency in the United Kingdom. BizBox Story helps UK businesses grow with AI SEO, Google Ads, content marketing & lead generation.",
+  keywords: ["digital marketing agency UK", "SEO United Kingdom", "Google Ads UK", "content marketing UK", "lead generation UK"],
   authors: [{ name: "shay mehta" }],
   publisher: "shay mehta",
   alternates: {
-    canonical: "https://bizboxstory.com/digital-marketing-agency-united-states",
+    canonical: "https://bizboxstory.com/uk",
   },
 };
 
-export default function UnitedStatesPage() {
+export default function UnitedKingdomPage() {
   const faqs = [
     {
-      q: "What makes your digital marketing agency different from others in the United States?",
-      a: "We focus exclusively on revenue-driven results. Unlike agencies that report on vanity metrics, we build comprehensive growth engines using AI SEO, engaging content, and optimized ads to ensure scalable business growth and a strong ROI for US businesses."
+      q: "What makes your digital marketing agency different from others in the United Kingdom?",
+      a: "We focus exclusively on revenue-driven results. Unlike agencies that report on vanity metrics, we build comprehensive growth engines using AI SEO, engaging content, and optimized ads to ensure scalable business growth and a strong ROI for UK businesses."
     },
     {
-      q: "Do you work with local businesses or nationwide enterprises in the United States?",
-      a: "We partner with both. Whether you need local Google My Business optimization to capture foot traffic in a specific US city or nationwide SEO to dominate broad search terms, our strategies are highly adaptable."
+      q: "Do you work with local businesses or nationwide enterprises in the United Kingdom?",
+      a: "We partner with both. Whether you need local Google My Business optimization to capture foot traffic in a specific UK city like London or Manchester, or nationwide SEO to dominate broad search terms, our strategies are highly adaptable."
     },
     {
       q: "How long does it take to see results from AI SEO?",
-      a: "While paid ads can generate immediate leads, our AI-powered SEO strategies typically begin showing significant improvements in search rankings and organic traffic within 3 to 6 months for most competitive markets in the United States."
+      a: "While paid ads can generate immediate leads, our AI-powered SEO strategies typically begin showing significant improvements in search rankings and organic traffic within 3 to 6 months for most competitive markets in the United Kingdom."
     },
     {
       q: "Can you handle our social media and content marketing together?",
-      a: "Yes, we offer comprehensive services. We perfectly align your content marketing with your social media management to ensure your brand message is consistent, authoritative, and highly engaging across all platforms in the United States."
+      a: "Yes, we offer comprehensive services. We perfectly align your content marketing with your social media management to ensure your brand message is consistent, authoritative, and highly engaging across all platforms in the UK."
     },
     {
       q: "How do we get started with your services?",
-      a: "Getting started is simple. Book a free strategy call with our experts. We will thoroughly audit your current digital presence and propose a custom roadmap tailored to your specific business goals in the US market."
+      a: "Getting started is simple. Book a free strategy call with our experts. We will thoroughly audit your current digital presence and propose a custom roadmap tailored to your specific business goals in the UK market."
     }
   ];
 
@@ -44,15 +44,28 @@ export default function UnitedStatesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((f) => ({
-              "@type": "Question",
-              name: f.q,
-              acceptedAnswer: { "@type": "Answer", text: f.a },
-            })),
-          }),
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            },
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "BizBox Story - UK",
+              "url": "https://bizboxstory.com/uk",
+              "description": "Top digital marketing agency serving the United Kingdom.",
+              "areaServed": {
+                "@type": "Country",
+                "name": "United Kingdom"
+              }
+            }
+          ]),
         }}
       />
 
@@ -63,13 +76,13 @@ export default function UnitedStatesPage() {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
           <span className="inline-flex items-center gap-2 font-dm text-brand-gold text-sm uppercase tracking-widest font-semibold mb-6 px-4 py-2 border border-brand-gold/30 rounded-full bg-brand-gold/10">
-            🇺🇸 Serving The United States
+            🇬🇧 Serving The United Kingdom
           </span>
           <h1 className="font-fraunces text-5xl sm:text-6xl lg:text-[4.5rem] font-bold text-white leading-tight max-w-5xl mx-auto">
-            Leading Digital Marketing Agency in the <span className="text-brand-gold italic">United States</span>
+            Leading Digital Marketing Agency in the <span className="text-brand-gold italic">United Kingdom</span>
           </h1>
           <p className="mt-8 font-dm text-lg sm:text-xl text-white/70 max-w-3xl mx-auto leading-relaxed">
-            Helping US businesses scale with AI-driven SEO, high-converting Google & Facebook Ads, and revenue-focused content marketing. We don't just run campaigns—we build powerful growth engines tailored specifically for the competitive American market.
+            Helping UK businesses scale with AI-driven SEO, high-converting Google & Facebook Ads, and revenue-focused content marketing. We don't just run campaigns—we build powerful growth engines tailored specifically for the competitive British market.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Link href="/free-strategy-call" className="font-dm font-bold text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.3)] hover:-translate-y-1">
@@ -85,15 +98,15 @@ export default function UnitedStatesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="font-fraunces text-3xl md:text-4xl lg:text-5xl font-bold text-brand-ink mb-6 leading-tight">
-                Transforming How American Businesses Grow Online
+                Transforming How British Businesses Grow Online
               </h2>
               <div className="w-16 h-1 bg-brand-gold mb-8 rounded-full" />
               <div className="space-y-6 font-dm text-gray-600 text-lg leading-relaxed">
                 <p>
-                  As a premier digital marketing agency in the United States, BizBox Story is committed to transforming how American businesses grow online. Whether you are a local SME or a nationwide enterprise, we offer comprehensive digital marketing services across the United States tailored to your specific market demands. From dominating search results with advanced AI SEO to generating high-quality leads through targeted ad campaigns, our ultimate goal is tangible business growth.
+                  As a premier digital marketing agency in the United Kingdom, BizBox Story is committed to transforming how UK businesses grow online. Whether you are a local SME or a nationwide enterprise, we offer comprehensive digital marketing services across the United Kingdom tailored to your specific market demands. From dominating search results with advanced AI SEO to generating high-quality leads through targeted ad campaigns, our ultimate goal is tangible business growth.
                 </p>
                 <p>
-                  We understand the fiercely competitive landscape of the United States market, bringing years of global experience, proven reliability, and unmatched quality to every project. We know you are tired of agencies that sell empty promises. That is why we partner with you to build a sustainable online presence that drives real revenue, not just vanity metrics. Let us engineer your growth.
+                  We understand the fiercely competitive landscape of the UK market, bringing years of global experience, proven reliability, and unmatched quality to every project. We know you are tired of agencies that sell empty promises. That is why we partner with you to build a sustainable online presence that drives real revenue, not just vanity metrics. Let us engineer your growth.
                 </p>
               </div>
             </div>
@@ -101,7 +114,7 @@ export default function UnitedStatesPage() {
               <div className="relative rounded-3xl overflow-hidden aspect-square sm:aspect-[4/3] lg:aspect-square border border-brand-border shadow-lg group">
                 <Image
                   src="/images/services/seo.webp"
-                  alt="BizBox Story digital marketing agency team analyzing US market data"
+                  alt="BizBox Story digital marketing agency team analyzing UK market data"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -110,14 +123,14 @@ export default function UnitedStatesPage() {
               </div>
               
               {/* Floating element */}
-              <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-brand-border hidden sm:block animate-bounce-slow">
+              <div className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-xl border border-brand-border hidden sm:block animate-bounce-slow" style={{ animationDelay: '1s' }}>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-brand-gold/10 text-brand-gold rounded-full flex items-center justify-center">
                     <FiTrendingUp className="text-2xl" />
                   </div>
                   <div>
-                    <div className="font-fraunces font-bold text-2xl text-brand-blue-deep">+340%</div>
-                    <div className="font-dm text-sm text-gray-500 uppercase tracking-widest font-semibold mt-1">ROI Growth</div>
+                    <div className="font-fraunces font-bold text-2xl text-brand-blue-deep">+280%</div>
+                    <div className="font-dm text-sm text-gray-500 uppercase tracking-widest font-semibold mt-1">Lead Growth</div>
                   </div>
                 </div>
               </div>
@@ -126,7 +139,7 @@ export default function UnitedStatesPage() {
         </div>
       </section>
 
-      {/* ── OUR SERVICES IN THE US ──────────────────────────────────────── */}
+      {/* ── OUR SERVICES IN THE UK ──────────────────────────────────────── */}
       <section className="py-24 bg-brand-muted border-y border-brand-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -134,48 +147,48 @@ export default function UnitedStatesPage() {
               Tailored Solutions
             </span>
             <h2 className="font-fraunces text-4xl sm:text-5xl font-bold text-brand-blue-deep mt-3">
-              Our Services in the <span className="text-brand-gold italic">United States</span>
+              Our Services in the <span className="text-brand-gold italic">United Kingdom</span>
             </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm">
-              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6">
+            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm group">
+              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-ink transition-colors">
                 <FiSearch className="text-2xl" />
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">AI-Powered SEO Services</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Dominate local and national search rankings across the United States. Our <Link href="/services/seo-services" className="text-brand-gold font-semibold hover:underline">AI-powered SEO strategies</Link> ensure your website appears right when potential customers are actively searching for your solutions. For United States businesses, this means higher organic traffic, stronger brand visibility, and a significant boost in qualified leads without relying entirely on paid advertising.
+                Dominate local and national search rankings across the United Kingdom. Our <Link href="/services/seo-services" className="text-brand-gold font-semibold hover:underline">AI-powered SEO strategies</Link> ensure your website appears right when potential customers are actively searching for your solutions. For UK businesses, this means higher organic traffic, stronger brand visibility, and a significant boost in qualified leads without relying entirely on paid advertising.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm">
-              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6">
+            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm group">
+              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-ink transition-colors">
                 <FiTarget className="text-2xl" />
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">Google & Facebook Ads</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Maximize your return on ad spend in the highly competitive United States market. We design, launch, and manage high-converting <Link href="/services/google-facebook-ads" className="text-brand-gold font-semibold hover:underline">Google and Facebook ad campaigns</Link> that target your ideal audience with precision. Experience a lower cost-per-acquisition and a steady stream of ready-to-buy customers tailored specifically for US-based companies.
+                Maximize your return on ad spend in the highly competitive United Kingdom market. We design, launch, and manage high-converting <Link href="/services/google-facebook-ads" className="text-brand-gold font-semibold hover:underline">Google and Facebook ad campaigns</Link> that target your ideal audience with precision. Experience a lower cost-per-acquisition and a steady stream of ready-to-buy customers tailored specifically for UK-based companies.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm">
-              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6">
+            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm group">
+              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-ink transition-colors">
                 <FiLayout className="text-2xl" />
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">Content Marketing & Brand Presence</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Stand out in the United States with authoritative, revenue-focused content. Our <Link href="/services/brand-presence-consulting" className="text-brand-gold font-semibold hover:underline">content marketing and brand presence</Link> consulting build immediate trust and establish you as an industry leader. For businesses in the United States, we create compelling narratives that engage your audience and naturally guide them through your sales funnel.
+                Stand out in the UK with authoritative, revenue-focused content. Our <Link href="/services/brand-presence-consulting" className="text-brand-gold font-semibold hover:underline">content marketing and brand presence</Link> consulting build immediate trust and establish you as an industry leader. For businesses in the United Kingdom, we create compelling narratives that engage your audience and naturally guide them through your sales funnel.
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm">
-              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6">
+            <div className="bg-white p-8 rounded-3xl border border-brand-border hover:border-brand-gold/40 transition-colors shadow-sm group">
+              <div className="w-14 h-14 bg-brand-gold/10 text-brand-gold flex items-center justify-center rounded-2xl mb-6 group-hover:bg-brand-gold group-hover:text-brand-ink transition-colors">
                 <FiPieChart className="text-2xl" />
               </div>
               <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-4">Lead Generation & GMB Optimization</h3>
               <p className="font-dm text-gray-600 mb-6 leading-relaxed">
-                Capture high-intent local leads with <Link href="/services/lead-generation" className="text-brand-gold font-semibold hover:underline">targeted lead generation</Link> and <Link href="/services/google-my-business" className="text-brand-gold font-semibold hover:underline">Google My Business (GMB) optimization</Link>. We ensure your business is easily discoverable on local US maps and search results. The outcome is a consistent pipeline of local inquiries and increased foot traffic for your physical or service-area business in the United States.
+                Capture high-intent local leads with <Link href="/services/lead-generation" className="text-brand-gold font-semibold hover:underline">targeted lead generation</Link> and <Link href="/services/google-my-business" className="text-brand-gold font-semibold hover:underline">Google My Business (GMB) optimization</Link>. We ensure your business is easily discoverable on local UK maps and search results. The outcome is a consistent pipeline of local inquiries and increased foot traffic for your physical or service-area business in the United Kingdom.
               </p>
             </div>
           </div>
@@ -196,17 +209,17 @@ export default function UnitedStatesPage() {
               
               <div className="space-y-8">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold border border-brand-gold/20">
                     <FiTrendingUp className="text-xl" />
                   </div>
                   <div>
                     <h4 className="font-fraunces font-bold text-xl text-brand-ink mb-2">Proven Years of Experience</h4>
-                    <p className="font-dm text-gray-600">We bring over 6 years of hands-on experience helping SMEs scale globally, with deep expertise navigating the specific demands of the US market.</p>
+                    <p className="font-dm text-gray-600">We bring over 6 years of hands-on experience helping SMEs scale globally, with deep expertise navigating the specific demands of the UK market.</p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold border border-brand-gold/20">
                     <FiTarget className="text-xl" />
                   </div>
                   <div>
@@ -216,17 +229,17 @@ export default function UnitedStatesPage() {
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold border border-brand-gold/20">
                     <FiGlobe className="text-xl" />
                   </div>
                   <div>
                     <h4 className="font-fraunces font-bold text-xl text-brand-ink mb-2">Global Expertise, Local Focus</h4>
-                    <p className="font-dm text-gray-600">Our global team understands international best practices while applying highly localized strategies specifically designed for clients across the United States.</p>
+                    <p className="font-dm text-gray-600">Our global team understands international best practices while applying highly localized strategies specifically designed for clients across the United Kingdom.</p>
                   </div>
                 </div>
 
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold">
+                  <div className="flex-shrink-0 w-12 h-12 rounded-full bg-brand-muted flex items-center justify-center text-brand-gold border border-brand-gold/20">
                     <FiClock className="text-xl" />
                   </div>
                   <div>
@@ -237,15 +250,21 @@ export default function UnitedStatesPage() {
               </div>
             </div>
             
-            <div className="bg-[#080c18] rounded-3xl p-10 text-white relative overflow-hidden shadow-2xl">
+            <div className="bg-[#080c18] rounded-3xl p-10 text-white relative overflow-hidden shadow-2xl group">
               <div className="absolute top-0 right-0 w-64 h-64 bg-brand-gold/10 rounded-full blur-[80px]" />
+              <Image 
+                src="/images/services/brand.webp" 
+                alt="Business growth strategy in the UK"
+                fill
+                className="object-cover opacity-20 mix-blend-overlay group-hover:opacity-30 transition-opacity duration-500"
+              />
               <h3 className="font-fraunces text-3xl font-bold mb-8 relative z-10">How It Works</h3>
               <ul className="space-y-6 relative z-10 font-dm">
                 <li className="flex gap-4 items-start">
                   <span className="w-8 h-8 rounded-full bg-brand-gold text-brand-ink flex items-center justify-center font-bold flex-shrink-0">1</span>
                   <div>
                     <strong className="block text-lg mb-1">Discovery & Audit:</strong>
-                    <span className="text-white/70">We analyze your current digital presence, target audience, and direct competitors within the United States market.</span>
+                    <span className="text-white/70">We analyze your current digital presence, target audience, and direct competitors within the United Kingdom market.</span>
                   </div>
                 </li>
                 <li className="flex gap-4 items-start">
@@ -282,34 +301,34 @@ export default function UnitedStatesPage() {
             Success Stories
           </span>
           <h2 className="font-fraunces text-4xl sm:text-5xl font-bold text-brand-blue-deep mt-3 mb-16">
-            What Our <span className="text-brand-gold italic">US Clients</span> Say
+            What Our <span className="text-brand-gold italic">UK Clients</span> Say
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-            <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm">
+            <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm group hover:border-brand-gold/40 transition-colors">
               <div className="text-brand-gold text-lg tracking-wider mb-4">★★★★★</div>
               <p className="font-dm text-gray-700 text-lg leading-relaxed italic mb-6">
-                "Partnering with BizBox Story completely transformed our online visibility. Their targeted approach to the United States market doubled our organic leads within just four months. They truly understand what drives real revenue."
+                "Partnering with BizBox Story completely transformed our online visibility. Their targeted approach to the United Kingdom market doubled our organic leads within just four months. They truly understand what drives real revenue."
               </p>
               <div className="flex items-center gap-4 border-t border-brand-border pt-6">
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">M</div>
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">E</div>
                 <div>
-                  <div className="font-dm font-bold text-brand-blue-deep">Michael T.</div>
-                  <div className="font-dm text-sm text-gray-500">Operations Director, US Logistics Firm</div>
+                  <div className="font-dm font-bold text-brand-blue-deep">Emma W.</div>
+                  <div className="font-dm text-sm text-gray-500">E-commerce Head, Manchester</div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm">
+            <div className="bg-white p-8 rounded-3xl border border-brand-border shadow-sm group hover:border-brand-gold/40 transition-colors">
               <div className="text-brand-gold text-lg tracking-wider mb-4">★★★★★</div>
               <p className="font-dm text-gray-700 text-lg leading-relaxed italic mb-6">
-                "We were tired of agencies delivering empty promises. BizBox Story stepped in, restructured our Google Ads, and optimized our local SEO. We are finally seeing a strong ROI across our retail locations in the United States."
+                "We were tired of agencies delivering empty promises. BizBox Story stepped in, restructured our Google Ads, and optimized our local SEO. We are finally seeing a strong ROI across our service locations in the UK."
               </p>
               <div className="flex items-center gap-4 border-t border-brand-border pt-6">
-                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">S</div>
+                <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center text-gray-500 font-bold">J</div>
                 <div>
-                  <div className="font-dm font-bold text-brand-blue-deep">Sarah L.</div>
-                  <div className="font-dm text-sm text-gray-500">Founder, National Retail Brand</div>
+                  <div className="font-dm font-bold text-brand-blue-deep">James P.</div>
+                  <div className="font-dm text-sm text-gray-500">Director, London Tech Firm</div>
                 </div>
               </div>
             </div>
@@ -360,10 +379,10 @@ export default function UnitedStatesPage() {
       <section className="py-20 bg-brand-surface">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-fraunces text-4xl font-bold text-brand-ink mb-6">
-            Ready to Scale Your Business in the United States?
+            Ready to Scale Your Business in the United Kingdom?
           </h2>
           <p className="font-dm text-lg text-gray-600 mb-10 leading-relaxed">
-            If you are looking for a digital marketing agency in the United States that prioritizes your bottom line, BizBox Story is your ideal partner. Stop wasting budget on generic campaigns that do not convert. Let us build a customized growth engine that drives sustainable revenue, high-quality leads, and long-term digital success.
+            If you are looking for a digital marketing agency in the United Kingdom that prioritizes your bottom line, BizBox Story is your ideal partner. Stop wasting budget on generic campaigns that do not convert. Let us build a customized growth engine that drives sustainable revenue, high-quality leads, and long-term digital success.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/free-strategy-call" className="font-dm font-bold text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-lg hover:-translate-y-1">
