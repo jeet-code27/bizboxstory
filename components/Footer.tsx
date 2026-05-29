@@ -27,7 +27,7 @@ const companyLinks = [
 ];
 
 const marketsLinks = [
-  { flag: "https://flagcdn.com/w40/us.png", name: "United States", href: "/digital-marketing-agency-united-states" },
+  { flag: "https://flagcdn.com/w40/us.png", name: "United States", href: "/us" },
   { flag: "https://flagcdn.com/w40/gb.png", name: "United Kingdom", href: "/digital-marketing-agency-united-kingdom" },
   { flag: "https://flagcdn.com/w40/in.png", name: "India", href: "/" },
   { flag: "https://flagcdn.com/w40/au.png", name: "Australia", href: "/digital-marketing-agency-australia" },
