@@ -41,3 +41,56 @@ html {
 .animate-marquee {
   animation: marquee 25s linear infinite;
 }
+
+/* ── Legal pages: shared content styles ─────────────────────────────────── */
+.terms-content h3,
+.privacy-content h3 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f1b3d;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.terms-content h3:first-child,
+.privacy-content h3:first-child {
+  margin-top: 0;
+}
+.terms-content ul,
+.privacy-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.terms-content ul li,
+.privacy-content ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+.terms-content ul li::before,
+.privacy-content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #ffb605;
+}
+.terms-content strong,
+.privacy-content strong {
+  color: #0f1b3d;
+  font-weight: 600;
+}
+.terms-content a,
+.privacy-content a {
+  color: #ffb605;
+  font-weight: 600;
+  text-decoration: none;
+}
+.terms-content a:hover,
+.privacy-content a:hover {
+  text-decoration: underline;
+}

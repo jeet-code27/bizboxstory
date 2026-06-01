@@ -168,9 +168,7 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 font-dm text-sm text-gray-600">
             <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
             <span className="hidden sm:inline-block">|</span>
-            <Link href="/terms" className="hover:text-gray-300 transition-colors">Terms & Conditions</Link>
-            <span className="hidden sm:inline-block">|</span>
-            <Link href="/refund-policy" className="hover:text-gray-300 transition-colors">Refund Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-gray-300 transition-colors">Terms &amp; Conditions</Link>
           </div>
         </div>
 
