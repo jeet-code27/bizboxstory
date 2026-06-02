@@ -27,12 +27,12 @@ export const metadata: Metadata = {
   authors: [{ name: "Shay Mehta" }],
   publisher: "BizBox Story",
   alternates: {
-    canonical: "https://bizboxstory.com/us",
+    canonical: "https://bizboxstory.com/digital-marketing-agency-united-states",
   },
   openGraph: {
     title: "#1 Digital Marketing Agency USA | BizBox Story",
     description: "Top-rated digital marketing agency serving businesses across the United States. AI SEO, Google Ads, content marketing & lead generation that drives real revenue.",
-    url: "https://bizboxstory.com/us",
+    url: "https://bizboxstory.com/digital-marketing-agency-united-states",
     siteName: "BizBox Story",
     images: [
       {
@@ -119,7 +119,7 @@ export default function UnitedStatesPage() {
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "BizBox Story",
-              "url": "https://bizboxstory.com/us",
+              "url": "https://bizboxstory.com/digital-marketing-agency-united-states",
               "logo": "https://bizboxstory.com/images/logo.png",
               "description": "BizBox Story is a top-rated digital marketing agency in the United States offering AI SEO, Google Ads management, Facebook ads, content marketing, and B2B lead generation services for small and medium businesses.",
               "priceRange": "$$",
@@ -175,7 +175,7 @@ export default function UnitedStatesPage() {
                   "@type": "ListItem",
                   "position": 2,
                   "name": "Digital Marketing Agency USA",
-                  "item": "https://bizboxstory.com/us"
+                  "item": "https://bizboxstory.com/digital-marketing-agency-united-states"
                 }
               ]
             }
@@ -249,6 +249,31 @@ export default function UnitedStatesPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── VIDEO PRESENTATION ────────────────────────────────────────── */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="font-dm text-brand-gold text-sm uppercase tracking-widest font-semibold">
+              Hear From Our Team
+            </span>
+            <h2 className="font-fraunces text-4xl font-bold text-brand-blue-deep mt-3">
+              Why US Businesses Choose <span className="text-brand-gold italic">BizBox Story</span>
+            </h2>
+          </div>
+          <div className="flex justify-center">
+            <div className="w-full max-w-sm aspect-[9/16] relative rounded-3xl overflow-hidden shadow-2xl border-[8px] border-[#080c18]">
+              <iframe
+                src="https://www.youtube.com/embed/8fjtb6T8vzY?rel=0"
+                title="BizBox Story Digital Marketing USA"
+                className="absolute top-0 left-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </div>

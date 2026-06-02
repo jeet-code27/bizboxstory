@@ -17,8 +17,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/digital-marketing-agency-united-states',
-        destination: '/us',
+        source: '/us',
+        destination: '/digital-marketing-agency-united-states',
         permanent: true,
       },
       {
@@ -27,18 +27,18 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
-        source: '/digital-marketing-agency-australia',
-        destination: '/au',
+        source: '/au',
+        destination: '/digital-marketing-agency-Australia',
         permanent: true,
       },
       {
-        source: '/digital-marketing-agency-canada',
-        destination: '/ca',
+        source: '/ca',
+        destination: '/digital-marketing-agency-canada',
         permanent: true,
       },
       {
-        source: '/digital-marketing-agency-dubai',
-        destination: '/ae',
+        source: '/ae',
+        destination: '/digital-marketing-agency-dubai',
         permanent: true,
       },
     ];

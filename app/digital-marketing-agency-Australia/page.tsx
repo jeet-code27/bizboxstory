@@ -7,11 +7,18 @@ import BottomCTA from "@/components/BottomCTA";
 export const metadata: Metadata = {
   title: "Digital Marketing Agency in Australia | BizBox Story",
   description: "Top digital marketing agency in Australia. BizBox Story drives growth with AI SEO, Google Ads, content marketing & lead generation for Australian businesses.",
-  keywords: ["digital marketing agency Australia", "SEO Australia", "Google Ads Australia", "content marketing Australia", "lead generation Australia"],
+  keywords: [
+    "digital marketing agency Australia", 
+    "SEO agency Sydney", 
+    "Google Ads agency Australia", 
+    "SEO Australia", 
+    "content marketing Australia", 
+    "lead generation Australia"
+  ],
   authors: [{ name: "shay mehta" }],
   publisher: "shay mehta",
   alternates: {
-    canonical: "https://bizboxstory.com/au",
+    canonical: "https://bizboxstory.com/digital-marketing-agency-Australia",
   },
 };
 
@@ -36,6 +43,30 @@ export default function AustraliaPage() {
     {
       q: "How do we get started with your services?",
       a: "Getting started is simple. Book a free strategy call with our experts. We will thoroughly audit your current digital presence and propose a custom roadmap tailored to your specific business goals in the Australian market."
+    },
+    {
+      q: "Do you offer affordable SEO for Australian small business?",
+      a: "Yes, we provide affordable SEO for Australian small business designed to deliver high ROI. Our localized and national strategies focus on driving consistent, qualified traffic without breaking your budget."
+    },
+    {
+      q: "How much does digital marketing cost in Australia?",
+      a: "How much does digital marketing cost in Australia depends on your specific goals, industry, and the services required. We offer customized packages with clear, transparent pricing to ensure the best return on investment for your business."
+    },
+    {
+      q: "Are you the best Google Ads agency for Australian e-commerce?",
+      a: "Many of our clients consider us the best Google Ads agency for Australian e-commerce. We build highly targeted, conversion-focused campaigns that maximize product sales and minimize wasted ad spend."
+    },
+    {
+      q: "Do you operate as a B2B lead generation agency Sydney?",
+      a: "Yes, if you need a reliable B2B lead generation agency Sydney, our specialized strategies target key decision-makers using advanced LinkedIn outreach, SEO, and paid media to fill your sales pipeline with quality prospects."
+    },
+    {
+      q: "Do you handle digital marketing for tradies and local services Australia?",
+      a: "Absolutely. Our digital marketing for tradies and local services Australia focuses on Google Local Services Ads, GMB optimization, and targeted local SEO to ensure your phone keeps ringing with qualified local jobs."
+    },
+    {
+      q: "Why should we outsource SEO to agency Australia rather than keeping it in-house?",
+      a: "When you outsource SEO to agency Australia like BizBox Story, you gain immediate access to an entire team of specialists, advanced AI tools, and proven strategies—all for a fraction of the cost of hiring an in-house expert."
     }
   ];
 
@@ -103,7 +134,7 @@ export default function AustraliaPage() {
               <div className="w-16 h-1 bg-brand-gold mb-8 rounded-full" />
               <div className="space-y-6 font-dm text-gray-600 text-lg leading-relaxed">
                 <p>
-                  As a premier digital marketing agency in Australia, BizBox Story is committed to transforming how Australian businesses grow online. Whether you are a local SME in Sydney or a nationwide enterprise across Australia, we offer comprehensive digital marketing services tailored to your specific market demands. From dominating search results with advanced AI SEO to generating high-quality leads through targeted ad campaigns, our ultimate goal is tangible business growth.
+                  As a premier digital marketing agency Australia, BizBox Story is committed to transforming how Australian businesses grow online. Whether you are looking for a specialized SEO agency Sydney or need a reliable Google Ads agency Australia to scale your enterprise, we offer comprehensive digital marketing services tailored to your specific market demands. From dominating search results with advanced AI SEO to generating high-quality leads through targeted ad campaigns, our ultimate goal is tangible business growth.
                 </p>
                 <p>
                   We understand the fiercely competitive landscape of the Australian market, bringing years of global experience, proven reliability, and unmatched quality to every project. We know you are tired of agencies that sell empty promises. That is why we partner with you to build a sustainable online presence that drives real revenue, not just vanity metrics. Let us engineer your growth.
