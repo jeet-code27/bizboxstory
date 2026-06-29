@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   authors: [{ name: "shay mehta" }],
   publisher: "shay mehta",
   alternates: {
-    canonical: "https://bizboxstory.com/digital-marketing-agency-Australia",
+    canonical: "https://bizboxstory.com/digital-marketing-agency-australia",
   },
 };
 

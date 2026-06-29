@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/au',
-        destination: '/digital-marketing-agency-Australia',
+        destination: '/digital-marketing-agency-australia',
         permanent: true,
       },
       {

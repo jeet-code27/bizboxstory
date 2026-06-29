@@ -24,6 +24,7 @@ const navLinks = [
       { name: "Brand Presence & Consulting", href: "/services/brand-presence-consulting" },
       { name: "Lead Generation", href: "/services/lead-generation" },
       { name: "CBD SEO Strategies", href: "/services/cbd-seo" },
+      { name: "Marketing for Doctors", href: "/digital-marketing-for-doctors" },
     ],
   },
   { name: "Case Studies", href: "/case-studies" },
