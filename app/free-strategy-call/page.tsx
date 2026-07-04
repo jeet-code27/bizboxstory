@@ -15,14 +15,33 @@ export default function FreeStrategyCallPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
+    
+    const formData = new FormData(e.currentTarget);
+    formData.append("access_key", "d2be3617-99b0-4a71-8da8-874ddb392790");
+    formData.append("subject", "New Free Strategy Call Request - Bizbox Story");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setIsSubmitted(true);
+      } else {
+        console.error("Form submission failed", result);
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
       setIsSubmitting(false);
-      setIsSubmitted(true);
-    }, 1500);
+    }
   };
 
   return (
@@ -169,6 +188,7 @@ export default function FreeStrategyCallPage() {
                       <label className="font-dm text-sm font-bold text-brand-ink">First Name *</label>
                       <input 
                         type="text" 
+                        name="firstName"
                         required
                         className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
                         placeholder="John"
@@ -178,6 +198,7 @@ export default function FreeStrategyCallPage() {
                       <label className="font-dm text-sm font-bold text-brand-ink">Last Name *</label>
                       <input 
                         type="text" 
+                        name="lastName"
                         required
                         className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
                         placeholder="Doe"
@@ -190,6 +211,7 @@ export default function FreeStrategyCallPage() {
                       <label className="font-dm text-sm font-bold text-brand-ink">Work Email *</label>
                       <input 
                         type="email" 
+                        name="email"
                         required
                         className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
                         placeholder="john@company.com"
@@ -199,6 +221,7 @@ export default function FreeStrategyCallPage() {
                       <label className="font-dm text-sm font-bold text-brand-ink">Phone Number</label>
                       <input 
                         type="tel" 
+                        name="phone"
                         className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
                         placeholder="+1 (555) 000-0000"
                       />
@@ -209,6 +232,7 @@ export default function FreeStrategyCallPage() {
                     <label className="font-dm text-sm font-bold text-brand-ink">Website URL *</label>
                     <input 
                       type="url" 
+                      name="website"
                       required
                       className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
                       placeholder="https://www.yourdomain.com"
@@ -217,7 +241,7 @@ export default function FreeStrategyCallPage() {
 
                   <div className="space-y-2">
                     <label className="font-dm text-sm font-bold text-brand-ink">What is your primary marketing goal?</label>
-                    <select className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm text-gray-700 appearance-none">
+                    <select name="goal" className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm text-gray-700 appearance-none">
                       <option value="">Select a goal...</option>
                       <option value="leads">Generate More Leads</option>
                       <option value="sales">Increase Direct Sales / E-commerce</option>
@@ -230,6 +254,7 @@ export default function FreeStrategyCallPage() {
                   <div className="space-y-2">
                     <label className="font-dm text-sm font-bold text-brand-ink">Anything specific we should look at?</label>
                     <textarea 
+                      name="message"
                       rows={4}
                       className="w-full px-4 py-3 bg-brand-muted/50 border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm resize-none"
                       placeholder="Tell us about your biggest digital marketing headache right now..."
