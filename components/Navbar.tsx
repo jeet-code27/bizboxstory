@@ -27,6 +27,7 @@ const navLinks = [
       { name: "Marketing for Doctors", href: "/digital-marketing-for-doctors" },
     ],
   },
+  { name: "Marketing Strategy", href: "/marketing-strategy" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blogs" },
   { name: "Contact", href: "/contact" },

@@ -22,6 +22,7 @@ import {
 } from "react-icons/fa6";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect } from "react";
+import Script from "next/script";
 
 /* ── Testimonials Data ─────────────────────────────────────────── */
 const testimonials = [
@@ -420,9 +421,9 @@ export default function ContactPage() {
                     <FaWhatsapp className="text-lg" /> WhatsApp Us
                   </a>
                   {[
-                    { icon: <FaFacebookF />, href: "#" },
-                    { icon: <FaInstagram />, href: "#" },
-                    { icon: <FaLinkedinIn />, href: "#" },
+                    { icon: <FaFacebookF />, href: "https://www.facebook.com/bizboxstory" },
+                    { icon: <FaInstagram />, href: "https://www.instagram.com/bizboxstory/" },
+                    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/company/bizboxstory" },
                   ].map((s, i) => (
                     <a
                       key={i}
@@ -456,8 +457,29 @@ export default function ContactPage() {
                   Ready to speak with our marketing expert?
                 </h3>
                 <p className="font-dm text-gray-500 text-sm mb-8">
-                  Fill in the form below and we&apos;ll get back to you within 24 hours.
+                  Pick a time on our calendar or fill in the form below.
                 </p>
+
+                {!submitted && (
+                  <div className="text-center mb-8 pb-8 border-b border-brand-border">
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+                    <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+                    
+                    <h4 className="font-fraunces text-xl font-bold text-brand-blue-deep mb-3">Schedule Directly</h4>
+                    
+                    <button 
+                      onClick={(e) => {
+                        e.preventDefault();
+                        if ((window as any).Calendly) {
+                          (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});
+                        }
+                      }}
+                      className="inline-flex items-center justify-center font-dm font-bold text-base px-8 py-4 bg-brand-blue-deep text-white rounded-xl hover:bg-brand-ink transition-all duration-300 shadow-lg w-full sm:w-auto"
+                    >
+                      Book Meeting with Calendly
+                    </button>
+                  </div>
+                )}
 
                 {submitted ? (
                   <div className="flex flex-col items-center justify-center py-16 text-center">

@@ -324,132 +324,154 @@ export default function MarketingStrategyPage() {
 
       {/* Form Section */}
       <section id="strategy-form" className="py-24 bg-white border-t border-brand-border">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-brand-surface p-8 sm:p-12 rounded-3xl border border-brand-border shadow-2xl relative">
-            {isSubmitted ? (
-              <div className="text-center py-20">
-                <div className="w-20 h-20 bg-emerald-100 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <FiCheckCircle className="w-10 h-10" />
-                </div>
-                <h3 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-4">You're All Set!</h3>
-                <p className="font-dm text-gray-600 max-w-md mx-auto mb-8">
-                  Your strategy session request has been successfully submitted. Our team will contact you within 24 hours to confirm your time slot.
-                </p>
-                <button 
-                  onClick={() => setIsSubmitted(false)}
-                  className="font-dm text-brand-gold font-bold hover:text-brand-gold-light underline"
-                >
-                  Submit another request
-                </button>
-              </div>
-            ) : (
-              <>
-                <div className="text-center mb-10">
-                  <h3 className="font-fraunces text-3xl md:text-4xl font-bold text-brand-blue-deep mb-4">Get Your Free Strategy Call</h3>
-                  <p className="font-dm text-gray-600 max-w-2xl mx-auto">
-                    Tell us about your business. We'll show you exactly where you're losing customers online with no obligation and no sales pressure.
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            
+            {/* Left Column: Existing Form */}
+            <div className="bg-brand-surface p-8 sm:p-12 rounded-3xl border border-brand-border shadow-2xl relative h-full">
+              {isSubmitted ? (
+                <div className="text-center py-20">
+                  <div className="w-20 h-20 bg-emerald-100 text-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <FiCheckCircle className="w-10 h-10" />
+                  </div>
+                  <h3 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-4">You're All Set!</h3>
+                  <p className="font-dm text-gray-600 max-w-md mx-auto mb-8">
+                    Your strategy session request has been successfully submitted. Our team will contact you within 24 hours to confirm your time slot.
                   </p>
-                </div>
-
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="font-dm text-sm font-bold text-brand-ink">Full Name *</label>
-                      <input 
-                        type="text" 
-                        name="fullName"
-                        required
-                        className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
-                        placeholder="John Doe"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="font-dm text-sm font-bold text-brand-ink">Business Name *</label>
-                      <input 
-                        type="text" 
-                        name="businessName"
-                        required
-                        className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
-                        placeholder="Acme Corp"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="font-dm text-sm font-bold text-brand-ink">Industry *</label>
-                      <select name="industry" required className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm text-gray-700 appearance-none">
-                        <option value="">Select your industry...</option>
-                        <option value="Doctor">Doctor / Medical Practice</option>
-                        <option value="Dentist">Dentist</option>
-                        <option value="Cleaning Company">Cleaning Company</option>
-                        <option value="Insurance Agency">Insurance Agency</option>
-                        <option value="Cannabis Dispensary">Cannabis Dispensary</option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="font-dm text-sm font-bold text-brand-ink">Current Monthly Marketing Budget (Optional)</label>
-                      <select name="budget" className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm text-gray-700 appearance-none">
-                        <option value="">Select a range...</option>
-                        <option value="< $1,000">Less than $1,000</option>
-                        <option value="$1,000 - $3,000">$1,000 - $3,000</option>
-                        <option value="$3,000 - $5,000">$3,000 - $5,000</option>
-                        <option value="$5,000+">$5,000+</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="font-dm text-sm font-bold text-brand-ink">Email Address *</label>
-                      <input 
-                        type="email" 
-                        name="email"
-                        required
-                        className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
-                        placeholder="john@company.com"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <label className="font-dm text-sm font-bold text-brand-ink">Phone Number</label>
-                      <input 
-                        type="tel" 
-                        name="phone"
-                        className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
-                        placeholder="+1 (555) 000-0000"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label className="font-dm text-sm font-bold text-brand-ink">Message / What are you hoping to achieve?</label>
-                    <textarea 
-                      name="message"
-                      rows={4}
-                      className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm resize-none"
-                      placeholder="Tell us what's working, what's not, and where you want to be..."
-                    ></textarea>
-                  </div>
-
                   <button 
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full font-dm font-bold text-lg px-8 py-5 bg-brand-gold text-brand-ink rounded-xl hover:bg-brand-gold-light transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-70 shadow-lg mt-4"
+                    onClick={() => setIsSubmitted(false)}
+                    className="font-dm text-brand-gold font-bold hover:text-brand-gold-light underline"
                   >
-                    {isSubmitting ? (
-                      <span className="w-6 h-6 border-2 border-brand-ink border-t-transparent rounded-full animate-spin"></span>
-                    ) : (
-                      <>Book My Free 30-Minute Strategy Call <FiArrowRight className="w-6 h-6" /></>
-                    )}
+                    Submit another request
                   </button>
-
-                  <div className="flex items-center justify-center gap-2 font-dm text-sm text-gray-500 mt-6">
-                    <FiClock className="w-4 h-4" /> 30-minute session · <FiAward className="w-4 h-4 ml-2" /> Zoom or Google Meet · <FiShield className="w-4 h-4 ml-2" /> No sales pressure
+                </div>
+              ) : (
+                <>
+                  <div className="text-center mb-10">
+                    <h3 className="font-fraunces text-3xl md:text-4xl font-bold text-brand-blue-deep mb-4">Get Your Free Strategy Call</h3>
+                    <p className="font-dm text-gray-600 max-w-xl mx-auto">
+                      Tell us about your business. We'll show you exactly where you're losing customers online.
+                    </p>
                   </div>
-                </form>
-              </>
-            )}
+
+                  <form onSubmit={handleSubmit} className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="font-dm text-sm font-bold text-brand-ink">Full Name *</label>
+                        <input 
+                          type="text" 
+                          name="fullName"
+                          required
+                          className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
+                          placeholder="John Doe"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="font-dm text-sm font-bold text-brand-ink">Business Name *</label>
+                        <input 
+                          type="text" 
+                          name="businessName"
+                          required
+                          className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
+                          placeholder="Acme Corp"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="font-dm text-sm font-bold text-brand-ink">Industry *</label>
+                        <select name="industry" required className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm text-gray-700 appearance-none">
+                          <option value="">Select your industry...</option>
+                          <option value="Doctor">Doctor / Medical Practice</option>
+                          <option value="Dentist">Dentist</option>
+                          <option value="Cleaning Company">Cleaning Company</option>
+                          <option value="Insurance Agency">Insurance Agency</option>
+                          <option value="Cannabis Dispensary">Cannabis Dispensary</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                      <div className="space-y-2">
+                        <label className="font-dm text-sm font-bold text-brand-ink">Monthly Budget</label>
+                        <select name="budget" className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm text-gray-700 appearance-none">
+                          <option value="">Select a range...</option>
+                          <option value="< $1,000">Less than $1,000</option>
+                          <option value="$1,000 - $3,000">$1,000 - $3,000</option>
+                          <option value="$3,000 - $5,000">$3,000 - $5,000</option>
+                          <option value="$5,000+">$5,000+</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <label className="font-dm text-sm font-bold text-brand-ink">Email Address *</label>
+                        <input 
+                          type="email" 
+                          name="email"
+                          required
+                          className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
+                          placeholder="john@company.com"
+                        />
+                      </div>
+                      <div className="space-y-2">
+                        <label className="font-dm text-sm font-bold text-brand-ink">Phone Number</label>
+                        <input 
+                          type="tel" 
+                          name="phone"
+                          className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm"
+                          placeholder="+1 (555) 000-0000"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="space-y-2">
+                      <label className="font-dm text-sm font-bold text-brand-ink">Message</label>
+                      <textarea 
+                        name="message"
+                        rows={3}
+                        className="w-full px-4 py-3 bg-white border border-brand-border rounded-xl focus:ring-2 focus:ring-brand-gold focus:border-brand-gold outline-none transition-all font-dm text-sm resize-none"
+                        placeholder="Tell us what's working and what's not..."
+                      ></textarea>
+                    </div>
+
+                    <button 
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full font-dm font-bold text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-xl hover:bg-brand-gold-light transition-all duration-300 flex items-center justify-center gap-3 disabled:opacity-70 shadow-lg mt-4"
+                    >
+                      {isSubmitting ? (
+                        <span className="w-6 h-6 border-2 border-brand-ink border-t-transparent rounded-full animate-spin"></span>
+                      ) : (
+                        <>Submit Request <FiArrowRight className="w-5 h-5" /></>
+                      )}
+                    </button>
+
+                    <div className="flex items-center justify-center gap-2 font-dm text-sm text-gray-500 mt-4">
+                      <FiShield className="w-4 h-4" /> No sales pressure
+                    </div>
+                  </form>
+                </>
+              )}
+            </div>
+
+            {/* Right Column: Calendly Inline Embed */}
+            <div className="bg-white p-8 sm:p-12 rounded-3xl border border-brand-border shadow-2xl h-full flex flex-col relative overflow-hidden">
+              <div className="text-center mb-6">
+                <h3 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3">Or, Schedule Directly</h3>
+                <p className="font-dm text-gray-600">Pick a time that works best for you on our calendar.</p>
+              </div>
+              <div className="flex-1 rounded-xl overflow-hidden bg-white w-full h-[650px] relative">
+                <iframe 
+                  src="https://calendly.com/bizboxstory/30min?embed_domain=bizboxstory.com&embed_type=Inline&hide_gdpr_banner=1" 
+                  width="100%" 
+                  height="100%" 
+                  frameBorder="0" 
+                  className="absolute inset-0"
+                ></iframe>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

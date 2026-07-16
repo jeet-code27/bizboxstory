@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Script from "next/script";
 import { motion } from "framer-motion";
 import {
   FiCheckCircle,
@@ -177,8 +178,28 @@ export default function FreeStrategyCallPage() {
               </div>
             ) : (
               <>
+                <div className="text-center mb-10 pb-10 border-b border-brand-border">
+                  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+                  <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+                  
+                  <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-3">Schedule Directly</h3>
+                  <p className="font-dm text-gray-500 mb-6">Pick a time on our calendar or fill in the form below.</p>
+                  
+                  <button 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      if ((window as any).Calendly) {
+                        (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});
+                      }
+                    }}
+                    className="inline-flex items-center justify-center font-dm font-bold text-lg px-10 py-4 bg-brand-blue-deep text-white rounded-xl hover:bg-brand-ink transition-all duration-300 shadow-xl"
+                  >
+                    Book Meeting with Calendly
+                  </button>
+                </div>
+
                 <div className="mb-8">
-                  <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep">Tell Us About Your Business</h3>
+                  <h3 className="font-fraunces text-xl font-bold text-brand-blue-deep">Or, Tell Us About Your Business</h3>
                   <p className="font-dm text-gray-500 mt-2">Fill out the form below so we can prepare data before we speak.</p>
                 </div>
 
@@ -279,20 +300,7 @@ export default function FreeStrategyCallPage() {
                   </p>
                 </form>
 
-                {/* 
-                  NOTE TO DEVELOPER: 
-                  If you want to embed Calendly instead of the custom form, you can delete the <form> 
-                  above and uncomment the embedded iframe code below!
-                  
-                   <div style={{ height: '700px' }}>
-                    <iframe 
-                      src="https://calendly.com/YOUR_CALENDLY_URL" 
-                      width="100%" 
-                      height="100%" 
-                      frameBorder="0"
-                    ></iframe>
-                  </div>
-                */}
+
               </>
             )}
             
