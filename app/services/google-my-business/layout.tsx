@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Google Business Profile Services | Boost Local Visibility",
   description: "Get found by more local customers with Google Business Profile services designed to improve rankings, visibility, and local leads.",
   keywords: ["Google Business Profile services", "local SEO", "Google My Business", "local visibility", "local search rankings"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/google-my-business",
   },

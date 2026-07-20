@@ -74,6 +74,8 @@ export async function generateMetadata({ params }) {
   return {
     title: cleanTitle,
     description: cleanDescription,
+    authors: [{ name: 'Shay Mehta', url: 'https://shaymehta.com' }],
+    publisher: 'BizBox Story',
     alternates: {
       canonical: canonicalUrl,
     },
@@ -93,6 +95,8 @@ export async function generateMetadata({ params }) {
       url: canonicalUrl,
       images: featuredImage ? [{ url: featuredImage }] : [],
       type: 'article',
+      authors: ['Shay Mehta'],
+      siteName: 'BizBox Story',
     },
   };
 }

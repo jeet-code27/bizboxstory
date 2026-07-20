@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Google & Facebook Ads Services | More Traffic & Leads",
   description: "Drive targeted traffic and quality leads with Google and Facebook Ads services built to increase conversions and grow your business.",
   keywords: ["Google Ads services", "Facebook Ads services", "paid ads", "PPC management", "lead generation ads"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/google-facebook-ads",
   },

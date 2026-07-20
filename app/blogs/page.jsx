@@ -7,8 +7,8 @@ export const metadata = {
   title: "Digital Marketing Blog | SEO Tips, Ads & Growth Insights",
   description: "Discover practical tips on SEO, content marketing, paid ads, and online growth to help your business attract more traffic and customers.",
   keywords: ["digital marketing blog", "SEO tips", "content marketing insights", "paid ads", "online growth"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/blogs",
   },

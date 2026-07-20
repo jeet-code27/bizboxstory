@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Social Media Management | Grow Your Brand Online",
   description: "Build a stronger online presence with social media management services focused on engagement, content strategy, and business growth.",
   keywords: ["social media management", "social media strategy", "brand engagement", "online presence", "social media marketing"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/social-media-management",
   },

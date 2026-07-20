@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Brand Strategy & Consulting | Build a Stronger Brand",
   description: "Strengthen your business with brand strategy and consulting services that build trust, improve positioning, and support long-term growth.",
   keywords: ["brand strategy consulting", "brand presence", "business positioning", "brand identity", "long-term growth strategy"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/brand-presence-consulting",
   },

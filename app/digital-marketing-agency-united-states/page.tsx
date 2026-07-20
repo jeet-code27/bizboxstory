@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "digital marketing Texas",
     "SEO company Florida"
   ],
-  authors: [{ name: "Shay Mehta" }],
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
   publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/digital-marketing-agency-united-states",

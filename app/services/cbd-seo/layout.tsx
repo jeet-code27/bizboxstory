@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "CBD SEO Services | Grow Your Cannabis Brand Online",
   description: "Help your cannabis or CBD business grow with expert CBD SEO services designed to improve Google rankings, increase traffic, and attract more customers.",
   keywords: ["CBD SEO services", "cannabis marketing", "marijuana SEO", "dispensary SEO", "CBD brand growth"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/cbd-seo",
   },

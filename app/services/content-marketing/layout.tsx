@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Content Marketing Services | Content That Drives Growth",
   description: "Grow your brand with content marketing services that improve SEO, engage your audience, and turn traffic into real business leads.",
   keywords: ["content marketing services", "content strategy", "audience engagement", "lead generation content"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/content-marketing",
   },

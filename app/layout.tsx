@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://bizboxstory.com"),
   title: "BizBox Story | AI-Powered Digital Marketing Agency",
   description: "Revenue-driven digital marketing agency helping SMEs scale with AI SEO, Content Marketing, Google Ads & Social Media. Serving US, UK, Australia & India.",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: '/',
     languages: {

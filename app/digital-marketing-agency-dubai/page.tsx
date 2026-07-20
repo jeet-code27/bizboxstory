@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     "SEO agency UAE",
     "social media agency Dubai"
   ],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/digital-marketing-agency-dubai",
   },

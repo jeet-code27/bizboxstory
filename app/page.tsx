@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "BizBox Story | Digital Marketing Agency for Business Growth",
   description: "BizBox Story is a digital marketing agency offering SEO, Google Ads, content marketing, and lead generation services to grow brands globally.",
   keywords: ["digital marketing agency", "SEO", "Google Ads", "content marketing", "lead generation", "business growth"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/",
   },

@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Digital Marketing Agency in the UK | BizBox Story",
   description: "Leading digital marketing agency in the United Kingdom. BizBox Story helps UK businesses grow with AI SEO, Google Ads, content marketing & lead generation.",
   keywords: ["digital marketing agency UK", "SEO United Kingdom", "Google Ads UK", "content marketing UK", "lead generation UK"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/uk",
   },

@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "Google Ads Canada", 
     "content marketing Canada"
   ],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/digital-marketing-agency-canada",
   },

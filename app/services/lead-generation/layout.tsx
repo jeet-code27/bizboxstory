@@ -5,8 +5,8 @@ export const metadata: Metadata = {
   title: "Lead Generation Services | Get More Leads & Grow Faster",
   description: "Grow your business with lead generation services that help attract quality leads, boost conversions, and turn more visitors into customers.",
   keywords: ["lead generation services", "B2B lead generation", "customer acquisition", "conversion rate optimization", "business growth"],
-  authors: [{ name: "shay mehta" }],
-  publisher: "shay mehta",
+  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+  publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/services/lead-generation",
   },
