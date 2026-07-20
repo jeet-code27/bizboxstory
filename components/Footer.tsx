@@ -22,7 +22,6 @@ const companyLinks = [
   { name: "Case Studies", href: "/case-studies" },
   { name: "Marketing Strategy", href: "/marketing-strategy" },
   { name: "Blog", href: "/blogs" },
-  { name: "SEO Blogs", href: "/blogs" },
   { name: "Jobs", href: "/careers" },
   { name: "Contact Us", href: "/contact" },
   { name: "FAQs", href: "/faqs" },

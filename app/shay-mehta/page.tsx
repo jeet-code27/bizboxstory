@@ -75,7 +75,7 @@ export default function ShayMehtaPage() {
               </h1>
               <div className="flex flex-wrap items-center gap-4">
                 <p className="text-brand-gold font-dm text-lg md:text-xl font-bold uppercase tracking-widest flex items-center gap-2">
-                  <FiBriefcase className="text-brand-gold" /> Founder &amp; CEO, BizBox Story
+                  <FiBriefcase className="text-brand-gold" /> Founder, CEO &amp; Author, BizBox Story
                 </p>
                 <span className="hidden md:block text-brand-border">|</span>
                 <p className="text-gray-500 font-dm text-base md:text-lg flex items-center gap-2">

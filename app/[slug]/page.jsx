@@ -173,7 +173,7 @@ export default async function SingleBlogPage({ params }) {
         <div className="mt-16 bg-white p-8 md:p-10 rounded-3xl border border-brand-border shadow-sm flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-1">
             <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-2">About Shay Mehta</h3>
-            <p className="text-brand-gold font-dm font-bold text-sm mb-6 uppercase tracking-wider">Founder &amp; CEO, BizBox Story</p>
+            <p className="text-brand-gold font-dm font-bold text-sm mb-6 uppercase tracking-wider">Founder, CEO &amp; Author, BizBox Story</p>
             
             <div className="space-y-4 text-gray-600 font-dm text-[15px] leading-relaxed">
               <p>
