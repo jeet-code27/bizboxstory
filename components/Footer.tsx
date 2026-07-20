@@ -18,6 +18,7 @@ const servicesLinks = [
 const companyLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
+  { name: "Founder Profile", href: "/shay-mehta" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Marketing Strategy", href: "/marketing-strategy" },
   { name: "Blog", href: "/blogs" },

@@ -106,7 +106,7 @@ export default async function SingleBlogPage({ params }) {
   }
 
   const featuredImage = getFeaturedImageUrl(post);
-  const authorName = post._embedded?.author?.[0]?.name || 'BizBox Story';
+  const authorName = 'Shay Mehta';
   const date = new Date(post.date).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
@@ -164,6 +164,45 @@ export default async function SingleBlogPage({ params }) {
           className="max-w-none text-gray-600 font-dm leading-relaxed text-lg [&_h2]:font-fraunces [&_h2]:text-3xl [&_h2]:font-bold [&_h2]:text-brand-blue-deep [&_h2]:mt-10 [&_h2]:mb-6 [&_h3]:font-fraunces [&_h3]:text-2xl [&_h3]:font-bold [&_h3]:text-brand-blue-deep [&_h3]:mt-8 [&_h3]:mb-4 [&_p]:mb-6 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:mb-6 [&_ol]:list-decimal [&_ol]:pl-6 [&_ol]:mb-6 [&_li]:mb-2 [&_a]:text-brand-gold hover:[&_a]:text-brand-gold-light [&_a]:underline [&_a]:transition-colors [&_a]:font-bold [&_blockquote]:border-l-4 [&_blockquote]:border-brand-gold [&_blockquote]:pl-6 [&_blockquote]:italic [&_blockquote]:my-8 [&_strong]:text-brand-ink [&_img]:rounded-2xl [&_img]:shadow-md [&_img]:my-8 [&_img]:w-full [&_img]:h-auto"
           dangerouslySetInnerHTML={{ __html: post.content.rendered }}
         />
+
+        {/* Author Bio Section */}
+        <div className="mt-16 bg-white p-8 md:p-10 rounded-3xl border border-brand-border shadow-sm flex flex-col md:flex-row gap-8 items-start">
+          <div className="flex-1">
+            <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-2">About Shay Mehta</h3>
+            <p className="text-brand-gold font-dm font-bold text-sm mb-6 uppercase tracking-wider">Founder &amp; CEO, BizBox Story</p>
+            
+            <div className="space-y-4 text-gray-600 font-dm text-[15px] leading-relaxed">
+              <p>
+                Shay Mehta is the Founder &amp; CEO of BizBox Story, a digital marketing agency built specifically for US businesses operating in restricted, underserved, and hard-to-market niches — cannabis dispensaries, pest control companies, chiropractic practices, and home services. Under Shay&apos;s leadership, BizBox Story&apos;s delivery team has taken clients from page three to page one of Google in as little as 60 days, and helped dispensary clients generate $45,000+ in monthly organic revenue with triple-digit traffic growth.
+              </p>
+              <p>
+                Shay&apos;s path into marketing runs through nearly two decades inside the US and Indian financial services industry. Having lived in the United States for 18 years and completed his education at the University of Massachusetts, Shay went on to hold senior leadership roles at two of the largest names in life insurance: serving as National Head at Max New York Life and later as Director at MetLife India. That career — built on disciplined strategy, large-scale client relationships, and navigating heavily regulated markets — gives Shay a rare vantage point on what it actually takes for a business to earn trust and visibility in the US, especially in categories where traditional advertising doors are closed.
+              </p>
+              <p>
+                Today, Shay channels that experience into building BizBox Story&apos;s proof-first, no-lock-in approach to SEO and digital marketing. Shay is also the voice behind <a href="https://www.instagram.com/sayitlikeshay" target="_blank" rel="noopener noreferrer" className="text-brand-gold hover:text-brand-gold-light font-bold underline transition-colors">@sayitlikeshay</a>, a rapidly growing Instagram account with 50,000+ followers and an exceptionally high engagement rate, where he shares direct, unfiltered takes on current affairs, marketing and sales.
+              </p>
+            </div>
+            
+            <div className="mt-8 flex flex-wrap items-center gap-4">
+              <a 
+                href="https://shaymehta.com/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-brand-blue-deep text-white font-dm font-bold text-sm rounded-full hover:bg-brand-blue transition-colors shadow-md hover:shadow-lg"
+              >
+                Visit ShayMehta.com
+              </a>
+              <a 
+                href="https://www.instagram.com/sayitlikeshay" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 bg-white text-brand-ink font-dm font-bold text-sm rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors shadow-sm"
+              >
+                Follow on Instagram
+              </a>
+            </div>
+          </div>
+        </div>
         
           </div>
 
