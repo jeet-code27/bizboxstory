@@ -6,7 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiCheckCircle, FiPlay } from "react-icons/fi";
 
-export default function VideoSection() {
+interface VideoSectionProps {
+  ctaHref?: string;
+  onCtaClick?: () => void;
+}
+
+export default function VideoSection({ ctaHref, onCtaClick }: VideoSectionProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [hasMounted, setHasMounted] = useState(false);
@@ -116,7 +121,7 @@ export default function VideoSection() {
 
             {/* Paragraph 2 */}
             <p className="font-dm text-white/70 text-base mt-4 leading-relaxed">
-              If you want to build your brand and reach more customers across India and globally, we&apos;re here to help!
+              If you want to build your brand and reach more customers across USA and globally, we&apos;re here to help!
             </p>
 
             {/* Bullet Points */}
@@ -142,12 +147,21 @@ export default function VideoSection() {
             </div>
 
             {/* CTA Button */}
-            <Link
-              href="/free-strategy-call"
-              className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-fit"
-            >
-              Book Your Free Strategy Call &rarr;
-            </Link>
+            {onCtaClick ? (
+              <button
+                onClick={onCtaClick}
+                className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-fit cursor-pointer"
+              >
+                Book Your Free Strategy Call &rarr;
+              </button>
+            ) : (
+              <Link
+                href={ctaHref || "/free-strategy-call"}
+                className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-fit"
+              >
+                Book Your Free Strategy Call &rarr;
+              </Link>
+            )}
 
             {/* Subtext */}
             <p className="font-dm text-xs text-white/50 mt-4 tracking-wide text-center sm:text-left">

@@ -1,9 +1,12 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function FloatingWhatsApp() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/us-ads")) return null;
   return (
     <div className="fixed bottom-6 xl:bottom-10 right-6 xl:right-10 z-[99] flex items-center group">
       

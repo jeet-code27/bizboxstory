@@ -24,7 +24,7 @@ export default function BedBugsBostonCaseStudy() {
   );
 }
 
-export function HiddenBedBugsBostonCaseStudy() {
+function HiddenBedBugsBostonCaseStudy() {
   return (
     <>
       {/* ── HERO SECTION ──────────────────────────────────────────────────*/}

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 import { FiMail, FiPhone } from "react-icons/fi";
 
@@ -20,6 +21,7 @@ const companyLinks = [
   { name: "About Us", href: "/about" },
   { name: "Founder Profile", href: "/shay-mehta" },
   { name: "Case Studies", href: "/case-studies" },
+  { name: "Client Reviews", href: "/reviews" },
   { name: "Marketing Strategy", href: "/marketing-strategy" },
   { name: "Blog", href: "/blogs" },
   { name: "Jobs", href: "/careers" },
@@ -37,6 +39,8 @@ const marketsLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname?.startsWith("/us-ads")) return null;
   return (
     <footer className="bg-[#080c18] pt-20 pb-10 border-t border-brand-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
