@@ -39,8 +39,6 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  if (pathname?.startsWith("/us-ads")) return null;
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -56,6 +54,8 @@ export default function Navbar() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  if (pathname?.startsWith("/us-ads")) return null;
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
