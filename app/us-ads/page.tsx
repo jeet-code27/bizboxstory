@@ -9,7 +9,6 @@ import AdsFooter from "@/components/AdsFooter";
 import ClientLogos from "@/components/ClientLogos";
 import USAdsCaseStudiesSlider from "@/components/USAdsCaseStudiesSlider";
 import VideoSection from "@/components/VideoSection";
-import MetaPixel from "@/components/MetaPixel";
 import { trackMetaEvent, trackCustomMetaEvent } from "@/lib/metaPixel";
 import { 
   FiCheckCircle, 
@@ -309,7 +308,6 @@ export default function USAdsPage() {
 
   return (
     <>
-      <MetaPixel />
       <AdsHeader />
 
       <main className="min-h-screen bg-brand-surface text-brand-ink font-dm">

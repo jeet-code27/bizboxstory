@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import MetaPixel from "@/components/MetaPixel";
 import { trackMetaEvent } from "@/lib/metaPixel";
 import { 
   FiCheckCircle, 
@@ -29,8 +28,6 @@ export default function ThankYouPage() {
 
   return (
     <>
-      <MetaPixel />
-
       <main className="min-h-screen bg-brand-surface text-brand-ink font-dm pt-12 pb-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           

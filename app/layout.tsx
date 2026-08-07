@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import NoScrollOnNav from "@/components/NoScrollOnNav";
+import MetaPixel from "@/components/MetaPixel";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -78,6 +79,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col text-brand-ink bg-brand-surface selection:bg-brand-gold selection:text-brand-ink overflow-x-hidden" suppressHydrationWarning>
+        <MetaPixel />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
