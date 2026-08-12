@@ -10,6 +10,7 @@ import ClientLogos from "@/components/ClientLogos";
 import USAdsCaseStudiesSlider from "@/components/USAdsCaseStudiesSlider";
 import VideoSection from "@/components/VideoSection";
 import MetaPixel from "@/components/MetaPixel";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { trackMetaEvent, trackCustomMetaEvent } from "@/lib/metaPixel";
 import { 
   FiCheckCircle, 
@@ -138,10 +139,10 @@ export default function USAdsPage() {
         // 3. Redirect to Thank You Page with Meeting Scheduler
         router.push("/thank-you");
       } else {
-        setLeadError("Form submission failed. Please try again or call us directly at +1-774-991-2610.");
+        setLeadError("Form submission failed. Please try again or chat with us on WhatsApp at +91 81309 72200.");
       }
     } catch (err) {
-      setLeadError("Something went wrong. Please try again or call us directly at +1-774-991-2610.");
+      setLeadError("Something went wrong. Please try again or chat with us on WhatsApp at +91 81309 72200.");
     } finally {
       setIsSubmittingLead(false);
     }
@@ -189,10 +190,10 @@ export default function USAdsPage() {
         // 3. Redirect to Thank You Page
         router.push("/thank-you");
       } else {
-        setContactError("Failed to send message. Please call us directly at +1-774-991-2610.");
+        setContactError("Failed to send message. Please chat with us on WhatsApp at +91 81309 72200.");
       }
     } catch (err) {
-      setContactError("Failed to send message. Please call us directly at +1-774-991-2610.");
+      setContactError("Failed to send message. Please chat with us on WhatsApp at +91 81309 72200.");
     } finally {
       setIsSubmittingContact(false);
     }
@@ -358,20 +359,23 @@ export default function USAdsPage() {
                 </div>
 
                 {/* Call to Action Buttons */}
-                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
                   <button
                     onClick={() => handleCtaClick("hero_primary")}
-                    className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_35px_rgba(255,182,5,0.35)] hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_35px_rgba(255,182,5,0.35)] hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer text-center"
                   >
                     Claim Free Growth Audit <FiArrowRight />
                   </button>
 
                   <a
-                    href="tel:+17749912610"
-                    onClick={() => handlePhoneClick("hero_phone")}
-                    className="w-full sm:w-auto font-dm font-semibold text-base px-6 py-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-2 text-white"
+                    href="https://wa.me/918130972200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handlePhoneClick("hero_whatsapp")}
+                    className="w-full sm:w-auto font-dm font-semibold text-sm sm:text-base px-5 sm:px-6 py-3.5 sm:py-4 border border-white/20 rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-2 text-white text-center"
                   >
-                    <FiPhone className="text-brand-gold" /> Speak to US Expert
+                    <WhatsAppIcon className="w-5 h-5 text-[#25D366] shrink-0" />
+                    <span>Chat on WhatsApp (+91 81309 72200)</span>
                   </a>
                 </div>
 
@@ -402,8 +406,8 @@ export default function USAdsPage() {
 
               </div>
 
-              {/* Right Column: Hero Quick Lead Box */}
-              <div className="lg:col-span-5">
+              {/* Right Column: Hero Quick Lead Box (Hidden on Mobile to prevent double-form redundancy, visible on Desktop) */}
+              <div className="lg:col-span-5 hidden lg:block">
                 <div className="bg-white text-brand-ink rounded-3xl p-6 sm:p-8 shadow-2xl border border-brand-border relative">
                   
                   <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-gold text-brand-ink text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-sm flex items-center gap-1.5">
@@ -504,11 +508,13 @@ export default function USAdsPage() {
                     Your request has been received. Our growth strategist will review your information and contact you within 24 hours.
                   </p>
                   <a
-                    href="tel:+17749912610"
-                    onClick={() => handlePhoneClick("form_success_phone")}
-                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-ink bg-brand-gold px-6 py-3 rounded-full hover:bg-brand-gold-light transition-colors mt-4"
+                    href="https://wa.me/918130972200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => handlePhoneClick("form_success_whatsapp")}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 font-dm font-bold text-sm sm:text-base text-brand-ink bg-brand-gold px-6 py-3.5 rounded-full hover:bg-brand-gold-light transition-colors mt-4 text-center"
                   >
-                    <FiPhone /> Need Immediate Answers? Call +1-774-991-2610
+                    <WhatsAppIcon className="w-5 h-5 text-[#25D366] shrink-0" /> Chat on WhatsApp (+91 81309 72200)
                   </a>
                 </div>
               ) : (
@@ -609,7 +615,7 @@ export default function USAdsPage() {
                     <button
                       type="submit"
                       disabled={isSubmittingLead}
-                      className="w-full font-dm font-bold text-lg py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.35)] cursor-pointer"
+                      className="w-full font-dm font-bold text-base sm:text-lg py-3.5 sm:py-4 px-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.35)] cursor-pointer text-center leading-snug"
                     >
                       {isSubmittingLead ? "Submitting Request..." : "Get My Free US Growth Strategy & Audit →"}
                     </button>
@@ -764,7 +770,7 @@ export default function USAdsPage() {
             <div className="text-center mt-12">
               <button
                 onClick={() => handleCtaClick("services_section")}
-                className="font-dm font-bold text-base sm:text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-md cursor-pointer"
+                className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-md cursor-pointer text-center"
               >
                 Discuss Your Custom Service Needs →
               </button>
@@ -801,17 +807,19 @@ export default function USAdsPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 bg-brand-gold/15 text-brand-gold rounded-full flex items-center justify-center flex-shrink-0 text-base">
-                      <FiPhone />
+                    <div className="w-10 h-10 bg-[#25D366]/15 text-[#25D366] rounded-full flex items-center justify-center flex-shrink-0 text-base">
+                      <WhatsAppIcon className="w-5 h-5" />
                     </div>
                     <div>
-                      <strong className="block text-brand-blue-deep font-bold text-base">Direct Phone Support</strong>
+                      <strong className="block text-brand-blue-deep font-bold text-base">WhatsApp Support</strong>
                       <a 
-                        href="tel:+17749912610" 
-                        onClick={() => handlePhoneClick("contact_section_phone")}
-                        className="text-brand-gold font-bold hover:underline"
+                        href="https://wa.me/918130972200" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => handlePhoneClick("contact_section_whatsapp")}
+                        className="text-[#25D366] font-bold hover:underline"
                       >
-                        +1-774-991-2610
+                        +91 81309 72200
                       </a>
                     </div>
                   </div>
@@ -951,7 +959,7 @@ export default function USAdsPage() {
             </p>
             <button
               onClick={() => handleCtaClick("bottom_cta")}
-              className="font-dm font-bold text-base sm:text-lg px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.35)] cursor-pointer"
+              className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.35)] cursor-pointer text-center"
             >
               Get Free Growth Audit Now &rarr;
             </button>

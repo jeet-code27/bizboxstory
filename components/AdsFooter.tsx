@@ -2,12 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
+import { FiMail, FiMapPin } from "react-icons/fi";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { trackCustomMetaEvent } from "@/lib/metaPixel";
 
 export default function AdsFooter() {
   const handlePhoneClick = () => {
-    trackCustomMetaEvent("Phone_Click", { source: "ads_footer_phone" });
+    trackCustomMetaEvent("Phone_Click", { source: "ads_footer_whatsapp" });
   };
 
   return (
@@ -42,11 +43,13 @@ export default function AdsFooter() {
 
             <div className="flex flex-col gap-1.5 border-t sm:border-t-0 sm:border-l border-white/10 pt-4 sm:pt-0 sm:pl-6">
               <a 
-                href="tel:+17749912610" 
+                href="https://wa.me/918130972200" 
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={handlePhoneClick}
-                className="hover:text-brand-gold transition-colors flex items-center gap-2"
+                className="hover:text-[#25D366] transition-colors flex items-center gap-2"
               >
-                <FiPhone className="text-brand-gold" /> +1-774-991-2610
+                <WhatsAppIcon className="w-4 h-4 text-[#25D366]" /> +91 81309 72200
               </a>
               <a href="mailto:info@bizboxstory.com" className="hover:text-brand-gold transition-colors flex items-center gap-2">
                 <FiMail className="text-brand-gold" /> info@bizboxstory.com

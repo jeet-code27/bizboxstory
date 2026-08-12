@@ -150,14 +150,14 @@ export default function VideoSection({ ctaHref, onCtaClick }: VideoSectionProps)
             {onCtaClick ? (
               <button
                 onClick={onCtaClick}
-                className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-fit cursor-pointer"
+                className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-full sm:w-fit cursor-pointer text-center"
               >
                 Book Your Free Strategy Call &rarr;
               </button>
             ) : (
               <Link
                 href={ctaHref || "/free-strategy-call"}
-                className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold px-8 py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-fit"
+                className="mt-10 inline-flex items-center justify-center bg-brand-gold text-brand-ink font-dm font-bold text-sm sm:text-base px-6 sm:px-8 py-3.5 sm:py-4 rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-[2px] shadow-[0_10px_20px_rgba(255,182,5,0.3)] w-full sm:w-fit text-center"
               >
                 Book Your Free Strategy Call &rarr;
               </Link>

@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaPhone } from "react-icons/fa";
+import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { trackMetaEvent, trackCustomMetaEvent } from "@/lib/metaPixel";
 
 export default function AdsHeader() {
   const handlePhoneClick = () => {
-    trackCustomMetaEvent("Phone_Click", { source: "ads_header_phone" });
+    trackCustomMetaEvent("Phone_Click", { source: "ads_header_whatsapp" });
   };
 
   const handleCtaClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -41,20 +41,22 @@ export default function AdsHeader() {
           </Link>
         </div>
 
-        {/* Right Actions: USA Phone Icon & Compact CTA Button */}
+        {/* Right Actions: WhatsApp Icon & Compact CTA Button */}
         <div className="flex items-center gap-2 sm:gap-4">
           
-          {/* Direct USA Phone Call - Icon on Mobile, Full Number on Desktop */}
+          {/* Direct WhatsApp Chat */}
           <a
-            href="tel:+17749912610"
+            href="https://wa.me/918130972200"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={handlePhoneClick}
-            aria-label="Call USA Support +1-774-991-2610"
-            className="flex items-center gap-2 font-dm text-xs sm:text-sm font-bold text-brand-ink hover:text-brand-blue-deep transition-colors"
+            aria-label="Chat on WhatsApp +91 81309 72200"
+            className="flex items-center gap-2 font-dm text-xs sm:text-sm font-bold text-brand-ink hover:text-[#25D366] transition-colors"
           >
-            <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-brand-gold/15 text-brand-ink flex items-center justify-center flex-shrink-0 hover:bg-brand-gold/30 transition-colors">
-              <FaPhone className="w-3.5 h-3.5 scale-x-[-1]" />
+            <span className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#25D366]/15 text-[#25D366] flex items-center justify-center flex-shrink-0 hover:bg-[#25D366]/30 transition-colors">
+              <WhatsAppIcon className="w-4 h-4" />
             </span>
-            <span className="hidden md:inline font-dm whitespace-nowrap">+1-774-991-2610</span>
+            <span className="hidden md:inline font-dm whitespace-nowrap">+91 81309 72200</span>
           </a>
 
           {/* Primary High-Converting CTA Button */}
