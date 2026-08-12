@@ -14,6 +14,7 @@ const clients = [
   { name: "Saankanvali", logo: "/images/clients/saankanvali.webp" },
   { name: "Pest Control Boston", logo: "/images/clients/pest-control-boston.png" },
   { name: "Bed Bug Boston", logo: "/images/clients/bed-bug-boston-logo.jpg" },
+  { name: "Enterprise Cleaning Corp", logo: "/images/case-studies/ecc-new-logo.webp" },
   { name: "Plugd", logo: "/images/clients/plugd-logo.png" },
   { name: "District Cure", logo: "/images/clients/district-cure.png" },
   { name: "Torch", logo: "/images/clients/torch.svg" },

@@ -7,7 +7,7 @@ import { FiArrowRight, FiTrendingUp } from "react-icons/fi";
 export default function CaseStudiesPage() {
   return (
     <>
-      {/* â”€â”€ HERO SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/}
+      {/* —————————————————————————————————————————————————————————————————————— HERO SECTION ——————————————————————————————————————————————————————————————————————*/}
       <section
         className="relative pt-32 pb-24 flex items-center justify-center overflow-hidden bg-brand-surface min-h-[60vh]"
       >
@@ -34,7 +34,7 @@ export default function CaseStudiesPage() {
         </div>
       </section>
 
-      {/* â”€â”€ US CLIENTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€*/}
+      {/* US CLIENTS */}
       <section className="pb-16 bg-brand-surface relative z-10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -50,7 +50,7 @@ export default function CaseStudiesPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            {/* Bed Bugs Boston - Temporarily Hidden
+            {/* Bed Bugs Boston */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -101,7 +101,58 @@ export default function CaseStudiesPage() {
                 </div>
               </div>
             </motion.div>
-            */}
+
+            {/* Enterprise Cleaning Corp */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white rounded-3xl border border-brand-border overflow-hidden group flex flex-col"
+              style={{ boxShadow: "0 10px 40px rgba(0,0,0,0.03)" }}
+            >
+              <div className="h-64 sm:h-72 w-full relative overflow-hidden bg-brand-ink/5 flex items-center justify-center p-6">
+                <img
+                  src="/images/case-studies/ecc-new-logo.webp"
+                  alt="Enterprise Cleaning Corp Case Study"
+                  className="max-h-48 max-w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Local SEO
+                  </span>
+                  <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-brand-blue-deep text-xs font-bold rounded-full uppercase tracking-wider font-dm">
+                    Commercial Cleaning
+                  </span>
+                </div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <h2 className="font-fraunces text-3xl font-bold text-brand-blue-deep mb-3 group-hover:text-brand-gold transition-colors duration-300">
+                  Enterprise Cleaning Corp
+                </h2>
+                <p className="font-dm text-gray-500 mb-6 line-clamp-3">
+                  How we helped Enterprise Cleaning Corp strengthen its local online presence and attract more qualified commercial cleaning enquiries across Central MA, RI &amp; NH.
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">+185%</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Lead Growth</p>
+                  </div>
+                  <div className="bg-brand-surface/50 p-4 rounded-2xl border border-brand-border/50">
+                    <p className="font-dm text-brand-gold font-bold text-2xl">Top 3</p>
+                    <p className="font-dm text-xs text-gray-500 uppercase tracking-widest mt-1">Map Rankings</p>
+                  </div>
+                </div>
+                <div className="mt-auto">
+                  <Link
+                    href="/case-studies/enterprise-cleaning-corp"
+                    className="inline-flex items-center gap-2 font-dm font-bold text-brand-blue-deep hover:text-brand-gold transition-colors duration-300 group/link"
+                  >
+                    Read Full Story
+                    <FiArrowRight className="transition-transform duration-300 group-hover/link:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
 
             {/* Torch Cannabis */}
             <motion.div

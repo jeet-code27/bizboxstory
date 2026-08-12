@@ -201,7 +201,7 @@ export default function USAdsPage() {
 
   const handleCtaClick = (source: string) => {
     trackMetaEvent("LeadCTA_Click", { source });
-    const target = document.getElementById("lead-form");
+    const target = document.getElementById("book-call");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
@@ -331,30 +331,37 @@ export default function USAdsPage() {
                 </span>
 
                 <h1 className="font-fraunces text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-white mb-6">
-                  Scale Your Business in the USA with <span className="text-brand-gold italic">AI SEO &amp; High-ROI Ads</span>
+                  Grow Your Business <span className="text-brand-gold italic">Faster</span>
                 </h1>
 
-                <p className="font-dm text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-8">
-                  Stop burning ad budget on low-converting clicks. We build revenue-generating growth engines that deliver consistent, highly-qualified US leads within 30 days.
+                <p className="font-dm text-base sm:text-lg lg:text-xl text-gray-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed mb-6">
+                  Stop burning ad dollars on marketing that doesn’t pay you back. At BizBox Story, we run Google Ads, Meta Ads, SEO &amp; conversion marketing that actually brings in qualified leads and revenue.
                 </p>
 
+                {/* Founder Authority Highlight */}
+                <div className="mb-6 p-4 sm:p-5 rounded-2xl bg-brand-gold/10 border border-brand-gold/30 text-left max-w-2xl mx-auto lg:mx-0">
+                  <p className="font-dm text-sm sm:text-base text-gray-100 font-medium leading-relaxed">
+                    <strong className="text-brand-gold font-bold">Why Us?</strong> Our founder lived in the US for 18 years and ran a business there. We get the US market, the competition, and what actually converts.
+                  </p>
+                </div>
+
                 {/* Key Benefit Bullets */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10 text-left max-w-xl mx-auto lg:mx-0 font-dm text-sm sm:text-base text-gray-200">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-left max-w-xl mx-auto lg:mx-0 font-dm text-sm sm:text-base text-gray-200">
                   <div className="flex items-center gap-2.5">
                     <FiCheckCircle className="text-brand-gold text-lg flex-shrink-0" />
-                    <span>Guaranteed High-Intent US Leads</span>
+                    <span>More Qualified Leads</span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <FiCheckCircle className="text-brand-gold text-lg flex-shrink-0" />
-                    <span>50+ SMEs Scaled Globally</span>
+                    <span>Better ROI</span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <FiCheckCircle className="text-brand-gold text-lg flex-shrink-0" />
-                    <span>No Long-Term Contracts Required</span>
+                    <span>Transparent Reporting</span>
                   </div>
                   <div className="flex items-center gap-2.5">
                     <FiCheckCircle className="text-brand-gold text-lg flex-shrink-0" />
-                    <span>Transparent Reporting &amp; Support</span>
+                    <span>Custom Growth Strategy</span>
                   </div>
                 </div>
 
@@ -364,7 +371,7 @@ export default function USAdsPage() {
                     onClick={() => handleCtaClick("hero_primary")}
                     className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_35px_rgba(255,182,5,0.35)] hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer text-center"
                   >
-                    Claim Free Growth Audit <FiArrowRight />
+                    Book Your Free 30-Min Call <FiArrowRight />
                   </button>
 
                   <a
@@ -379,8 +386,12 @@ export default function USAdsPage() {
                   </a>
                 </div>
 
+                <p className="font-dm text-xs text-gray-400 text-center lg:text-left mt-4">
+                  Free 30-min growth strategy for your business. Founder with 18 years US experience.
+                </p>
+
                 {/* Trust Badges - Real Stats */}
-                <div className="mt-12 pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center sm:text-left">
+                <div className="mt-10 pt-8 border-t border-white/10 grid grid-cols-3 gap-4 text-center sm:text-left">
                   <div>
                     <div className="flex items-center justify-center sm:justify-start text-brand-gold gap-1 mb-1">
                       <FiStar className="fill-current text-xs" />
@@ -406,70 +417,29 @@ export default function USAdsPage() {
 
               </div>
 
-              {/* Right Column: Hero Quick Lead Box (Hidden on Mobile to prevent double-form redundancy, visible on Desktop) */}
-              <div className="lg:col-span-5 hidden lg:block">
-                <div className="bg-white text-brand-ink rounded-3xl p-6 sm:p-8 shadow-2xl border border-brand-border relative">
-                  
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-gold text-brand-ink text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow-sm flex items-center gap-1.5">
-                    <FiAward className="text-sm" /> ⚡ 5 Free Audits Remaining
+              {/* Right Column: Founder Reel Video (Instagram Embed) */}
+              <div className="lg:col-span-5 flex justify-center">
+                <div className="w-full max-w-[340px] xs:max-w-[360px] sm:max-w-[380px] bg-white/5 border border-white/10 rounded-3xl p-3.5 sm:p-4 shadow-2xl backdrop-blur-md relative">
+                  <div className="flex items-center justify-between mb-3 px-1">
+                    <div className="flex items-center gap-1.5">
+                      <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                      <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                      <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                    </div>
+                    <span className="font-dm text-xs font-bold text-brand-gold tracking-wide">Shay Mehta · Founder</span>
                   </div>
-
-                  <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep text-center mt-2 mb-2">
-                    Get Your Custom US Growth Plan
-                  </h3>
-                  <p className="font-dm text-xs sm:text-sm text-gray-500 text-center mb-6">
-                    Audit includes competitor gap analysis, keyword roadmap &amp; ad ROI calculation.
+                  <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden bg-black shadow-inner">
+                    <iframe
+                      src="https://www.instagram.com/reel/Dbam-AdlUuY/embed"
+                      className="w-full h-full border-0 rounded-2xl"
+                      allowTransparency={true}
+                      scrolling="no"
+                      title="Shay Mehta Founder Instagram Reel"
+                    />
+                  </div>
+                  <p className="font-dm text-xs text-gray-300 text-center mt-3 leading-relaxed">
+                    🎬 Watch how we scale US businesses with proven ad &amp; SEO systems.
                   </p>
-
-                  <form onSubmit={handleLeadSubmit} className="space-y-4">
-                    <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Full Name *</label>
-                      <input
-                        type="text"
-                        required
-                        placeholder="John Smith"
-                        value={leadFormData.fullName}
-                        onChange={(e) => setLeadFormData({ ...leadFormData, fullName: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none font-dm text-sm text-gray-800"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Business Email *</label>
-                      <input
-                        type="email"
-                        required
-                        placeholder="john@yourcompany.com"
-                        value={leadFormData.email}
-                        onChange={(e) => setLeadFormData({ ...leadFormData, email: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none font-dm text-sm text-gray-800"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Phone Number (US) *</label>
-                      <input
-                        type="tel"
-                        required
-                        placeholder="+1 (555) 000-0000"
-                        value={leadFormData.phone}
-                        onChange={(e) => setLeadFormData({ ...leadFormData, phone: e.target.value })}
-                        className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-brand-gold focus:ring-2 focus:ring-brand-gold/20 outline-none font-dm text-sm text-gray-800"
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      disabled={isSubmittingLead}
-                      className="w-full font-dm font-bold text-base py-4 bg-brand-gold text-brand-ink rounded-xl hover:bg-brand-gold-light transition-all shadow-[0_8px_25px_rgba(255,182,5,0.35)] cursor-pointer mt-2"
-                    >
-                      {isSubmittingLead ? "Generating Audit..." : "Claim Free Audit Now →"}
-                    </button>
-
-                    <p className="text-[11px] text-gray-400 text-center flex items-center justify-center gap-1 mt-2">
-                      <FiLock className="text-xs" /> 100% Confidential. No Spam Guaranteed.
-                    </p>
-                  </form>
                 </div>
               </div>
 
@@ -479,6 +449,36 @@ export default function USAdsPage() {
 
         {/* ── CLIENT BRANDS MARQUEE ────────────────────────────────────────── */}
         <ClientLogos />
+
+        {/* ── 2. CALENDLY STRATEGY CALL BOOKING SECTION ───────────────────── */}
+        <section id="book-call" className="py-20 bg-brand-surface border-b border-brand-border">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span className="font-dm text-brand-gold text-xs sm:text-sm uppercase tracking-widest font-bold px-4 py-1.5 border border-brand-gold/30 rounded-full bg-brand-gold/10">
+              Limited Availability
+            </span>
+            <h2 className="font-fraunces text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-blue-deep mt-4">
+              Book Your FREE 30-Minute <span className="text-brand-gold italic">Growth Strategy Call</span>
+            </h2>
+            <p className="font-dm text-gray-600 max-w-xl mx-auto text-base sm:text-lg mt-3 mb-8">
+              Select a date &amp; time below to speak directly with our team. Free 30-minute session. Founder with 18 years US experience.
+            </p>
+
+            <div className="bg-white rounded-3xl border border-brand-border p-2 sm:p-4 shadow-xl overflow-hidden">
+              <iframe
+                src="https://calendly.com/bizboxstory/30min?embed_domain=bizboxstory.com&embed_type=Inline&hide_gdpr_banner=1"
+                width="100%"
+                height="650"
+                frameBorder="0"
+                title="Schedule a 30-Minute Strategy Call with BizBox Story"
+                className="w-full h-[600px] sm:h-[680px] rounded-2xl"
+              />
+            </div>
+
+            <p className="font-dm text-xs text-gray-500 mt-4 flex items-center justify-center gap-1">
+              <FiLock className="text-xs text-brand-gold" /> 100% Confidential. Directly with our Founder &amp; Growth Specialists.
+            </p>
+          </div>
+        </section>
 
         {/* ── 2. MAIN LEAD CAPTURE FORM SECTION ─────────────────────────── */}
         <section id="lead-form" ref={leadFormRef} className="py-20 bg-brand-surface border-b border-brand-border">
@@ -772,7 +772,7 @@ export default function USAdsPage() {
                 onClick={() => handleCtaClick("services_section")}
                 className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-md cursor-pointer text-center"
               >
-                Discuss Your Custom Service Needs →
+                Book Free 30-Min Strategy Call →
               </button>
             </div>
 
@@ -961,7 +961,7 @@ export default function USAdsPage() {
               onClick={() => handleCtaClick("bottom_cta")}
               className="w-full sm:w-auto font-dm font-bold text-base sm:text-lg px-6 sm:px-8 py-3.5 sm:py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_10px_30px_rgba(255,182,5,0.35)] cursor-pointer text-center"
             >
-              Get Free Growth Audit Now &rarr;
+              Book Your Free 30-Min Strategy Call &rarr;
             </button>
           </div>
         </section>

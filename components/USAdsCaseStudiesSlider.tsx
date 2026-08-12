@@ -6,6 +6,19 @@ import { FiChevronLeft, FiChevronRight, FiCheckCircle, FiArrowRight } from "reac
 
 const usCaseStudies = [
   {
+    title: "Enterprise Cleaning Corp",
+    subtitle: "Commercial Cleaning & Janitorial",
+    location: "🇺🇸 Massachusetts, USA",
+    logo: "/images/case-studies/ecc-new-logo.webp",
+    image: "/images/case-studies/ecc-new-logo.webp",
+    desc: "Strengthened local digital presence across Central MA, RI & Southern NH, driving qualified commercial inquiries from hotels, hospitals & warehouses.",
+    metrics: [
+      { value: "+185%", label: "Local Enquiries" },
+      { value: "Top-3", label: "Map Rankings" }
+    ],
+    tag: "Local Commercial SEO"
+  },
+  {
     title: "Torch Cannabis",
     subtitle: "Cannabis Dispensary & Retail",
     location: "🇺🇸 Massachusetts, USA",
@@ -183,19 +196,19 @@ export default function USAdsCaseStudiesSlider() {
                 className="flex-[0_0_100%] md:flex-[0_0_50%] lg:flex-[0_0_33.333333%] min-w-0 pl-4 sm:pl-6"
                 key={idx}
               >
-                <div className="bg-brand-surface rounded-3xl border border-brand-border p-7 h-full flex flex-col justify-between hover:border-brand-gold/50 transition-all duration-300 shadow-sm group">
+                <div className="bg-brand-surface rounded-3xl border border-brand-border p-5 sm:p-7 h-full flex flex-col justify-between hover:border-brand-gold/50 transition-all duration-300 shadow-sm group">
                   
                   <div>
                     {/* Header: Brand Logo & Location */}
-                    <div className="flex items-center justify-between gap-4 pb-5 border-b border-brand-border/60 mb-5">
-                      <div className="h-16 sm:h-20 w-40 sm:w-44 bg-white border border-brand-border/70 rounded-xl px-4 py-2.5 flex items-center justify-center shrink-0 shadow-xs">
+                    <div className="flex items-center justify-between gap-2 sm:gap-4 pb-4 sm:pb-5 border-b border-brand-border/60 mb-5">
+                      <div className="h-12 xs:h-14 sm:h-16 w-28 xs:w-32 sm:w-36 bg-white border border-brand-border/70 rounded-xl px-3 sm:px-4 py-2 flex items-center justify-center shrink-0 shadow-xs">
                         <img
                           src={study.logo}
                           alt={`${study.title} logo`}
-                          className="max-h-12 sm:max-h-16 max-w-full object-contain"
+                          className="max-h-8 xs:max-h-10 sm:max-h-12 max-w-full object-contain"
                         />
                       </div>
-                      <span className="font-dm text-xs font-semibold px-3 py-1 bg-white rounded-full border border-brand-border/80 text-gray-700 shrink-0">
+                      <span className="font-dm text-[11px] sm:text-xs font-semibold px-2.5 sm:px-3 py-1 bg-white rounded-full border border-brand-border/80 text-gray-700 whitespace-nowrap overflow-hidden text-ellipsis">
                         {study.location}
                       </span>
                     </div>

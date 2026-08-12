@@ -13,7 +13,7 @@ export default function AdsHeader() {
   const handleCtaClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     trackMetaEvent("LeadCTA_Click", { source: "ads_header_cta" });
-    const target = document.getElementById("lead-form");
+    const target = document.getElementById("book-call");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }
@@ -61,12 +61,12 @@ export default function AdsHeader() {
 
           {/* Primary High-Converting CTA Button */}
           <a
-            href="#lead-form"
+            href="#book-call"
             onClick={handleCtaClick}
             className="font-dm text-xs sm:text-sm font-bold tracking-tight sm:tracking-wide px-3 sm:px-6 py-2 sm:py-2.5 bg-brand-gold text-brand-ink rounded-full transition-all duration-300 hover:bg-brand-gold-light hover:-translate-y-0.5 shadow-[0_4px_15px_rgba(255,182,5,0.35)] whitespace-nowrap shrink-0"
           >
-            <span className="xs:hidden">Audit &rarr;</span>
-            <span className="hidden xs:inline">Get Free Audit &rarr;</span>
+            <span className="xs:hidden">Book Call &rarr;</span>
+            <span className="hidden xs:inline">Book Free Call &rarr;</span>
           </a>
         </div>
 
