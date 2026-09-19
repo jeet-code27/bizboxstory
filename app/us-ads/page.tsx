@@ -463,6 +463,36 @@ export default function USAdsPage() {
               Select a date &amp; time below to speak directly with our team. Free 30-minute session. Founder with 18 years US experience.
             </p>
 
+            {/* Banner Image linked to Calendly */}
+            <div className="mb-10 max-w-3xl mx-auto">
+              <a
+                href="https://calendly.com/bizboxstory/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block relative overflow-hidden rounded-3xl border border-brand-border hover:border-brand-gold shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer bg-[#0e1017]"
+                title="Book Free 30-Minute Consultation on Calendly"
+              >
+                <Image
+                  src="/images/free-30-min-consultation.jpg"
+                  alt="Book Your Free 30-Minute Growth Strategy Call"
+                  width={1448}
+                  height={1086}
+                  className="w-full h-auto object-contain block transition-transform duration-500 group-hover:scale-[1.01]"
+                  priority
+                />
+              </a>
+              <div className="mt-4">
+                <a
+                  href="https://calendly.com/bizboxstory/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 font-dm font-bold text-sm sm:text-base px-6 py-3 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-md hover:shadow-lg cursor-pointer"
+                >
+                  📅 Open Calendly in Full Screen &rarr;
+                </a>
+              </div>
+            </div>
+
             <div className="bg-white rounded-3xl border border-brand-border p-2 sm:p-4 shadow-xl overflow-hidden">
               <iframe
                 src="https://calendly.com/bizboxstory/30min?embed_domain=bizboxstory.com&embed_type=Inline&hide_gdpr_banner=1"

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Script from "next/script";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   FiCheckCircle,
@@ -182,20 +183,46 @@ export default function FreeStrategyCallPage() {
                   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
                   <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
                   
-                  <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-3">Schedule Directly</h3>
-                  <p className="font-dm text-gray-500 mb-6">Pick a time on our calendar or fill in the form below.</p>
-                  
-                  <button 
+                  <h3 className="font-fraunces text-2xl font-bold text-brand-blue-deep mb-2">Schedule Directly</h3>
+                  <p className="font-dm text-gray-500 mb-6">Click below to pick a date &amp; time on our calendar, or fill in the details below:</p>
+
+                  <a
+                    href="https://calendly.com/bizboxstory/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={(e) => {
-                      e.preventDefault();
                       if ((window as any).Calendly) {
+                        e.preventDefault();
                         (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});
                       }
                     }}
-                    className="inline-flex items-center justify-center font-dm font-bold text-lg px-10 py-4 bg-brand-blue-deep text-white rounded-xl hover:bg-brand-ink transition-all duration-300 shadow-xl"
+                    className="group block relative overflow-hidden rounded-2xl border border-brand-border hover:border-brand-gold shadow-lg hover:shadow-2xl transition-all duration-300 mb-6 cursor-pointer bg-[#0e1017]"
+                    title="Book Free 30-Minute Consultation on Calendly"
                   >
-                    Book Meeting with Calendly
-                  </button>
+                    <Image
+                      src="/images/free-30-min-consultation.jpg"
+                      alt="Free 30-Minute Consultation - Complete Digital Presence Review"
+                      width={1448}
+                      height={1086}
+                      className="w-full h-auto object-contain block transition-transform duration-500 group-hover:scale-[1.01]"
+                      priority
+                    />
+                  </a>
+                  
+                  <a 
+                    href="https://calendly.com/bizboxstory/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => {
+                      if ((window as any).Calendly) {
+                        e.preventDefault();
+                        (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});
+                      }
+                    }}
+                    className="inline-flex items-center justify-center gap-2 font-dm font-bold text-lg px-10 py-4 bg-brand-gold text-brand-ink rounded-xl hover:bg-brand-gold-light transition-all duration-300 shadow-xl w-full sm:w-auto cursor-pointer"
+                  >
+                    📅 Book Meeting with Calendly &rarr;
+                  </a>
                 </div>
 
                 <div className="mb-8">
