@@ -24,6 +24,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect } from "react";
 import Script from "next/script";
 import Image from "next/image";
+import { trackMetaEvent } from "@/lib/metaPixel";
 
 /* ── Testimonials Data ─────────────────────────────────────────── */
 const testimonials = [
@@ -228,6 +229,10 @@ export default function ContactPage() {
       const result = await response.json();
       if (result.success) {
         setSubmitted(true);
+        trackMetaEvent("Contact", {
+          content_name: "Contact Us Page Inquiry",
+          business: formState.business || "General",
+        });
       } else {
         console.error("Form submission failed", result);
         alert("Something went wrong. Please try again.");
@@ -476,6 +481,7 @@ export default function ContactPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => {
+                        trackMetaEvent("Schedule", { content_name: "Contact Page Calendly Banner Click" });
                         if ((window as any).Calendly) {
                           e.preventDefault();
                           (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});
@@ -499,6 +505,7 @@ export default function ContactPage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => {
+                        trackMetaEvent("Schedule", { content_name: "Contact Page Calendly Button Click" });
                         if ((window as any).Calendly) {
                           e.preventDefault();
                           (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});

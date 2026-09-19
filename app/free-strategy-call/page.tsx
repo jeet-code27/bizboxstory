@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Script from "next/script";
 import Image from "next/image";
+import { trackMetaEvent } from "@/lib/metaPixel";
 import { motion } from "framer-motion";
 import {
   FiCheckCircle,
@@ -34,6 +35,9 @@ export default function FreeStrategyCallPage() {
       const result = await response.json();
       if (result.success) {
         setIsSubmitted(true);
+        trackMetaEvent("Lead", {
+          content_name: "Free Strategy Call Lead Form",
+        });
       } else {
         console.error("Form submission failed", result);
         alert("Something went wrong. Please try again.");
@@ -191,6 +195,7 @@ export default function FreeStrategyCallPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => {
+                      trackMetaEvent("Schedule", { content_name: "Strategy Call Calendly Banner Click" });
                       if ((window as any).Calendly) {
                         e.preventDefault();
                         (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});
@@ -214,6 +219,7 @@ export default function FreeStrategyCallPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => {
+                      trackMetaEvent("Schedule", { content_name: "Strategy Call Calendly Button Click" });
                       if ((window as any).Calendly) {
                         e.preventDefault();
                         (window as any).Calendly.initPopupWidget({url: 'https://calendly.com/bizboxstory/30min'});

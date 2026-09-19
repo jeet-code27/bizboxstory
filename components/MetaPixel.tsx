@@ -1,13 +1,30 @@
 "use client";
 
 import Script from "next/script";
-import { FB_PIXEL_ID } from "@/lib/metaPixel";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
+import { FB_PIXEL_ID, trackMetaEvent } from "@/lib/metaPixel";
 
 export default function MetaPixel() {
+  const pathname = usePathname();
+  const isFirstRender = useRef(true);
+
+  useEffect(() => {
+    // Avoid duplicate PageView on first load since the inline base script already tracks it
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    // Track PageView on Next.js client-side route transitions
+    if (pathname) {
+      trackMetaEvent("PageView");
+    }
+  }, [pathname]);
+
   return (
     <>
       <Script
-        id="fb-pixel"
+        id="meta-pixel-base"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: `
@@ -17,7 +34,7 @@ export default function MetaPixel() {
             if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
             n.queue=[];t=b.createElement(e);t.async=!0;
             t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            s.parentNode.insertBefore(t,s)}(window,document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '${FB_PIXEL_ID}');
             fbq('track', 'PageView');
@@ -36,3 +53,4 @@ export default function MetaPixel() {
     </>
   );
 }
+

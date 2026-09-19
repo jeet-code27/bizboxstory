@@ -9,7 +9,6 @@ import AdsFooter from "@/components/AdsFooter";
 import ClientLogos from "@/components/ClientLogos";
 import USAdsCaseStudiesSlider from "@/components/USAdsCaseStudiesSlider";
 import VideoSection from "@/components/VideoSection";
-import MetaPixel from "@/components/MetaPixel";
 import WhatsAppIcon from "@/components/WhatsAppIcon";
 import { trackMetaEvent, trackCustomMetaEvent } from "@/lib/metaPixel";
 import { 
@@ -310,7 +309,6 @@ export default function USAdsPage() {
 
   return (
     <>
-      <MetaPixel />
       <AdsHeader />
 
       <main className="min-h-screen bg-brand-surface text-brand-ink font-dm">
@@ -469,6 +467,7 @@ export default function USAdsPage() {
                 href="https://calendly.com/bizboxstory/30min"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackMetaEvent("Schedule", { content_name: "US Ads Calendly Banner Click" })}
                 className="group block relative overflow-hidden rounded-3xl border border-brand-border hover:border-brand-gold shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer bg-[#0e1017]"
                 title="Book Free 30-Minute Consultation on Calendly"
               >
@@ -486,6 +485,7 @@ export default function USAdsPage() {
                   href="https://calendly.com/bizboxstory/30min"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackMetaEvent("Schedule", { content_name: "US Ads Calendly Button Click" })}
                   className="inline-flex items-center justify-center gap-2 font-dm font-bold text-sm sm:text-base px-6 py-3 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-md hover:shadow-lg cursor-pointer"
                 >
                   📅 Open Calendly in Full Screen &rarr;
