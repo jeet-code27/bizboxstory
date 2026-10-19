@@ -62,14 +62,29 @@ export default function About() {
               </p>
             </div>
 
-            {/* CTA Link */}
-            <Link
-              href="/about"
-              className="mt-10 inline-flex items-center gap-2 text-brand-gold font-dm text-lg hover:text-brand-gold-light transition-all duration-300 w-fit font-semibold group"
-            >
-              Discover Our Full Story 
-              <span className="group-hover:translate-x-1 transition-transform duration-300 text-xl leading-none">&rarr;</span>
-            </Link>
+            {/* CTA Links */}
+            <div className="mt-10 flex flex-wrap items-center gap-5 sm:gap-6">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 text-brand-gold font-dm text-lg hover:text-brand-gold-light transition-all duration-300 w-fit font-semibold group"
+              >
+                Discover Our Full Story 
+                <span className="group-hover:translate-x-1 transition-transform duration-300 text-xl leading-none">&rarr;</span>
+              </Link>
+
+              <button
+                type="button"
+                onClick={() => {
+                  if (typeof window !== "undefined") {
+                    window.dispatchEvent(new CustomEvent("open-founder-note"));
+                  }
+                }}
+                className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-brand-gold/10 hover:bg-brand-gold/20 border border-brand-gold/30 hover:border-brand-gold text-brand-blue-deep font-dm text-sm font-semibold transition-all duration-300 cursor-pointer shadow-sm"
+              >
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span>How We Work (Founder Memo)</span>
+              </button>
+            </div>
           </motion.div>
 
           {/* RIGHT COLUMN: Sleek Metrics Card (Span 5) */}

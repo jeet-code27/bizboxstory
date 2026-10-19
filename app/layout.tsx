@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import NoScrollOnNav from "@/components/NoScrollOnNav";
 import MetaPixel from "@/components/MetaPixel";
+import FounderNoteModal from "@/components/FounderNoteModal";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -91,6 +92,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <FloatingWhatsApp />
+        <FounderNoteModal />
       </body>
     </html>
   );
