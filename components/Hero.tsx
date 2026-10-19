@@ -159,7 +159,7 @@ export default function Hero() {
 
           {/* RIGHT COLUMN - Video Player */}
           <motion.div 
-            className="flex mt-12 lg:mt-0 lg:col-span-5 relative justify-center items-center"
+            className="flex flex-col mt-12 lg:mt-0 lg:col-span-5 relative justify-center items-center"
             variants={cardVariants}
             initial="hidden"
             animate="show"
@@ -177,6 +177,16 @@ export default function Hero() {
                 allowFullScreen
               ></iframe>
             </div>
+
+            {/* Founder Note Link under YouTube Shorts */}
+            <Link
+              href="/shay-mehta#how-we-work"
+              className="mt-6 z-10 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 hover:bg-brand-gold/15 border border-brand-gold/30 hover:border-brand-gold text-brand-gold font-dm text-xs sm:text-sm font-semibold transition-all duration-300 shadow-md group"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <span>Founder note: How we work together</span>
+              <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
+            </Link>
             
             {/* Background glowing orb behind the video */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-[350px] bg-brand-gold/20 blur-[100px] rounded-full z-[0] pointer-events-none" />
