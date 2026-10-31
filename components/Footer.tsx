@@ -92,8 +92,8 @@ export default function Footer() {
               <a href="tel:+919217730039" className="hover:text-brand-gold transition-colors flex items-center gap-3">
                 <FiPhone className="text-brand-gold text-base" /> +91-9217730039 (India)
               </a>
-              <a href="tel:+17749912610" className="hover:text-brand-gold transition-colors flex items-center gap-3">
-                <FiPhone className="text-brand-gold text-base" /> +1-774-991-2610 (USA)
+              <a href="tel:+15087868636" className="hover:text-brand-gold transition-colors flex items-center gap-3">
+                <FiPhone className="text-brand-gold text-base" /> +1-508-786-8636 (USA)
               </a>
             </div>
 

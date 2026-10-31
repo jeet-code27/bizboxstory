@@ -91,10 +91,10 @@ export default function ThankYouPage() {
               {/* Direct USA Phone & WhatsApp Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                  href="tel:+17749912610"
+                  href="tel:+15087868636"
                   className="w-full sm:w-auto font-dm font-bold text-base px-8 py-4 bg-brand-gold text-brand-ink rounded-full hover:bg-brand-gold-light transition-all shadow-[0_8px_25px_rgba(255,182,5,0.35)] flex items-center justify-center gap-2"
                 >
-                  <FiPhone /> Call USA Support: +1-774-991-2610
+                  <FiPhone /> Call USA Support: +1-508-786-8636
                 </a>
 
                 <a

@@ -391,8 +391,8 @@ export default function ContactPage() {
                     <a href="tel:+919217730039" className="font-dm text-gray-600 text-sm hover:text-brand-gold transition-colors block">
                       +91-9217730039 (India)
                     </a>
-                    <a href="tel:+17749912610" className="font-dm text-gray-500 text-sm hover:text-brand-gold transition-colors block mt-0.5">
-                      +1-774-991-2610 (USA)
+                    <a href="tel:+15087868636" className="font-dm text-gray-500 text-sm hover:text-brand-gold transition-colors block mt-0.5">
+                      +1-508-786-8636 (USA)
                     </a>
                   </div>
                 </div>

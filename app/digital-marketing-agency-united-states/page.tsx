@@ -123,7 +123,7 @@ export default function UnitedStatesPage() {
               "logo": "https://bizboxstory.com/images/logo.png",
               "description": "BizBox Story is a top-rated digital marketing agency in the United States offering AI SEO, Google Ads management, Facebook ads, content marketing, and B2B lead generation services for small and medium businesses.",
               "priceRange": "$$",
-              "telephone": "+1-774-991-2610",
+              "telephone": "+1-508-786-8636",
               "email": "info@bizboxstory.com",
               "address": {
                 "@type": "PostalAddress",
