@@ -14,6 +14,7 @@ const servicesLinks = [
   { name: "Lead Generation", href: "/services/lead-generation" },
   { name: "Brand Presence & Consulting", href: "/services/brand-presence-consulting" },
   { name: "CBD SEO Strategies", href: "/services/cbd-seo" },
+  { name: "Home Services Marketing", href: "/industries/home-services-marketing" },
 ];
 
 const companyLinks = [

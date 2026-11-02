@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/industries',
+        destination: '/industries/home-services-marketing',
+        permanent: false,
+      },
+      {
         source: '/us',
         destination: '/digital-marketing-agency-united-states',
         permanent: true,

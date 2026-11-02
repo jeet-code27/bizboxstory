@@ -28,6 +28,18 @@ const navLinks = [
       { name: "Marketing for Doctors", href: "/digital-marketing-for-doctors" },
     ],
   },
+  {
+    name: "Industries",
+    href: "/industries/home-services-marketing",
+    dropdown: [
+      { name: "Home Services", href: "/industries/home-services-marketing" },
+      { name: "Junk Removal", href: "/industries/home-services-marketing/junk-removal-marketing" },
+      { name: "Roofing", href: "/industries/home-services-marketing/roofing-marketing" },
+      { name: "HVAC", href: "/industries/home-services-marketing/hvac-marketing" },
+      { name: "Electricians", href: "/industries/home-services-marketing/electrician-marketing" },
+      { name: "Air Duct Cleaning", href: "/industries/home-services-marketing/air-duct-cleaning-marketing" },
+    ],
+  },
   { name: "Marketing Strategy", href: "/marketing-strategy" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blogs" },
@@ -140,7 +152,7 @@ export default function Navbar() {
             variants={containerVariants}
             initial="hidden"
             animate="show"
-            className="hidden lg:flex items-center space-x-10 font-dm"
+            className="hidden lg:flex items-center space-x-4 xl:space-x-5 whitespace-nowrap font-dm"
           >
             {navLinks.map((link) => (
               <motion.div key={link.name} variants={itemVariants} className="relative group">
@@ -189,7 +201,7 @@ export default function Navbar() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.3 }}
-            className="hidden lg:flex items-center"
+            className="hidden xl:flex items-center"
           >
             <Link
               href="/free-strategy-call"
