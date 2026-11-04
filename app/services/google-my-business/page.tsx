@@ -396,7 +396,7 @@ export default function GMBPage() {
                     <span className="font-dm text-sm font-semibold text-brand-ink">SEO Services</span>
                     <FiArrowRight className="text-brand-gold group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <Link href="/services/brand-presence" className="flex items-center justify-between px-4 py-3 bg-white border border-brand-border rounded-xl hover:border-brand-gold transition-colors group">
+                  <Link href="/services/brand-presence-consulting" className="flex items-center justify-between px-4 py-3 bg-white border border-brand-border rounded-xl hover:border-brand-gold transition-colors group">
                     <span className="font-dm text-sm font-semibold text-brand-ink">Brand Consulting</span>
                     <FiArrowRight className="text-brand-gold group-hover:translate-x-1 transition-transform" />
                   </Link>

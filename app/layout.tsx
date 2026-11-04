@@ -27,17 +27,6 @@ export const metadata: Metadata = {
   description: "Revenue-driven digital marketing agency helping SMEs scale with AI SEO, Content Marketing, Google Ads & Social Media. Serving US, UK, Australia & India.",
   authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
   publisher: "BizBox Story",
-  alternates: {
-    canonical: '/',
-    languages: {
-      'en-US': '/us',
-      'en-GB': '/uk',
-      'en-AU': '/au',
-      'en-CA': '/ca',
-      'en-AE': '/ae',
-      'x-default': '/',
-    },
-  },
   robots: {
     index: true,
     follow: true,

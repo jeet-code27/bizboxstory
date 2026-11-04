@@ -1,19 +1,15 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getAllPosts, getPostBySlug, getFeaturedImageUrl } from '@/lib/wordpress';
+import { getPostBySlug, getFeaturedImageUrl } from '@/lib/wordpress';
 import { FiCalendar, FiUser, FiArrowLeft } from 'react-icons/fi';
 import BlogSidebar from '@/components/BlogSidebar';
 
+// Posts are rendered on first visit and then cached, instead of at build time.
+// A CMS hiccup during a build used to bake posts in as "not found" pages;
+// rendering on demand lets a failed fetch error out and retry on the next visit.
 export async function generateStaticParams() {
-  try {
-    const posts = await getAllPosts();
-    return posts.map((post) => ({
-      slug: post.slug,
-    }));
-  } catch (e) {
-    return [];
-  }
+  return [];
 }
 
 function decodeHtmlEntities(text) {

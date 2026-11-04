@@ -22,6 +22,9 @@ export const metadata = {
   title: 'Shay Mehta - Founder & CEO | BizBox Story',
   description: 'Learn more about Shay Mehta, Founder & CEO of BizBox Story, a digital marketing agency built for US businesses in restricted and underserved niches.',
   keywords: 'Shay Mehta, Founder BizBox Story, SEO expert for dispensaries, digital marketing for chiropractic, pest control marketing expert, US business marketing, BizBox Story CEO',
+  alternates: {
+    canonical: 'https://bizboxstory.com/shay-mehta',
+  },
   openGraph: {
     title: 'Shay Mehta - Founder & CEO | BizBox Story',
     description: 'Learn more about Shay Mehta, Founder & CEO of BizBox Story, a digital marketing agency built for US businesses in restricted and underserved niches.',

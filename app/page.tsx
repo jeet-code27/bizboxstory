@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { hreflangAlternates } from "@/lib/hreflang";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ClientLogos from "@/components/ClientLogos";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
   publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/",
+    languages: hreflangAlternates,
   },
 };
 

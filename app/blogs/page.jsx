@@ -3,16 +3,25 @@ import Image from 'next/image';
 import { getPostsPaginated, getFeaturedImageUrl } from '@/lib/wordpress';
 import { FiArrowRight, FiCalendar, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-export const metadata = {
-  title: "Digital Marketing Blog | SEO Tips, Ads & Growth Insights",
-  description: "Discover practical tips on SEO, content marketing, paid ads, and online growth to help your business attract more traffic and customers.",
-  keywords: ["digital marketing blog", "SEO tips", "content marketing insights", "paid ads", "online growth"],
-  authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
-  publisher: "BizBox Story",
-  alternates: {
-    canonical: "https://bizboxstory.com/blogs",
-  },
-};
+export async function generateMetadata({ searchParams }) {
+  const resolvedParams = await searchParams;
+  const currentPage = parseInt(resolvedParams?.page || '1', 10);
+
+  return {
+    title: currentPage > 1
+      ? `Digital Marketing Blog - Page ${currentPage} | BizBox Story`
+      : "Digital Marketing Blog | SEO Tips, Ads & Growth Insights",
+    description: "Discover practical tips on SEO, content marketing, paid ads, and online growth to help your business attract more traffic and customers.",
+    keywords: ["digital marketing blog", "SEO tips", "content marketing insights", "paid ads", "online growth"],
+    authors: [{ name: "Shay Mehta", url: "https://shaymehta.com" }],
+    publisher: "BizBox Story",
+    alternates: {
+      canonical: currentPage > 1
+        ? `https://bizboxstory.com/blogs?page=${currentPage}`
+        : "https://bizboxstory.com/blogs",
+    },
+  };
+}
 
 export default async function BlogListingPage({ searchParams }) {
   // Await searchParams for correct Next.js 15+ resolution

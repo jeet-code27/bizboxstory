@@ -6,7 +6,7 @@ import { FaFacebookF, FaInstagram, FaXTwitter, FaLinkedinIn } from "react-icons/
 import { FiMail, FiPhone } from "react-icons/fi";
 
 const servicesLinks = [
-  { name: "AI SEO Services", href: "/services/ai-seo" },
+  { name: "AI SEO Services", href: "/services/seo-services" },
   { name: "Content Marketing", href: "/services/content-marketing" },
   { name: "Social Media Management", href: "/services/social-media-management" },
   { name: "Google & Facebook Ads", href: "/services/google-facebook-ads" },
@@ -32,7 +32,7 @@ const companyLinks = [
 
 const marketsLinks = [
   { flag: "https://flagcdn.com/w40/us.png", name: "United States", href: "/digital-marketing-agency-united-states" },
-  { flag: "https://flagcdn.com/w40/gb.png", name: "United Kingdom", href: "/digital-marketing-agency-united-kingdom" },
+  { flag: "https://flagcdn.com/w40/gb.png", name: "United Kingdom", href: "/uk" },
   { flag: "https://flagcdn.com/w40/in.png", name: "India", href: "/" },
   { flag: "https://flagcdn.com/w40/au.png", name: "Australia", href: "/digital-marketing-agency-australia" },
   { flag: "https://flagcdn.com/w40/ca.png", name: "Canada", href: "/digital-marketing-agency-canada" },

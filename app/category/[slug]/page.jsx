@@ -4,15 +4,22 @@ import { getCategoryBySlug, getPostsByCategoryPaginated, getFeaturedImageUrl } f
 import { FiArrowRight, FiCalendar, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { notFound } from 'next/navigation';
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params, searchParams }) {
   const resolvedParams = await params;
+  const resolvedSearchParams = await searchParams;
   const category = await getCategoryBySlug(resolvedParams.slug);
-  
+
   if (!category) return { title: 'Category Not Found' };
-  
+
+  const currentPage = parseInt(resolvedSearchParams?.page || '1', 10);
+  const baseUrl = `https://bizboxstory.com/category/${resolvedParams.slug}`;
+
   return {
-    title: category.name,
+    title: currentPage > 1 ? `${category.name} - Page ${currentPage}` : category.name,
     description: `Read the latest articles about ${category.name} from BizBox Story.`,
+    alternates: {
+      canonical: currentPage > 1 ? `${baseUrl}?page=${currentPage}` : baseUrl,
+    },
   };
 }
 

@@ -222,15 +222,7 @@ export default function DcLeaflyPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="absolute inset-0 bg-brand-blue-deep/10 transform rotate-1 rounded-3xl" />
-            <div className="relative rounded-3xl overflow-hidden border border-brand-border shadow-2xl bg-white">
-              <img
-                src="/images/case-studies/dc-leafly-backlinks.png"
-                alt="DC Leafly — Backlinks Built in a Month"
-                className="w-full object-cover"
-              />
-            </div>
-            <div className="mt-6 flex items-center justify-center gap-3 flex-wrap">
+            <div className="flex items-center justify-center gap-3 flex-wrap">
               <span className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-brand-border rounded-full shadow-sm">
                 <span className="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse"></span>
                 <span className="font-dm text-gray-600 text-sm">6.6K backlinks with</span>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { hreflangAlternates } from "@/lib/hreflang";
 import Link from "next/link";
 import Image from "next/image";
 import { FiArrowRight, FiCheckCircle, FiTrendingUp, FiTarget, FiGlobe, FiClock, FiSearch, FiLayout, FiPieChart } from "react-icons/fi";
@@ -21,6 +22,7 @@ export const metadata: Metadata = {
   publisher: "BizBox Story",
   alternates: {
     canonical: "https://bizboxstory.com/digital-marketing-agency-dubai",
+    languages: hreflangAlternates,
   },
 };
 
