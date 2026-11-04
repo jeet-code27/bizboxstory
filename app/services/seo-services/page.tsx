@@ -233,7 +233,7 @@ export default function SEOServicesPage() {
             transition={{ duration: 0.6 }}
           >
             <span className="inline-flex items-center gap-2 font-dm text-brand-gold text-sm uppercase tracking-[0.22em] font-semibold mb-5 px-5 py-2 border border-brand-gold/30 rounded-full bg-brand-gold/10 backdrop-blur-sm">
-              <FiSearch className="w-4 h-4" /> SEO Services In India
+              <FiSearch className="w-4 h-4" /> SEO Services
             </span>
           </motion.div>
 
@@ -243,7 +243,7 @@ export default function SEOServicesPage() {
             transition={{ duration: 0.8, delay: 0.15 }}
             className="font-fraunces text-5xl sm:text-6xl lg:text-[4.5rem] font-bold text-white leading-[1.07] mt-2"
           >
-            Best <span className="italic text-brand-gold">SEO Services</span><br/>Company in India
+            Best <span className="italic text-brand-gold">SEO Services</span><br/>Company
           </motion.h1>
 
           <motion.p
